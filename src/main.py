@@ -2,20 +2,16 @@ import pandas as pd
 from tabulate import tabulate
 from log import log_progress
 from extract import extract_incautaciones
+from extract_api import extract_gbif
+from transform_api import transform_gbif
 from transform import transform_data
 from load import save_dimensions_to_csv, load_to_dw
 
-<<<<<<< HEAD
-log_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto_1\etl_project_ods-main\etl_project_ods-main\logs\log_file.txt'
-
-target_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto_1\etl_project_ods-main\etl_project_ods-main\transformed'
-
-data_path = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto_1\etl_project_ods-main\etl_project_ods-main\raw\incautaciones.csv'
-=======
+gbif_raw_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\raw\gbif_raw.csv'
 log_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\logs\log_file.txt'
 target_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\transformed'
 data_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\raw\incautaciones.csv'
->>>>>>> 701e10fe1c81ff506cec95086e0c4158bbb7db4e
+
 
 def main():
     # ETL process
@@ -23,6 +19,8 @@ def main():
 
     # Extract
     log_progress('Extract phase started', log_file)
+    df_incautaciones = extract_incautaciones(data_path)
+    df_gbif = extract_gbif(data_path, gbif_raw_path)
 
     df_incautaciones = extract_incautaciones(data_path)
     print(tabulate(df_incautaciones.head(), headers='keys', tablefmt='psql'))
@@ -33,6 +31,7 @@ def main():
     log_progress('Transform phase started', log_file)
 
     df_transform = transform_data(df_incautaciones)
+    dim_especie_api = transform_gbif(df_gbif)
 
     print("\nDIM_TIEMPO")
     print(tabulate(df_transform["dim_tiempo"].head(), headers='keys', tablefmt='psql'))

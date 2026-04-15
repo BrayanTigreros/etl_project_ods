@@ -1,9 +1,6 @@
 import pandas as pd
+from transform_api import nueva_dim_especie
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 701e10fe1c81ff506cec95086e0c4158bbb7db4e
 # Dim tiempo
 def create_dim_tiempo(df):
 
@@ -120,12 +117,13 @@ def create_fact_incautaciones(df, dim_tiempo, dim_ubicacion, dim_especie, dim_au
 
 
 # Transform completo
-def transform_data(df):
+def transform_data(df, df_gbif):
 
     dim_tiempo = create_dim_tiempo(df)
     dim_ubicacion = create_dim_ubicacion(df)
     dim_especie = create_dim_especie(df)
     dim_autoridad = create_dim_autoridad(df)
+    dim_especie = nueva_dim_especie(dim_especie, df_gbif)
 
     fact_incautaciones = create_fact_incautaciones(
         df,
