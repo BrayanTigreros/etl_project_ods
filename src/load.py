@@ -2,10 +2,6 @@ from sqlalchemy import create_engine, text
 import pandas as pd
 import os
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 701e10fe1c81ff506cec95086e0c4158bbb7db4e
 # Save to csv
 def save_dimensions_to_csv(target_file, **dataframes):
 
@@ -43,11 +39,7 @@ def load_to_dw(dataframes):
     fact_incautaciones = dataframes["fact_incautaciones"]
 
     engine = create_engine(
-<<<<<<< HEAD
-        "mysql+pymysql://root:@localhost:3306/incautaciones_dw"
-=======
         "mysql+pymysql://root:davidsp@localhost:3306/incautaciones_dw"
->>>>>>> 701e10fe1c81ff506cec95086e0c4158bbb7db4e
     )
 
     insert_ignore(dim_tiempo,    "dim_tiempo",    engine)

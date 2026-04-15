@@ -1,10 +1,10 @@
+from pathlib import Path
 import re
 import time
 import requests
 import pandas as pd
 
 BASE_URL = "https://api.gbif.org/v1"
-SLEEP_TIME = 0.3
 MIN_CONFIDENCE = 80
 
 def normalizar_nombre(nombre: str) -> str:
@@ -30,6 +30,13 @@ def get_iucn(usage_key: int) -> str:
         return None
 
 def extract_gbif(data_path: str, output_path: str) -> pd.DataFrame:
+
+    output_file = Path(output_path)
+
+    if output_file.exists():
+        print(f"gbif_raw.csv ya existe. Leyendo desde disco: {output_path}")
+        return pd.read_csv(output_file)
+
     df = pd.read_csv(data_path)
     nombres_unicos = df["Nombre cientifico"].dropna().unique().tolist()
     print(f"Consultando GBIF para {len(nombres_unicos)} especies...")
@@ -40,7 +47,6 @@ def extract_gbif(data_path: str, output_path: str) -> pd.DataFrame:
         print(f"[{i+1:>3}/{len(nombres_unicos)}] {nombre_original:45} → {nombre_norm}")
 
         taxonomia = get_taxonomia(nombre_norm)
-        time.sleep(SLEEP_TIME)
 
         if taxonomia is None:
             resultados.append({
@@ -56,7 +62,6 @@ def extract_gbif(data_path: str, output_path: str) -> pd.DataFrame:
 
         usage_key = taxonomia.get("usageKey")
         categoria_iucn = get_iucn(usage_key) if usage_key else None
-        time.sleep(SLEEP_TIME)
 
         resultados.append({
             "nombre_cientifico_original":    nombre_original,

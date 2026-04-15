@@ -3,7 +3,6 @@ from tabulate import tabulate
 from log import log_progress
 from extract import extract_incautaciones
 from extract_api import extract_gbif
-from transform_api import transform_gbif
 from transform import transform_data
 from load import save_dimensions_to_csv, load_to_dw
 
@@ -30,8 +29,7 @@ def main():
     # Transform
     log_progress('Transform phase started', log_file)
 
-    df_transform = transform_data(df_incautaciones)
-    dim_especie_api = transform_gbif(df_gbif)
+    df_transform = transform_data(df_incautaciones, df_gbif)
 
     print("\nDIM_TIEMPO")
     print(tabulate(df_transform["dim_tiempo"].head(), headers='keys', tablefmt='psql'))

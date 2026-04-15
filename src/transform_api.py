@@ -13,12 +13,6 @@ IUCN_LABELS = {
     "NE": "No evaluada"
 }
  
-#orden para clasificación de categorías IUCN, de menos a mas grave
-IUCN_ORDEN = {
-    "LC": 1, "NT": 2, "VU": 3, "EN": 4,
-    "CR": 5, "EW": 6, "EX": 7, "DD": 8, "NE": 9
-}
- 
  
 # 
 def nueva_dim_especie(dim_especie: pd.DataFrame, df_gbif: pd.DataFrame) -> pd.DataFrame:
@@ -61,12 +55,6 @@ def nueva_dim_especie(dim_especie: pd.DataFrame, df_gbif: pd.DataFrame) -> pd.Da
     # Quedarnos solo con las columnas útiles para el enriquecimiento
     gbif_ = gbif[[
         "nombre_cientifico",
-        "reino",
-        "filo",
-        "clase",
-        "orden",
-        "familia",
-        "genero",
         "categoria_iucn"
     ]].drop_duplicates(subset="nombre_cientifico")
  
@@ -79,20 +67,16 @@ def nueva_dim_especie(dim_especie: pd.DataFrame, df_gbif: pd.DataFrame) -> pd.Da
     )
  
     #Rellenar nulos de especies
-    # Las filas que no matchearon quedan = "DESCONOCIDO"
-    for col in ["reino", "filo", "clase", "orden", "familia", "genero"]:
-        dim_nueva[col] = dim_nueva[col].fillna("NO IDENTIFICADO")
  
     dim_nueva["categoria_iucn"] = dim_nueva["categoria_iucn"].fillna("NE")
  
     #agregar columnas derivadas
     dim_nueva["categoria_iucn_label"] = dim_nueva["categoria_iucn"].map(IUCN_LABELS)
-    dim_nueva["iucn_orden"]           = dim_nueva["categoria_iucn"].map(IUCN_ORDEN)
     dim_nueva["es_amenazada"]         = dim_nueva["categoria_iucn"].isin(["VU", "EN", "CR", "EW", "EX"])
  
     print("=== dim_especie enriquecida ===")
     print(f"Total filas            : {len(dim_nueva)}")
-    print(f"Con match GBIF         : {(dim_nueva['reino'] != 'NO IDENTIFICADO').sum()}")
+    print(f"Con categoría IUCN     : {(dim_nueva['categoria_iucn'] != 'NE').sum()}")
     print(f"Especies amenazadas    : {dim_nueva['es_amenazada'].sum()}")
     print(f"\nDistribución IUCN:")
     print(
@@ -103,5 +87,15 @@ def nueva_dim_especie(dim_especie: pd.DataFrame, df_gbif: pd.DataFrame) -> pd.Da
         .sort_values("categoria_iucn")
         .to_string(index=False)
     )
+
+    dim_nueva = dim_nueva[[
+    "especie_key",
+    "tipo_especie",
+    "nombre_comun",
+    "nombre_cientifico",
+    "categoria_iucn",
+    "categoria_iucn_label",
+    "es_amenazada"
+]]
  
     return dim_nueva
