@@ -54,6 +54,7 @@ def create_dim_especie(df):
     dim_especie["nombre_comun"] = dim_especie["nombre_comun"].str.strip().str.upper()
     dim_especie["nombre_cientifico"] = dim_especie["nombre_cientifico"].str.strip().str.upper()
 
+    dim_especie = dim_especie.sort_values("nombre_cientifico").reset_index(drop=True)
     dim_especie["especie_key"] = dim_especie.index + 1
 
     dim_especie = dim_especie[["especie_key", "tipo_especie", "nombre_comun", "nombre_cientifico"]]

@@ -2,8 +2,10 @@ from sqlalchemy import create_engine, text
 import pandas as pd
 import os
 
+
 # Save to csv
 def save_dimensions_to_csv(target_file, **dataframes):
+    os.makedirs(target_file, exist_ok=True)
 
     for name, df in dataframes.items():
         file_path = os.path.join(target_file, f"{name}.csv")
@@ -12,39 +14,76 @@ def save_dimensions_to_csv(target_file, **dataframes):
 
 
 def insert_ignore(df, table_name, engine):
-    # Crea una tabla temporal, inserta los datos y usa INSERT IGNORE para evitar duplicados
+    """
+    Inserta evitando duplicados.
+    Útil para dimensiones que no cambian o para facts.
+    """
     temp_table = f"tmp_{table_name}"
+    cols = ", ".join(df.columns)
 
     df.to_sql(temp_table, engine, if_exists="replace", index=False)
 
-    cols = ", ".join(df.columns)
-
     insert_sql = f"""
         INSERT IGNORE INTO {table_name} ({cols})
-        SELECT {cols} FROM {temp_table};
+        SELECT {cols}
+        FROM {temp_table};
     """
 
     with engine.begin() as conn:
         conn.execute(text(insert_sql))
-        conn.execute(text(f"DROP TABLE {temp_table}"))
+        conn.execute(text(f"DROP TABLE IF EXISTS {temp_table}"))
+
+
+def load_dim_especie(dim_especie, engine):
+    """
+    Mantiene INSERT IGNORE para no duplicar, pero luego actualiza
+    por especie_key los campos que sí pueden cambiar.
+    """
+    temp_table = "tmp_dim_especie"
+    cols = ", ".join(dim_especie.columns)
+
+    dim_especie.to_sql(temp_table, engine, if_exists="replace", index=False)
+
+    insert_sql = f"""
+        INSERT IGNORE INTO dim_especie ({cols})
+        SELECT {cols}
+        FROM {temp_table};
+    """
+
+    update_sql = f"""
+        UPDATE dim_especie d
+        JOIN {temp_table} t
+            ON d.especie_key = t.especie_key
+        SET
+            d.tipo_especie = t.tipo_especie,
+            d.nombre_comun = t.nombre_comun,
+            d.nombre_cientifico = t.nombre_cientifico,
+            d.categoria_iucn = t.categoria_iucn,
+            d.categoria_iucn_label = t.categoria_iucn_label,
+            d.es_amenazada = t.es_amenazada;
+    """
+
+    with engine.begin() as conn:
+        conn.execute(text(insert_sql))
+        conn.execute(text(update_sql))
+        conn.execute(text(f"DROP TABLE IF EXISTS {temp_table}"))
 
 
 # Load to DW
 def load_to_dw(dataframes):
-
-    dim_tiempo     = dataframes["dim_tiempo"]
-    dim_ubicacion  = dataframes["dim_ubicacion"]
-    dim_especie    = dataframes["dim_especie"]
-    dim_autoridad  = dataframes["dim_autoridad"]
+    dim_tiempo = dataframes["dim_tiempo"]
+    dim_ubicacion = dataframes["dim_ubicacion"]
+    dim_especie = dataframes["dim_especie"]
+    dim_autoridad = dataframes["dim_autoridad"]
     fact_incautaciones = dataframes["fact_incautaciones"]
 
     engine = create_engine(
         "mysql+pymysql://root:davidsp@localhost:3306/incautaciones_dw"
     )
 
-    insert_ignore(dim_tiempo,    "dim_tiempo",    engine)
+    insert_ignore(dim_tiempo, "dim_tiempo", engine)
     insert_ignore(dim_ubicacion, "dim_ubicacion", engine)
-    insert_ignore(dim_especie,   "dim_especie",   engine)
+    load_dim_especie(dim_especie, engine)
     insert_ignore(dim_autoridad, "dim_autoridad", engine)
 
     # Anti-join para evitar duplicados en la fact table
