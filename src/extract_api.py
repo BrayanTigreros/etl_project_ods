@@ -9,7 +9,7 @@ MIN_CONFIDENCE = 80
 
 
 def normalizar_nombre(nombre: str) -> str:
-    nombre = re.sub(r'\(.*?\)', '', nombre)  # quitar autores
+    nombre = re.sub(r'\(.*?\)', '', nombre)
     nombre = nombre.strip()
 
     palabras = nombre.split()
@@ -60,7 +60,6 @@ def extract_gbif(data_path: str, output_path: str, force_refresh: bool = False) 
 
     output_file = Path(output_path)
 
-    # ✅ CACHE
     if output_file.exists() and not force_refresh:
         print(f"gbif_raw.csv ya existe. Leyendo desde disco: {output_path}")
         return pd.read_csv(output_file)
@@ -78,7 +77,7 @@ def extract_gbif(data_path: str, output_path: str, force_refresh: bool = False) 
 
         print(f"[{i+1:>3}/{len(nombres_unicos)}] {nombre_original:45} → {nombre_norm}")
 
-        # ❌ FILTRO: nombres basura
+        #filtro nombres basura
         if not es_nombre_cientifico(nombre_norm):
             no_cientificos += 1
 
@@ -101,10 +100,10 @@ def extract_gbif(data_path: str, output_path: str, force_refresh: bool = False) 
 
         taxonomia = get_taxonomia(nombre_norm)
 
-        # ❌ LOG DE FALLOS REALES
+        #log de fallos
         if taxonomia is None:
             sin_match += 1
-            print(f"   ❌ No match o baja confianza")
+            print(f"Aviso: No match o baja confianza")
 
             resultados.append({
                 "nombre_cientifico_original": nombre_original,
@@ -125,7 +124,7 @@ def extract_gbif(data_path: str, output_path: str, force_refresh: bool = False) 
 
         usage_key = taxonomia.get("usageKey")
 
-        # ✅ Solo llamar IUCN si el match es fuerte
+        #solo llamar IUCN si el match es fuerte
         if usage_key and taxonomia.get("confidence", 0) >= 90:
             categoria_iucn = get_iucn(usage_key)
         else:
