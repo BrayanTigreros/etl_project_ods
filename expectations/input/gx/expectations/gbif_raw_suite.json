@@ -1,0 +1,83 @@
+{
+  "expectations": [
+    {
+      "id": "aa900a38-6612-4ed4-b017-83ba290374fd",
+      "kwargs": {
+        "column_set": [
+          "nombre_cientifico_original",
+          "nombre_cientifico_normalizado",
+          "nombre_cientifico_gbif",
+          "usage_key",
+          "reino",
+          "filo",
+          "clase",
+          "orden",
+          "familia",
+          "genero",
+          "estado_taxonomico",
+          "confianza_match",
+          "categoria_iucn"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_set"
+    },
+    {
+      "id": "828851ac-1005-4224-ad27-2ee627d97528",
+      "kwargs": {
+        "column": "nombre_cientifico_original"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a1823afb-32af-47a6-8458-c638e6b42f4b",
+      "kwargs": {
+        "column": "nombre_cientifico_normalizado"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "fd2f7357-c373-4249-9e68-644e9caf3dd2",
+      "kwargs": {
+        "column": "confianza_match",
+        "max_value": 100.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "97954a93-cad5-4a3f-9e9b-68c99958a074",
+      "kwargs": {
+        "column": "categoria_iucn",
+        "value_set": [
+          "EX",
+          "EW",
+          "CR",
+          "EN",
+          "VU",
+          "NT",
+          "LC",
+          "DD",
+          "NE",
+          null
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    }
+  ],
+  "id": "bbfebb3a-0cc0-4709-8331-2fd7495bd3c1",
+  "meta": {
+    "great_expectations_version": "1.15.1"
+  },
+  "name": "gbif_raw_suite",
+  "notes": null
+}

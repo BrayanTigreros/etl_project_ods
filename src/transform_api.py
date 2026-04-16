@@ -74,7 +74,7 @@ def nueva_dim_especie(dim_especie: pd.DataFrame, df_gbif: pd.DataFrame) -> pd.Da
     dim_nueva["categoria_iucn_label"] = dim_nueva["categoria_iucn"].map(IUCN_LABELS)
     dim_nueva["es_amenazada"]         = dim_nueva["categoria_iucn"].isin(["VU", "EN", "CR", "EW", "EX"])
  
-    print("=== dim_especie enriquecida ===")
+    print("\n=== dim_especie enriquecida ===")
     print(f"Total filas            : {len(dim_nueva)}")
     print(f"Con categoría IUCN     : {(dim_nueva['categoria_iucn'] != 'NE').sum()}")
     print(f"Especies amenazadas    : {dim_nueva['es_amenazada'].sum()}")

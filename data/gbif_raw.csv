@@ -1,0 +1,568 @@
+nombre_cientifico_original,nombre_cientifico_normalizado,nombre_cientifico_gbif,usage_key,reino,filo,clase,orden,familia,genero,estado_taxonomico,confianza_match,categoria_iucn
+PORPHYRULA MARTINICA (LINNAEUS),Porphyrula martinica,"Porphyrula martinica (Linnaeus, 1766)",2474414.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Porphyrio,SYNONYM,98,LC
+ARAÑA POLLERA,Araña pollera,,,,,,,,,,0,
+OTUS CHOLIBA,Otus choliba,"Otus choliba (Vieillot, 1817)",5232187.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Megascops,SYNONYM,98,LC
+PIONUS MENSTRUUS,Pionus menstruus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,99,LC
+IGUANA IGUANA,Iguana iguana,"Iguana iguana (Linnaeus, 1758)",2459658.0,Animalia,Chordata,Squamata,,Iguanidae,Iguana,ACCEPTED,99,LC
+CHOLOEPUS HOFFMANNI W.H. PETERS,Choloepus hoffmanni,"Choloepus hoffmanni Peters, 1858",5219520.0,Animalia,Chordata,Mammalia,Pilosa,Megalonychidae,Choloepus,ACCEPTED,99,LC
+TRACHEMYS SCRIPTA,Trachemys scripta,"Trachemys scripta (Thunberg In Schoepff, 1792)",2443002.0,Animalia,Chordata,Testudines,,Emydidae,Trachemys,ACCEPTED,99,LC
+ARA SEVERA,Ara severa,"Ara severus (Linnaeus, 1758)",5959228.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,96,LC
+ARA ARARAUNA,Ara ararauna,"Ara ararauna (Linnaeus, 1758)",5959231.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,99,LC
+ARA MACAO,Ara macao,"Ara macao (Linnaeus, 1758)",5959227.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,99,LC
+AMAZONA OCHROCEPHALA,Amazona ochrocephala,"Amazona ochrocephala (Gmelin, 1788)",2479612.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,99,LC
+AMAZONA AMAZONICA,Amazona amazonica,"Amazona amazonica (Linnaeus, 1766)",2479666.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,99,LC
+RHINOPTYNX CLAMATOR,Rhinoptynx clamator,"Rhinoptynx clamator (Vieillot, 1808)",5789327.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pseudoscops,SYNONYM,98,LC
+GEOCHELONE CARBONARIA,Geochelone carbonaria,"Geochelone carbonaria (Spix, 1824)",2441647.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,SYNONYM,98,NE
+DASYPUS NOVEMCINCTUS LINNAEUS,Dasypus novemcinctus,"Dasypus novemcinctus Linnaeus, 1758",2440779.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Dasypus,ACCEPTED,99,LC
+NASUA NASUA,Nasua nasua,"Nasua nasua (Linnaeus, 1766)",2433536.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Nasua,ACCEPTED,99,LC
+COENDU SP.,Coendu sp.,"Coendu Lesson, 1827",4829616.0,Animalia,Chordata,Mammalia,Rodentia,Erethizontidae,Coendou,SYNONYM,94,
+BOA CONSTRICTOR,Boa constrictor,"Boa constrictor Linnaeus, 1758",2464899.0,Animalia,Chordata,Squamata,,Boidae,Boa,ACCEPTED,99,LC
+DASYPUS NOVENCNCTUS,Dasypus novencnctus,"Dasypus novemcinctus Linnaeus, 1758",2440779.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Dasypus,ACCEPTED,93,LC
+SAGUINUS LEUCOPUS,Saguinus leucopus,"Saguinus leucopus (Günther, 1877)",2436476.0,Animalia,Chordata,Mammalia,Primates,Callitrichidae,Saguinus,ACCEPTED,99,VU
+TURDUS IGNOBILIS,Turdus ignobilis,"Turdus ignobilis P.L.Sclater, 1858",2490722.0,Animalia,Chordata,Aves,Passeriformes,Turdidae,Turdus,ACCEPTED,99,LC
+TANGARA VITRIOLINA,Tangara vitriolina,"Tangara vitriolina (Cabanis, 1851)",2488112.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Stilpnia,SYNONYM,98,LC
+TURDUS FUSCATER,Turdus fuscater,"Turdus fuscater Orbigny & Lafresnaye, 1837",2490717.0,Animalia,Chordata,Aves,Passeriformes,Turdidae,Turdus,ACCEPTED,99,LC
+ICTERUS CHRYSATER,Icterus chrysater,"Icterus chrysater (Lesson, 1844)",5229924.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Icterus,ACCEPTED,99,LC
+SICALIS FLAVEOLA,Sicalis flaveola,"Sicalis flaveola (Linnaeus, 1766)",2491862.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Sicalis,ACCEPTED,99,LC
+CHLOROPHANES SPIZA,Chlorophanes spiza,"Chlorophanes spiza (Linnaeus, 1758)",5230641.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Chlorophanes,ACCEPTED,99,LC
+POTOS FLAVUS (SCHREBER),Potos flavus,"Potos flavus (Schreber, 1774)",2433573.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Potos,ACCEPTED,99,LC
+RAMPHASTOS SULPHURATUS,Ramphastos sulphuratus,"Ramphastos sulfuratus R.Lesson, 1830",2478771.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Ramphastos,ACCEPTED,93,NT
+BROTOGERIS JUGULARIS,Brotogeris jugularis,"Brotogeris jugularis (Statius Muller, 1776)",2479563.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Brotogeris,ACCEPTED,99,LC
+PHOENICOPTERUS RUBER,Phoenicopterus ruber,"Phoenicopterus ruber Linnaeus, 1758",9691034.0,Animalia,Chordata,Aves,Phoenicopteriformes,Phoenicopteridae,Phoenicopterus,ACCEPTED,99,LC
+BOTOGERIS JUGULARIS,Botogeris jugularis,,,,,,,,,,0,
+BUTEO MAGNIROSTRIS,Buteo magnirostris,"Buteo magnirostris (Gmelin, 1788)",2480518.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Rupornis,SYNONYM,98,LC
+KINOSTERNON SP.,Kinosternon sp.,"Kinosternon Spix, 1824",2442349.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,ACCEPTED,94,NE
+CAIMAN COCODRYLUS,Caiman cocodrylus,"Caiman Spix, 1825",5220195.0,Animalia,Chordata,Crocodylia,,Alligatoridae,Caiman,ACCEPTED,94,NE
+CEBUS ALBIFRONS,Cebus albifrons,"Cebus albifrons (Humboldt, 1812)",2436636.0,Animalia,Chordata,Mammalia,Primates,Cebidae,Cebus,ACCEPTED,99,LC
+RHINOCLEMMYS MELANOSTERNA,Rhinoclemmys melanosterna,"Rhinoclemmys melanosterna (Gray, 1861)",2443669.0,Animalia,Chordata,Testudines,,Geoemydidae,Rhinoclemmys,ACCEPTED,99,NE
+LUTRA LONGICAUDIS ANNECTENS FORSYTH-MAJOR,Lutra longicaudis,"Lutra longicaudis Olfers, 1818",4970000.0,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Lontra,SYNONYM,98,NE
+BRADYPUS VARIEGATUS,Bradypus variegatus,"Bradypus variegatus Schinz, 1825",2436353.0,Animalia,Chordata,Mammalia,Pilosa,Bradypodidae,Bradypus,ACCEPTED,99,LC
+PODOCNEMYS EXPANSA,Podocnemys expansa,"Podocnemis expansa (Schweigger, 1812)",2442795.0,Animalia,Chordata,Testudines,,Podocnemididae,Podocnemis,ACCEPTED,85,
+PITANGUS SULPHURATUS,Pitangus sulphuratus,"Pitangus sulphuratus (Linnaeus, 1766)",2482755.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Pitangus,ACCEPTED,99,LC
+DUSCICION THOUS,Duscicion thous,,,,,,,,,,0,
+DRYMARCHON CORAIS MELANURUS,Drymarchon corais,"Drymarchon corais (Boie, 1827)",7759294.0,Animalia,Chordata,Squamata,,Colubridae,Drymarchon,ACCEPTED,99,LC
+CEBUS CAPUCHINUS,Cebus capuchinus,"Cebus capucinus (Linnaeus, 1758)",2436637.0,Animalia,Chordata,Mammalia,Primates,Cebidae,Cebus,ACCEPTED,95,VU
+SCIURUS GRANATENSIS,Sciurus granatensis,"Sciurus granatensis Humboldt, 1811",5219666.0,Animalia,Chordata,Mammalia,Rodentia,Sciuridae,Sciurus,ACCEPTED,99,LC
+UROPSALIS SEGMENTATA SEGMENTATA (CASSIN),Uropsalis segmentata,"Uropsalis segmentata (Cassin, 1849)",2497078.0,Animalia,Chordata,Aves,Caprimulgiformes,Caprimulgidae,Uropsalis,ACCEPTED,99,LC
+VANELLUS CHILENSIS,Vanellus chilensis,"Vanellus chilensis (Molina, 1782)",5229146.0,Animalia,Chordata,Aves,Charadriiformes,Charadriidae,Vanellus,ACCEPTED,99,LC
+AMAZONA AUTUMNALIS,Amazona autumnalis,"Amazona autumnalis (Linnaeus, 1758)",2479623.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,99,LC
+OXYRHOPHUS PETOLAE,Oxyrhophus petolae,"Oxyrhopus petola (Linnaeus, 1758)",7754541.0,Animalia,Chordata,Squamata,,Colubridae,Oxyrhopus,SYNONYM,84,
+SAYORNIS NIGRICANS,Sayornis nigricans,"Sayornis nigricans (Swainson, 1827)",2483612.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Sayornis,ACCEPTED,99,LC
+ARATINGA PERTINAX,Aratinga pertinax,"Aratinga pertinax (Linnaeus, 1758)",2479127.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Aratinga,ACCEPTED,99,LC
+CALUROMYS DERBIANUS,Caluromys derbianus,"Caluromys derbianus (Waterhouse, 1841)",2439992.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Caluromys,ACCEPTED,99,LC
+ALOUATTA SENICULUS SENICULUS (LINNAEUS),Alouatta seniculus,"Alouatta seniculus (Linnaeus, 1766)",2436648.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Alouatta,ACCEPTED,99,LC
+FALCO SPARVERIUS,Falco sparverius,"Falco sparverius Linnaeus, 1758",9685907.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Falco,ACCEPTED,99,LC
+LAGOTHRIX LAGOTRICHA,Lagothrix lagotricha,"Lagothrix lagothricha (Humboldt, 1812)",5786085.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Lagothrix,ACCEPTED,96,VU
+BUBULCUS IBIS,Bubulcus ibis,"Bubulcus ibis (Linnaeus, 1758)",2480830.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Bubulcus,ACCEPTED,99,LC
+CEBUS APELLA,Cebus apella,"Cebus apella (Linnaeus, 1758)",2436639.0,Animalia,Chordata,Mammalia,Primates,Cebidae,Sapajus,SYNONYM,98,LC
+ZENEIDA ARICULATA,Zeneida ariculata,,,,,,,,,,0,
+SAIMIRI SCIUREUS,Saimiri sciureus,"Saimiri sciureus (Linnaeus, 1758)",2436661.0,Animalia,Chordata,Mammalia,Primates,Cebidae,Saimiri,ACCEPTED,99,LC
+LEPTODEIRA ANNULATA,Leptodeira annulata,"Leptodeira annulata (Linnaeus, 1758)",2454954.0,Animalia,Chordata,Squamata,,Colubridae,Leptodeira,ACCEPTED,99,LC
+GEOCHELONE DENTICULATA,Geochelone denticulata,"Geochelone denticulata (Linnaeus, 1766)",2441635.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,SYNONYM,98,VU
+DENDROCINCLA FULIGINOSA,Dendrocincla fuliginosa,"Dendrocincla fuliginosa (Vieillot, 1818)",2485950.0,Animalia,Chordata,Aves,Passeriformes,Furnariidae,Dendrocincla,ACCEPTED,99,LC
+AMAZILIA TZACATL,Amazilia tzacatl,"Amazilia tzacatl (de la Llave, 1833)",2476441.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Amazilia,ACCEPTED,99,LC
+CORAGYPS ATRATUS,Coragyps atratus,"Coragyps atratus (Bechstein, 1793)",2481942.0,Animalia,Chordata,Aves,Accipitriformes,Cathartidae,Coragyps,ACCEPTED,99,LC
+HERPAILURUS YAGUARONDI,Herpailurus yaguarondi,"Herpailurus yaguarondi (Lacépède, 1809)",2435156.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Puma,SYNONYM,98,NE
+SPILOTES SP.,Spilotes sp.,"Spilotes Wagler, 1830",2457193.0,Animalia,Chordata,Squamata,,Colubridae,Spilotes,ACCEPTED,94,NE
+SPEOTHOS VENATICUS,Speothos venaticus,"Speothos venaticus (Lund, 1842)",2434444.0,Animalia,Chordata,Mammalia,Carnivora,Canidae,Speothos,ACCEPTED,99,NT
+CHIRONIUS MONTICOLA,Chironius monticola,"Chironius monticola Roze, 1952",2457327.0,Animalia,Chordata,Squamata,,Colubridae,Chironius,ACCEPTED,99,LC
+AGOUTI PACA,Agouti paca,"Agouti paca (Linnaeus, 1766)",2437587.0,Animalia,Chordata,Mammalia,Rodentia,Cuniculidae,Cuniculus,SYNONYM,98,LC
+DRYOCOPUS LINEATUS,Dryocopus lineatus,"Dryocopus lineatus (Linnaeus, 1766)",5228831.0,Animalia,Chordata,Aves,Piciformes,Picidae,Dryocopus,ACCEPTED,99,NE
+DASYPROCTA PUNCTATA J.E. GRAY,Dasyprocta punctata,"Dasyprocta punctata Gray, 1842",2437576.0,Animalia,Chordata,Mammalia,Rodentia,Dasyproctidae,Dasyprocta,ACCEPTED,99,LC
+LEOPARDIS WIEDII,Leopardis wiedii,"Leopardus wiedii (Schinz, 1821)",2434950.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Leopardus,ACCEPTED,85,
+RUPORNIX MAGNIROSTRI,Rupornix magnirostri,"Ruporni magnirostris (Gmelin, 1788)",8115644.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Rupornis,SYNONYM,92,NE
+GEOCARCINUS RURICOLA,Geocarcinus ruricola,,,,,,,,,,0,
+NEOSTRENGERIA  SP,Neostrengeria sp,"Neostrengeria Pretzmann, 1965",4645244.0,Animalia,Arthropoda,Malacostraca,Decapoda,Pseudothelphusidae,Neostrengeria,ACCEPTED,94,NE
+DIDELPHIS ALBIVENTRIS ANDINA J.A. ALLEN,Didelphis albiventris,"Didelphis albiventris Lund, 1840",2439930.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Didelphis,ACCEPTED,99,LC
+PULSATRIX PERSPICILLATA,Pulsatrix perspicillata,"Pulsatrix perspicillata (Latham, 1790)",2497878.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pulsatrix,ACCEPTED,99,LC
+AULACORHYNCHUS PRASINU ALBIVITTA (BOISSONNEAU),Aulacorhynchus prasinu,"Aulacorhynchus prasinus (Gould, 1833)",5229012.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Aulacorhynchus,ACCEPTED,95,LC
+COLUMBA FASCIATA,Columba fasciata,"Columba fasciata Say, 1822",5231797.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Patagioenas,SYNONYM,98,NE
+DASYPROCTA PUNCTATA,Dasyprocta punctata,"Dasyprocta punctata Gray, 1842",2437576.0,Animalia,Chordata,Mammalia,Rodentia,Dasyproctidae,Dasyprocta,ACCEPTED,99,LC
+CHELYDRA SERPENTINA,Chelydra serpentina,"Chelydra serpentina (Linnaeus, 1758)",2441905.0,Animalia,Chordata,Testudines,,Chelydridae,Chelydra,ACCEPTED,99,LC
+NASAU NASAU,Nasau nasau,"Nasua nasua (Linnaeus, 1766)",2433536.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Nasua,ACCEPTED,80,
+FORPUS CONSPICILLATUS  SUBSP. PERQUITO,Forpus conspicillatus,"Forpus conspicillatus (Lafresnaye, 1848)",2479071.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Forpus,ACCEPTED,99,LC
+MELANERPES RUBRICAPILLUS,Melanerpes rubricapillus,"Melanerpes rubricapillus (Cabanis, 1862)",2478125.0,Animalia,Chordata,Aves,Piciformes,Picidae,Melanerpes,ACCEPTED,99,LC
+DENDROCYGNA AUTUMNALIS,Dendrocygna autumnalis,"Dendrocygna autumnalis (Linnaeus, 1758)",2498393.0,Animalia,Chordata,Aves,Anseriformes,Anatidae,Dendrocygna,ACCEPTED,99,LC
+ARATINGA WAGLERI,Aratinga wagleri,"Aratinga wagleri (G.R.Gray, 1845)",2479159.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Aratinga,ACCEPTED,99,NE
+POTOS FLAVUS,Potos flavus,"Potos flavus (Schreber, 1774)",2433573.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Potos,ACCEPTED,99,LC
+ATRACTUS LOVERIDGEI,Atractus loveridgei,"Atractus loveridgei Amaral, 1930",5223923.0,Animalia,Chordata,Squamata,,Colubridae,Atractus,ACCEPTED,99,DD
+LAMPROPELTIS TRIANGULUM,Lampropeltis triangulum,"Lampropeltis triangulum (Lacépède, 1789)",5224503.0,Animalia,Chordata,Squamata,,Colubridae,Lampropeltis,ACCEPTED,99,LC
+CLELIA CLELIA,Clelia clelia,"Clelia clelia (Daudin, 1803)",8876700.0,Animalia,Chordata,Squamata,,Colubridae,Clelia,ACCEPTED,99,LC
+TAMANDUA TETRADACTYLA,Tamandua tetradactyla,"Tamandua tetradactyla (Linnaeus, 1758)",2436340.0,Animalia,Chordata,Mammalia,Pilosa,Myrmecophagidae,Tamandua,ACCEPTED,99,LC
+DENDROPHIDION BIVITTATUS,Dendrophidion bivittatus,"Dendrophidion bivittatus (Duméril, Bibron & Duméril, 1854)",2452613.0,Animalia,Chordata,Squamata,,Colubridae,Dendrophidion,ACCEPTED,99,LC
+ATELES BELZEBUTH,Ateles belzebuth,"Ateles belzebuth É.Geoffroy Saint-Hilaire, 1806",2436642.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Ateles,ACCEPTED,99,EN
+FELIS TIGRINA,Felis tigrina,"Felis tigrina Schreber, 1775",7944319.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Leopardus,SYNONYM,98,NE
+AOTUS LEMORINUS LEMORINUS (E. GEFFROY - ST. HILAIRE),Aotus lemorinus,"Aotus lemurinus I.Geoffroy Saint-Hilaire, 1843",5219591.0,Animalia,Chordata,Mammalia,Primates,Aotidae,Aotus,ACCEPTED,95,VU
+TROGLODYTES AEDON,Troglodytes aedon,"Troglodytes aedon Vieillot, 1809",5231459.0,Animalia,Chordata,Aves,Passeriformes,Troglodytidae,Troglodytes,ACCEPTED,99,LC
+STEATORNIS CARIPENSIS HUMBOLDT,Steatornis caripensis,"Steatornis caripensis von Humboldt, 1817",2497150.0,Animalia,Chordata,Aves,Steatornithiformes,Steatornithidae,Steatornis,ACCEPTED,99,LC
+MIMUS GILVUS,Mimus gilvus,"Mimus gilvus (Vieillot, 1808)",5231676.0,Animalia,Chordata,Aves,Passeriformes,Mimidae,Mimus,ACCEPTED,99,LC
+CACICUS CELA,Cacicus cela,"Cacicus cela (Linnaeus, 1758)",5229832.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Cacicus,ACCEPTED,99,LC
+SEMNORNIS RAMPHASTINUS,Semnornis ramphastinus,"Semnornis ramphastinus (Jardine, 1855)",2478863.0,Animalia,Chordata,Aves,Piciformes,Semnornithidae,Semnornis,ACCEPTED,99,NT
+ICTERUS ICTERUS,Icterus icterus,"Icterus icterus (Linnaeus, 1766)",5229915.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Icterus,ACCEPTED,99,LC
+TRHAUPIS EPISCOPUS,Trhaupis episcopus,"Thraupis episcopus (Linnaeus, 1766)",2488602.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Thraupis,ACCEPTED,85,
+MANTA RAYA,Manta raya,"Manta raya Baer, 1899",4352377.0,Animalia,Chordata,Elasmobranchii,Myliobatiformes,Myliobatidae,Mobula,SYNONYM,98,NE
+CAPARAZON TORTUGA,Caparazon tortuga,,,,,,,,,,0,
+ODOCOILEUS VIRGINIANUS (ZIMMERMAN),Odocoileus virginianus,"Odocoileus virginianus (Zimmermann, 1780)",2440965.0,Animalia,Chordata,Mammalia,Artiodactyla,Cervidae,Odocoileus,ACCEPTED,99,LC
+SPROPHOCHEILUS OBLONGUS,Sprophocheilus oblongus,"Strophocheilus oblongus (O.F.Müller, 1774)",7960743.0,Animalia,Mollusca,Gastropoda,Stylommatophora,Strophocheilidae,Megalobulimus,SYNONYM,84,
+DINOMIYS BRANIICKII,Dinomiys braniickii,"Dinomys branickii Peters, 1873",2437612.0,Animalia,Chordata,Mammalia,Rodentia,Dinomyidae,Dinomys,ACCEPTED,82,
+DASYPUS NOVENMCINTUS,Dasypus novenmcintus,"Dasypus novemcinctus Linnaeus, 1758",2440779.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Dasypus,ACCEPTED,93,LC
+HYDROCHAERIS HYDROCHAERIS,Hydrochaeris hydrochaeris,"Hydrochaeris hydrochaeris (Linnaeus, 1766)",2437610.0,Animalia,Chordata,Mammalia,Rodentia,Caviidae,Hydrochoerus,SYNONYM,98,LC
+AMAZONA FARINOSA,Amazona farinosa,"Amazona farinosa (Boddaert, 1783)",2479606.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,98,LC
+DINOMYS BRANICKII,Dinomys branickii,"Dinomys branickii Peters, 1873",2437612.0,Animalia,Chordata,Mammalia,Rodentia,Dinomyidae,Dinomys,ACCEPTED,99,LC
+PENELOPE PERSPICAX,Penelope perspicax,"Penelope perspicax Bangs, 1911",2482224.0,Animalia,Chordata,Aves,Galliformes,Cracidae,Penelope,ACCEPTED,99,VU
+HIRUNDO RUSTICA,Hirundo rustica,"Hirundo rustica Linnaeus, 1758",9515886.0,Animalia,Chordata,Aves,Passeriformes,Hirundinidae,Hirundo,ACCEPTED,99,LC
+ARA CHLOROPTERA,Ara chloroptera,"Ara chloropterus G.R.Gray, 1859",5959225.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,96,LC
+RANA CASTESBEIANA,Rana castesbeiana,"Rana Linnaeus, 1758",2422253.0,Animalia,Chordata,Amphibia,Anura,Ranidae,Rana,ACCEPTED,92,NE
+BUFO MARINUS,Bufo marinus,"Bufo marinus (Linnaeus, 1758)",5216940.0,Animalia,Chordata,Amphibia,Anura,Bufonidae,Rhinella,SYNONYM,98,NE
+ESTRUTIO CAMELUS,Estrutio camelus,,,,,,,,,,0,
+CERDOCYON THOUS,Cerdocyon thous,"Cerdocyon thous (Linnaeus, 1766)",2434584.0,Animalia,Chordata,Mammalia,Carnivora,Canidae,Cerdocyon,ACCEPTED,99,LC
+EUPHONIA LANIIROSTRIS,Euphonia laniirostris,"Euphonia laniirostris d'Orbigny & Lafresnaye, 1837",2487998.0,Animalia,Chordata,Aves,Passeriformes,Fringillidae,Euphonia,ACCEPTED,99,LC
+MAZAMA RUFINA BOURCIER & PUCHERÁN,Mazama rufina,"Mazama rufina (Bourcier & Pucheran, 1852)",5220122.0,Animalia,Chordata,Mammalia,Artiodactyla,Cervidae,Mazama,ACCEPTED,99,VU
+LEPTODEIRA ANNULATA CF.,Leptodeira annulata,"Leptodeira annulata (Linnaeus, 1758)",2454954.0,Animalia,Chordata,Squamata,,Colubridae,Leptodeira,ACCEPTED,99,LC
+THRAUPIS EPISCOPUS,Thraupis episcopus,"Thraupis episcopus (Linnaeus, 1766)",2488602.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Thraupis,ACCEPTED,99,LC
+DIDELPHIS MARSUPIALIS,Didelphis marsupialis,"Didelphis marsupialis Linnaeus, 1758",2439920.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Didelphis,ACCEPTED,99,LC
+MOMOTUS MOMOTA,Momotus momota,"Momotus momota (Linnaeus, 1766)",2475290.0,Animalia,Chordata,Aves,Coraciiformes,Momotidae,Momotus,ACCEPTED,99,LC
+NOCTILIO ALBIVENTRIS,Noctilio albiventris,"Noctilio albiventris Desmarest, 1818",2433344.0,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,ACCEPTED,99,LC
+CAMALEON,Camaleon,,,,,,,,,,0,
+ANOLIS CHLORIS,Anolis chloris,"Anolis chloris Boulenger, 1898",2466993.0,Animalia,Chordata,Squamata,,Dactyloidae,Anolis,ACCEPTED,99,LC
+CAPRIMULGUS LONGIROSTRIS RUFICERVIX (P.L. SCLATER),Caprimulgus longirostris,"Caprimulgus longirostris Bonaparte, 1825",2496877.0,Animalia,Chordata,Aves,Caprimulgiformes,Caprimulgidae,Systellura,SYNONYM,98,NE
+LEPIDOBLEPHARIS SP.,Lepidoblepharis sp.,"Lepidoblepharis Peracca, 1897",2446440.0,Animalia,Chordata,Squamata,,Sphaerodactylidae,Lepidoblepharis,ACCEPTED,94,NE
+TYTO ALBA,Tyto alba,"Tyto alba (Scopoli, 1769)",2497921.0,Animalia,Chordata,Aves,Strigiformes,Tytonidae,Tyto,ACCEPTED,99,LC
+CROTALUS DIRUSSUS,Crotalus dirussus,"Crotalus Linnaeus, 1758",2444354.0,Animalia,Chordata,Squamata,,Viperidae,Crotalus,ACCEPTED,92,
+HELIODOXA JACULA,Heliodoxa jacula,"Heliodoxa jacula Gould, 1850",2476948.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Heliodoxa,ACCEPTED,99,LC
+PARDIRALLUS NIGRACANS,Pardirallus nigracans,"Pardirallus nigricans (Vieillot, 1819)",2474707.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Pardirallus,ACCEPTED,95,LC
+SAGUINUS OEDIPUS,Saguinus oedipus,"Saguinus oedipus (Linnaeus, 1758)",2436469.0,Animalia,Chordata,Mammalia,Primates,Callitrichidae,Saguinus,ACCEPTED,99,CR
+LEOPARDUS TIGRINUS,Leopardus tigrinus,"Leopardus tigrinus (Schreber, 1775)",2434930.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Leopardus,ACCEPTED,99,VU
+GERANOAETUS MELANOLEUCUS AUSTRALIS SWANN,Geranoaetus melanoleucus,"Geranoaetus melanoleucus (Vieillot, 1819)",2480668.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Geranoaetus,ACCEPTED,99,LC
+DENDROPHIDION PERCARINATUM,Dendrophidion percarinatum,"Dendrophidion percarinatum (Cope, 1893)",2452602.0,Animalia,Chordata,Squamata,,Colubridae,Dendrophidion,ACCEPTED,99,LC
+SAGUINUS FUSCICOLLIS,Saguinus fuscicollis,"Saguinus fuscicollis (Spix, 1823)",2436474.0,Animalia,Chordata,Mammalia,Primates,Callitrichidae,Leontocebus,SYNONYM,98,LC
+CROTALUS DURISSUS,Crotalus durissus,"Crotalus durissus Linnaeus, 1758",2444433.0,Animalia,Chordata,Squamata,,Viperidae,Crotalus,ACCEPTED,97,LC
+AULACORHYNCHUS HAEMATOPYGUS,Aulacorhynchus haematopygus,"Aulacorhynchus haematopygus (Gould, 1835)",5229025.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Aulacorhynchus,ACCEPTED,99,LC
+TARANTULA,Tarantula,,,,,,,,,,0,
+ARATINGA LEUCOPHTALMUS,Aratinga leucophtalmus,"Aratinga leucophthalma (Statius Muller, 1776)",2479115.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Aratinga,ACCEPTED,95,LC
+KNIPOLEGUS POECILURUS POECILURUS (P.L. SCLATER),Knipolegus poecilurus,"Knipolegus poecilurus (P.L.Sclater, 1862)",2483043.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Knipolegus,ACCEPTED,99,LC
+RAMPHASTOS SWAINSONII,Ramphastos swainsonii,"Ramphastos swainsonii Gould, 1833",2478768.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Ramphastos,SYNONYM,98,LC
+PIONUS CHALCOPTERUS,Pionus chalcopterus,"Pionus chalcopterus (Fraser, 1841)",2479901.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,99,LC
+INDETERMINADA SP.,Indeterminada sp.,,,,,,,,,,0,
+ERYTHROLAMPRUS  BIZONA,Erythrolamprus bizona,"Erythrolamprus bizona Jan, 1863",7368688.0,Animalia,Chordata,Squamata,,Colubridae,Erythrolamprus,ACCEPTED,99,LC
+ASIO STYGIUS ROBUSTUS KELSO,Asio stygius,"Asio stygius (Wagler, 1832)",2497311.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Asio,ACCEPTED,99,LC
+MILVALGO CHIMACHIMA,Milvalgo chimachima,"Milvago chimachima (Vieillot, 1816)",2481066.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Milvago,ACCEPTED,85,
+NYCTIBIUS GRISEUS,Nyctibius griseus,"Nyctibius griseus (J.F.Gmelin, 1789)",2496811.0,Animalia,Chordata,Aves,Nyctibiiformes,Nyctibiidae,Nyctibius,ACCEPTED,99,LC
+CAPRIMULGUS CAROLIENSIS GMELIN,Caprimulgus caroliensis,"Caprimulgus carolinensis J.F.Gmelin, 1789",2496909.0,Animalia,Chordata,Aves,Caprimulgiformes,Caprimulgidae,Antrostomus,SYNONYM,94,NT
+CYANOCORAX YNCAS,Cyanocorax yncas,"Cyanocorax yncas (Boddaert, 1783)",2482565.0,Animalia,Chordata,Aves,Passeriformes,Corvidae,Cyanocorax,ACCEPTED,99,LC
+ASIO CLAMATUR,Asio clamatur,"Asio clamator (Vieillot, 1808)",4843115.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pseudoscops,SYNONYM,94,LC
+FALCO COLUMBARIUS,Falco columbarius,"Falco columbarius Linnaeus, 1758",9813242.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Falco,ACCEPTED,99,LC
+NOTIOCHELIDON CYANOLEUCA,Notiochelidon cyanoleuca,"Notiochelidon cyanoleuca (Vieillot, 1817)",2489208.0,Animalia,Chordata,Aves,Passeriformes,Hirundinidae,Notiochelidon,ACCEPTED,99,NE
+AGAPORNIS PERSONATA,Agapornis personata,"Agapornis personatus Reichenow, 1887",2479553.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Agapornis,ACCEPTED,96,LC
+SALAMANDRA SALAMANDRA,Salamandra salamandra,"Salamandra salamandra (Linnaeus, 1758)",2431776.0,Animalia,Chordata,Amphibia,Caudata,Salamandridae,Salamandra,ACCEPTED,99,VU
+CAMPEPHILUS MELANOLEUCUS,Campephilus melanoleucus,"Campephilus melanoleucos (J.F.Gmelin, 1788)",2478564.0,Animalia,Chordata,Aves,Piciformes,Picidae,Campephilus,ACCEPTED,95,LC
+CERYLE TORQUATA,Ceryle torquata,"Ceryle torquata (Linnaeus, 1766)",2475469.0,Animalia,Chordata,Aves,Coraciiformes,Alcedinidae,Megaceryle,SYNONYM,98,LC
+CICCABA ALBITARSUS (BONAPARTE),Ciccaba albitarsus,"Ciccaba albitarsus (Bonaparte, 1850)",2497538.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Strix,SYNONYM,98,LC
+SCIURUS GRANATENSIS QUINDIANUS (J.A. ALLEN),Sciurus granatensis,"Sciurus granatensis Humboldt, 1811",5219666.0,Animalia,Chordata,Mammalia,Rodentia,Sciuridae,Sciurus,ACCEPTED,99,LC
+COLUMBA FASCIATA ALBILINEA BONAPARTE,Columba fasciata,"Columba fasciata Say, 1822",5231797.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Patagioenas,SYNONYM,98,NE
+CAIMA COCODRILUS,Caima cocodrilus,,,,,,,,,,0,
+TAPIRUS TERRESTRIS,Tapirus terrestris,"Tapirus terrestris (Linnaeus, 1758)",2440898.0,Animalia,Chordata,Mammalia,Perissodactyla,Tapiridae,Tapirus,ACCEPTED,99,VU
+FELIX PARDALIS,Felix pardalis,"Felis pardalis Linnaeus, 1758",2434983.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Leopardus,SYNONYM,84,
+MAZAMA RUFINA,Mazama rufina,"Mazama rufina (Bourcier & Pucheran, 1852)",5220122.0,Animalia,Chordata,Mammalia,Artiodactyla,Cervidae,Mazama,ACCEPTED,99,VU
+STRUTHIO CAMELIUS,Struthio camelius,"Struthio camelus Linnaeus, 1758",2495150.0,Animalia,Chordata,Aves,Struthioniformes,Struthionidae,Struthio,ACCEPTED,95,LC
+PYROCEPHALUS RUBINUS,Pyrocephalus rubinus,"Pyrocephalus rubinus (Boddaert, 1783)",2483647.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Pyrocephalus,ACCEPTED,99,LC
+PANTHERA LEO,Panthera leo,"Panthera leo (Linnaeus, 1758)",5219404.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Panthera,ACCEPTED,99,VU
+LEOPARDUS PARDALIS,Leopardus pardalis,"Leopardus pardalis (Linnaeus, 1758)",2434982.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Leopardus,ACCEPTED,99,LC
+CYANOCOMPSA BRISSONII,Cyanocompsa brissonii,"Cyanocompsa brissonii (M.H.K.Lichtenstein, 1823)",2490375.0,Animalia,Chordata,Aves,Passeriformes,Cardinalidae,Cyanocompsa,ACCEPTED,99,LC
+RUPICOLA PERUVIANA,Rupicola peruviana,"Rupicola peruvianus (Latham, 1790)",5230374.0,Animalia,Chordata,Aves,Passeriformes,Cotingidae,Rupicola,ACCEPTED,96,LC
+PHALACROCORAX BRASILIANUS,Phalacrocorax brasilianus,"Phalacrocorax brasilianus (Gmelin, 1789)",9399113.0,Animalia,Chordata,Aves,Suliformes,Phalacrocoracidae,Phalacrocorax,ACCEPTED,99,LC
+OTUS (VERMICULATUS?),Otus,,,,,,,,,,0,
+CHRYSOPTILUS PUNCTIGULA,Chrysoptilus punctigula,"Chrysoptilus Swainson, 1832",4849469.0,Animalia,Chordata,Aves,Piciformes,Picidae,Colaptes,SYNONYM,94,
+BASILISCUS GALERITUS,Basiliscus galeritus,"Basiliscus galeritus Duméril, 1851",5221811.0,Animalia,Chordata,Squamata,,Corytophanidae,Basiliscus,ACCEPTED,99,LC
+SAGUINUS GEOFFROYI,Saguinus geoffroyi,"Saguinus geoffroyi (Pucheran, 1845)",2436466.0,Animalia,Chordata,Mammalia,Primates,Callitrichidae,Saguinus,ACCEPTED,99,NT
+DENDROCYGNA VIUDATA,Dendrocygna viudata,"Dendrocygna viduata (Linnaeus, 1766)",2498396.0,Animalia,Chordata,Aves,Anseriformes,Anatidae,Dendrocygna,ACCEPTED,95,LC
+IMANTODES CENCHOA,Imantodes cenchoa,"Imantodes cenchoa (Linnaeus, 1758)",8960303.0,Animalia,Chordata,Squamata,,Colubridae,Imantodes,ACCEPTED,99,LC
+HELIX ASPERSA,Helix aspersa,"Helix aspersa O.F.Müller, 1774",5190508.0,Animalia,Mollusca,Gastropoda,Stylommatophora,Helicidae,Cornu,SYNONYM,98,NE
+PYRRHOMYIAS CINNAMOMEA,Pyrrhomyias cinnamomea,"Pyrrhomyias cinnamomeus (Orbigny & Lafresnaye, 1837)",2483914.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Pyrrhomyias,ACCEPTED,96,LC
+PANDION ALIAETUS,Pandion aliaetus,"Pandion Savigny, 1809",2480725.0,Animalia,Chordata,Aves,Accipitriformes,Pandionidae,Pandion,ACCEPTED,94,NE
+BUTEO PLATYPTERUS,Buteo platypterus,"Buteo platypterus (Vieillot, 1823)",2480538.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Buteo,ACCEPTED,99,LC
+MESEMBRINISBIS CAYANNENSIS,Mesembrinisbis cayannensis,"Mesembrinibis cayennensis (Gmelin, 1789)",2480808.0,Animalia,Chordata,Aves,Pelecaniformes,Threskiornithidae,Mesembrinibis,ACCEPTED,80,
+LEUCOPTERNIS PRINCEPS,Leucopternis princeps,"Leucopternis princeps P.L.Sclater, 1865",2480401.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Leucopternis,ACCEPTED,99,LC
+RAMPHASTOS SP,Ramphastos sp,"Ramphastos Linnaeus, 1758",2478764.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Ramphastos,ACCEPTED,92,NE
+COLUMBINA TALPACOTI,Columbina talpacoti,"Columbina talpacoti (Temminck, 1810)",2495858.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Columbina,ACCEPTED,99,LC
+STREPTOPROCNE ZONARIS,Streptoprocne zonaris,"Streptoprocne zonaris (Shaw, 1796)",2477082.0,Animalia,Chordata,Aves,Apodiformes,Apodidae,Streptoprocne,ACCEPTED,99,LC
+LEPTODEIRA SEPTENTRIONALI,Leptodeira septentrionali,"Leptodeira septentrionalis (Kennicott, 1859)",2454959.0,Animalia,Chordata,Squamata,,Colubridae,Leptodeira,ACCEPTED,96,LC
+BURHINUS BISTRATUS,Burhinus bistratus,"Burhinus bistriatus (Wagler, 1829)",2482101.0,Animalia,Chordata,Aves,Charadriiformes,Burhinidae,Burhinus,ACCEPTED,95,LC
+PANDION HALIAETUS,Pandion haliaetus,"Pandion haliaetus (Linnaeus, 1758)",2480726.0,Animalia,Chordata,Aves,Accipitriformes,Pandionidae,Pandion,ACCEPTED,99,LC
+FALCO FEMORALIS,Falco femoralis,"Falco femoralis Temminck, 1822",2481006.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Falco,ACCEPTED,99,LC
+CARACARA PLANCUS,Caracara plancus,"Caracara plancus (J.F.Miller, 1777)",2480989.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Caracara,ACCEPTED,99,LC
+CERDOCYON THOUS SUBSP.,Cerdocyon thous,"Cerdocyon thous (Linnaeus, 1766)",2434584.0,Animalia,Chordata,Mammalia,Carnivora,Canidae,Cerdocyon,ACCEPTED,99,LC
+TRACHEMYS CALLIROSTRIS,Trachemys callirostris,"Trachemys callirostris (Gray, 1856)",2442992.0,Animalia,Chordata,Testudines,,Emydidae,Trachemys,ACCEPTED,99,NE
+ARAGIOPE BRUENNICHI,Aragiope bruennichi,,,,,,,,,,0,
+SYLVILAGUS BRASILIENSIS,Sylvilagus brasiliensis,"Sylvilagus brasiliensis (Linnaeus, 1758)",2436860.0,Animalia,Chordata,Mammalia,Lagomorpha,Leporidae,Sylvilagus,ACCEPTED,99,EN
+BOTHROPS SCHLEGELLII,Bothrops schlegellii,"Bothrops schlegeli Taylor, 1951",7604414.0,Animalia,Chordata,Squamata,,Viperidae,Bothriechis,SYNONYM,96,NE
+TANGARA ARTHUS,Tangara arthus,"Tangara arthus R.Lesson, 1832",2488179.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Tangara,ACCEPTED,99,LC
+ARAMUS GUARAUNA,Aramus guarauna,"Aramus guarauna (Linnaeus, 1766)",2474337.0,Animalia,Chordata,Aves,Gruiformes,Aramidae,Aramus,ACCEPTED,99,LC
+LEPTOPHIS AHAETULLA,Leptophis ahaetulla,"Leptophis ahaetulla (Linnaeus, 1758)",10362429.0,Animalia,Chordata,Squamata,,Colubridae,Leptophis,ACCEPTED,97,LC
+CICCABA VIRGATA,Ciccaba virgata,"Ciccaba virgata (Cassin, 1849)",2497439.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Strix,SYNONYM,98,LC
+AMAZILIA FRANCIAE,Amazilia franciae,"Amazilia franciae (Bourcier & Mulsant, 1846)",2476474.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Uranomitra,SYNONYM,98,LC
+BOLITOGLOSSA SP.,Bolitoglossa sp.,"Bolitoglossa Duméril, Bibron & Duméril, 1854",2431243.0,Animalia,Chordata,Amphibia,Caudata,Plethodontidae,Bolitoglossa,ACCEPTED,92,NE
+MARGANETTA ARMATA,Marganetta armata,"Merganetta armata Gould, 1842",2498275.0,Animalia,Chordata,Aves,Anseriformes,Anatidae,Merganetta,ACCEPTED,85,
+ARA MILITARIS,Ara militaris,"Ara militaris (Linnaeus, 1766)",5959230.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,99,VU
+AOTUS TRIVIGATUS,Aotus trivigatus,"Aotus trivirgatus (Humboldt, 1811)",5219590.0,Animalia,Chordata,Mammalia,Primates,Aotidae,Aotus,ACCEPTED,95,LC
+CHAMAEPETES GOUDOTII,Chamaepetes goudotii,"Chamaepetes goudotii (R.Lesson, 1828)",2482183.0,Animalia,Chordata,Aves,Galliformes,Cracidae,Chamaepetes,ACCEPTED,99,LC
+MEGASCOPS CHOLIBA,Megascops choliba,"Megascops choliba (Vieillot, 1817)",2497365.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Megascops,ACCEPTED,99,LC
+MUSTELA SP. (FRENATA O FELIPEI),Mustela sp.,Chordata,44.0,Animalia,Chordata,,,,,ACCEPTED,92,NE
+PHYLLIUM SP,Phyllium sp,"Phyllium Illiger, 1798",1415386.0,Animalia,Arthropoda,Insecta,Phasmida,Phylliidae,Phyllium,ACCEPTED,94,NE
+PIONUS TUMULTUOSUS SENILOIDES (MASSENA & SOUANCÉ),Pionus tumultuosus,"Pionus tumultuosus (Tschudi, 1844)",2479913.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,99,LC
+HYALINOBATRACHIUM AUREOGUTTATUM,Hyalinobatrachium aureoguttatum,"Hyalinobatrachium aureoguttatum (Barrera-Rodriguez & Ruiz-Carranza, 1989)",2429299.0,Animalia,Chordata,Amphibia,Anura,Centrolenidae,Hyalinobatrachium,ACCEPTED,99,LC
+ABURRIA ABURRI,Aburria aburri,"Aburria aburri (R.Lesson, 1828)",2482313.0,Animalia,Chordata,Aves,Galliformes,Cracidae,Aburria,ACCEPTED,99,LC
+YAFUARONDI,Yafuarondi,,,,,,,,,,0,
+CHELONOIDIS CARBONARIA,Chelonoidis carbonaria,"Chelonoidis carbonarius (Spix, 1824)",9533689.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,96,NE
+CHAETURA BRACHYURA,Chaetura brachyura,"Chaetura brachyura (Jardine, 1846)",5228607.0,Animalia,Chordata,Aves,Apodiformes,Apodidae,Chaetura,ACCEPTED,99,LC
+DASYPROCTA FULIGINOSA CANDELENSIS J.A. ALLEN,Dasyprocta fuliginosa,"Dasyprocta fuliginosa Wagler, 1832",2437581.0,Animalia,Chordata,Mammalia,Rodentia,Dasyproctidae,Dasyprocta,ACCEPTED,99,LC
+CHIRONIUS CARINATUS,Chironius carinatus,"Chironius carinatus (Linnaeus, 1758)",2457250.0,Animalia,Chordata,Squamata,,Colubridae,Chironius,ACCEPTED,99,LC
+CRAX TORMENTOSA,Crax tormentosa,"Crax Linnaeus, 1758",2482167.0,Animalia,Chordata,Aves,Galliformes,Cracidae,Crax,ACCEPTED,94,NE
+CABASSOUS INICINTUS,Cabassous inicintus,"Cabassous McMurtrie, 1831",2440805.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Cabassous,ACCEPTED,94,NE
+CROTOPHAGA ANI,Crotophaga ani,"Crotophaga ani Linnaeus, 1758",2496209.0,Animalia,Chordata,Aves,Cuculiformes,Cuculidae,Crotophaga,ACCEPTED,99,LC
+COCCYZUS AMERICANUS,Coccyzus americanus,"Coccyzus americanus (Linnaeus, 1758)",2496287.0,Animalia,Chordata,Aves,Cuculiformes,Cuculidae,Coccyzus,ACCEPTED,99,LC
+PANTHERA ONCA,Panthera onca,"Panthera onca (Linnaeus, 1758)",5219426.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Panthera,ACCEPTED,99,NT
+CAMPEPHILUS MELANOLEUCOS MALHERBII (G.R. GRAY),Campephilus melanoleucos,"Campephilus melanoleucos (J.F.Gmelin, 1788)",2478564.0,Animalia,Chordata,Aves,Piciformes,Picidae,Campephilus,ACCEPTED,98,LC
+PORTHIDIUM NASUTUM,Porthidium nasutum,"Porthidium nasutum (Bocourt, 1868)",2444260.0,Animalia,Chordata,Squamata,,Viperidae,Porthidium,ACCEPTED,99,LC
+MASTIGODRYAS BODDAERTHI,Mastigodryas boddaerthi,"Mastigodryas boddaerti (Sentzen, 1796)",2456203.0,Animalia,Chordata,Squamata,,Colubridae,Mastigodryas,ACCEPTED,96,LC
+CANGREJO,Cangrejo,,,,,,,,,,0,
+NYCTICORAX NYCTICORAX,Nycticorax nycticorax,"Nycticorax nycticorax (Linnaeus, 1758)",2480863.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Nycticorax,ACCEPTED,99,LC
+ATELES HYBRIDUS,Ateles hybridus,"Ateles hybridus I.Geoffroy Saint-Hilaire, 1829",4267251.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Ateles,ACCEPTED,99,CR
+ORTALIS MOTMOT,Ortalis motmot,"Ortalis motmot (Linnaeus, 1766)",5229436.0,Animalia,Chordata,Aves,Galliformes,Cracidae,Ortalis,ACCEPTED,99,LC
+HELIX POMATIA,Helix pomatia,"Helix pomatia Linnaeus, 1758",2294287.0,Animalia,Mollusca,Gastropoda,Stylommatophora,Helicidae,Helix,ACCEPTED,99,LC
+ATELERIX ALBIVENTRIS,Atelerix albiventris,"Atelerix albiventris (Wagner, 1841)",2437140.0,Animalia,Chordata,Mammalia,Erinaceomorpha,Erinaceidae,Atelerix,ACCEPTED,99,LC
+MICRURUS MIPARTITUS,Micrurus mipartitus,"Micrurus mipartitus (Duméril, Bibron & Duméril, 1854)",5226883.0,Animalia,Chordata,Squamata,,Elapidae,Micrurus,ACCEPTED,99,LC
+COLOPTES MELANOCHLOROS,Coloptes melanochloros,"Colaptes melanochloros (J.F.Gmelin, 1788)",2478272.0,Animalia,Chordata,Aves,Piciformes,Picidae,Colaptes,ACCEPTED,85,
+ARANEUS DIADEMATOS,Araneus diadematos,"Araneus diadematus Clerck, 1757",2160133.0,Animalia,Arthropoda,Arachnida,Araneae,Araneidae,Araneus,ACCEPTED,95,NE
+CHIROPTERA SP.,Chiroptera sp.,Chiroptera,734.0,Animalia,Chordata,Mammalia,Chiroptera,,,ACCEPTED,94,NE
+MYORNIS SENILIS (LA FRESNAYE),Myornis senilis,"Myornis senilis (Lafresnaye, 1840)",2490963.0,Animalia,Chordata,Aves,Passeriformes,Rhinocryptidae,Myornis,ACCEPTED,99,LC
+BUTERIDES STRIATA,Buterides striata,"Butorides striata (Linnaeus, 1758)",2480824.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Butorides,ACCEPTED,85,
+ICTERUS CRISTATER,Icterus cristater,Chordata,44.0,Animalia,Chordata,,,,,ACCEPTED,92,NE
+ARDEA COCOI,Ardea cocoi,"Ardea cocoi Linnaeus, 1766",2480951.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Ardea,ACCEPTED,99,LC
+SALTATOR AÍBICOLLIS,Saltator aíbicollis,"Saltator Vieillot, 1816",5428759.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Saltator,ACCEPTED,92,NE
+STREPTOPELIA DECAOCTO,Streptopelia decaocto,"Streptopelia decaocto (Frivaldszky, 1838)",2495696.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Streptopelia,ACCEPTED,99,LC
+ARA AMBIGUA,Ara ambigua,"Ara ambigua (Bechstein, 1811)",5959234.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,SYNONYM,98,CR
+PIONITES MELANOCEPHALA,Pionites melanocephala,"Pionites melanocephalus (Linnaeus, 1758)",2479437.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionites,ACCEPTED,96,LC
+RAMPHOCELUS DIMIDIATUS,Ramphocelus dimidiatus,"Ramphocelus dimidiatus Lafresnaye, 1837",2488424.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Ramphocelus,ACCEPTED,99,LC
+RAMPHOCELUS ICTERONOTUS,Ramphocelus icteronotus,"Ramphocelus icteronotus Bonaparte, 1838",5845475.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Ramphocelus,ACCEPTED,99,NE
+THRAUPIS PALMARUM,Thraupis palmarum,"Thraupis palmarum (Wied-Neuwied, 1821)",9436876.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Thraupis,ACCEPTED,99,LC
+PIRANGA FLAVA,Piranga flava,"Piranga flava (Vieillot, 1822)",2488498.0,Animalia,Chordata,Aves,Passeriformes,Cardinalidae,Piranga,ACCEPTED,99,LC
+HIDROCHAERIS HIDROCHAERIS,Hidrochaeris hidrochaeris,"Hydrochaeris hydrochaeris (Linnaeus, 1766)",2437610.0,Animalia,Chordata,Mammalia,Rodentia,Caviidae,Hydrochoerus,SYNONYM,83,
+ATELES FUSCICEPS,Ateles fusciceps,"Ateles fusciceps Gray, 1866",2436641.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Ateles,ACCEPTED,99,EN
+MERGANETTA ARMATA,Merganetta armata,"Merganetta armata Gould, 1842",2498275.0,Animalia,Chordata,Aves,Anseriformes,Anatidae,Merganetta,ACCEPTED,99,LC
+OTUS ALBOGULARIS ALBOGULARIS (CASSIN),Otus albogularis,"Otus albogularis (Cassin, 1849)",5232195.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Megascops,SYNONYM,98,LC
+PHIMOSUS INFUSCATUS,Phimosus infuscatus,"Phimosus infuscatus (Lichtenstein, 1823)",2480812.0,Animalia,Chordata,Aves,Pelecaniformes,Threskiornithidae,Phimosus,ACCEPTED,99,LC
+MEGALONULIM OBLONGUS,Megalonulim oblongus,,,,,,,,,,0,
+AMAZONA FESTIVA,Amazona festiva,"Amazona festiva (Linnaeus, 1758)",2479652.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,99,LC
+TAMANDUA MEXICANA,Tamandua mexicana,"Tamandua mexicana (Saussure, 1860)",2436335.0,Animalia,Chordata,Mammalia,Pilosa,Myrmecophagidae,Tamandua,ACCEPTED,99,LC
+AGRETTA CAERULES,Agretta caerules,Agretta Eckl.,7313280.0,Plantae,Tracheophyta,Liliopsida,Asparagales,Iridaceae,Ixia,SYNONYM,94,
+PYTHON REGIUS,Python regius,"Python regius (Shaw, 1802)",2465380.0,Animalia,Chordata,Squamata,,Pythonidae,Python,ACCEPTED,99,NT
+MARMOSA SP.,Marmosa sp.,"Marmosa Gray, 1821",2439860.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Marmosa,ACCEPTED,92,NE
+AMAZILIA VIRIDIGASTER,Amazilia viridigaster,"Amazilia viridigaster (Bourcier, 1843)",2476490.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Saucerottia,SYNONYM,98,LC
+PODOCNEMYS UNIFILIS,Podocnemys unifilis,"Podocnemis unifilis Troschel, 1848",2442782.0,Animalia,Chordata,Testudines,,Podocnemididae,Podocnemis,ACCEPTED,85,
+LONCHURA ATRICAPILLA,Lonchura atricapilla,"Lonchura atricapilla (Vieillot, 1807)",2493623.0,Animalia,Chordata,Aves,Passeriformes,Estrildidae,Lonchura,ACCEPTED,99,LC
+TANTILLA LONGIFRONTALIS,Tantilla longifrontalis,"Tantilla longifrontalis (Boulenger, 1896)",2456399.0,Animalia,Chordata,Squamata,,Colubridae,Tantilla,SYNONYM,98,LC
+ARDEA HERODIAS,Ardea herodias,"Ardea herodias Linnaeus, 1758",9630752.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Ardea,ACCEPTED,99,LC
+CALLICEBUS CUPREUS,Callicebus cupreus,"Plecturocebus Byrne, Rylands, Carneiro, Lynch Alfaro et al., 2016",8755067.0,Animalia,Chordata,Mammalia,Primates,Pitheciidae,Plecturocebus,ACCEPTED,97,NE
+PUMA CONCOLOR,Puma concolor,"Puma concolor (Linnaeus, 1771)",2435099.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Puma,ACCEPTED,99,LC
+CABASSOUS CENTRALIS,Cabassous centralis,"Cabassous centralis (Miller, 1899)",2440806.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Cabassous,ACCEPTED,99,DD
+PICOIDES NUTTALLI,Picoides nuttalli,"Picoides nuttallii (Gambel, 1843)",2477733.0,Animalia,Chordata,Aves,Piciformes,Picidae,Dryobates,SYNONYM,96,LC
+RANITOMEYA BOMBETES,Ranitomeya bombetes,"Ranitomeya bombetes (Myers & Daly, 1980)",2429091.0,Animalia,Chordata,Amphibia,Anura,Dendrobatidae,Andinobates,SYNONYM,98,VU
+ANOLIS,Anolis,,,,,,,,,,0,
+MASTIGODRYAS MELANOLOMUS,Mastigodryas melanolomus,"Mastigodryas melanolomus (Cope, 1868)",2456151.0,Animalia,Chordata,Squamata,,Colubridae,Mastigodryas,ACCEPTED,99,LC
+CAIRINA MOSCHATA,Cairina moschata,"Cairina moschata (Linnaeus, 1758)",9751099.0,Animalia,Chordata,Aves,Anseriformes,Anatidae,Cairina,ACCEPTED,98,LC
+AULACORHYNCHUS PRASINUS,Aulacorhynchus prasinus,"Aulacorhynchus prasinus (Gould, 1833)",5229012.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Aulacorhynchus,ACCEPTED,99,LC
+SIBON NEBULATA,Sibon nebulata,"Sibon nebulatus (Linnaeus, 1758)",2458237.0,Animalia,Chordata,Squamata,,Colubridae,Sibon,ACCEPTED,96,LC
+EGRETA THULA,Egreta thula,"Egretta thula (Molina, 1782)",2480873.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Egretta,ACCEPTED,85,
+COMPTODTOMA OBSOLETUM,Comptodtoma obsoletum,,,,,,,,,,0,
+MOLOTHRUS BONARIENSIS,Molothrus bonariensis,"Molothrus bonariensis (Gmelin, 1789)",2484396.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Molothrus,ACCEPTED,99,LC
+PHYLLOSTOMUS DISCOLOR,Phyllostomus discolor,"Phyllostomus discolor Wagner, 1843",2433280.0,Animalia,Chordata,Mammalia,Chiroptera,Phyllostomidae,Phyllostomus,ACCEPTED,99,LC
+BASILISCUS SP.,Basiliscus sp.,"Basiliscus Laurenti, 1768",2448619.0,Animalia,Chordata,Squamata,,Corytophanidae,Basiliscus,ACCEPTED,94,NE
+PIAYA CAYANA,Piaya cayana,"Piaya cayana (Linnaeus, 1766)",2496432.0,Animalia,Chordata,Aves,Cuculiformes,Cuculidae,Piaya,ACCEPTED,99,LC
+XENERPESTES MINLOSI,Xenerpestes minlosi,"Xenerpestes minlosi Berlepsch, 1886",2485904.0,Animalia,Chordata,Aves,Passeriformes,Furnariidae,Xenerpestes,ACCEPTED,99,LC
+ROSTRHAMUS SOCIABILIS,Rostrhamus sociabilis,"Rostrhamus sociabilis (Vieillot, 1817)",2480415.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Rostrhamus,ACCEPTED,99,LC
+MOLOSSUS MOLOSSUS,Molossus molossus,"Molossus molossus (Pallas, 1766)",5218725.0,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,ACCEPTED,99,LC
+RHINOCLEMYS NASUTA,Rhinoclemys nasuta,"Rhinoclemmys nasuta (Boulenger, 1902)",2443648.0,Animalia,Chordata,Testudines,,Geoemydidae,Rhinoclemmys,ACCEPTED,85,
+ERYTHROLAMPRUS BIZONUS,Erythrolamprus bizonus,"Erythrolamprus bizona Jan, 1863",7368688.0,Animalia,Chordata,Squamata,,Colubridae,Erythrolamprus,ACCEPTED,96,LC
+LACHESIS ACROCHARTA,Lachesis acrocharta,"Lachesis acrochorda (Garcia, 1896)",5221070.0,Animalia,Chordata,Squamata,,Viperidae,Lachesis,ACCEPTED,93,LC
+CHERONIUS GRANDISQUAMIS,Cheronius grandisquamis,"Chironius grandisquamis (Peters, 1869)",2457313.0,Animalia,Chordata,Squamata,,Colubridae,Chironius,ACCEPTED,85,
+MARMOSOPS SP.,Marmosops sp.,"Marmosops Matschie, 1916",2439940.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Marmosops,ACCEPTED,94,NE
+ESCORPION,Escorpion,,,,,,,,,,0,
+NYCTIBIUS AETHEREUS,Nyctibius aethereus,"Nyctibius aethereus (zu Wied-Neuwied, 1820)",2496796.0,Animalia,Chordata,Aves,Nyctibiiformes,Nyctibiidae,Nyctibius,ACCEPTED,99,LC
+NEOCREX ERYTHROPS,Neocrex erythrops,"Neocrex erythrops (P.L.Sclater, 1867)",2474728.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Neocrex,ACCEPTED,99,LC
+COLUMBINA MINUTA,Columbina minuta,"Columbina minuta (Linnaeus, 1766)",2495853.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Columbina,ACCEPTED,99,LC
+VIREO   SP.,Vireo sp.,"Vireo Vieillot, 1808",2487406.0,Animalia,Chordata,Aves,Passeriformes,Vireonidae,Vireo,ACCEPTED,94,NE
+CHELONOIDES DENTICULATA,Chelonoides denticulata,"Chelonoidis denticulatus (Linnaeus, 1766)",5220281.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,85,
+MOLOSSUS SP,Molossus sp,"Molossus E.Geoffroy, 1805",2433042.0,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,ACCEPTED,94,NE
+CHERAX QUADRICARINATUS,Cherax quadricarinatus,"Cherax quadricarinatus (von Martens, 1868)",4648609.0,Animalia,Arthropoda,Malacostraca,Decapoda,Parastacidae,Cherax,ACCEPTED,99,LC
+MABUYA MABOUYA,Mabuya mabouya,"Mabuya mabouya (Bonnaterre, 1789)",5960489.0,Animalia,Chordata,Squamata,,Scincidae,Mabuya,ACCEPTED,97,CR
+FALCO PEREGRINUS,Falco peregrinus,"Falco peregrinus Tunstall, 1771",2481047.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Falco,ACCEPTED,99,LC
+PODOCNEMIS LEWYANA,Podocnemis lewyana,"Podocnemis lewyana Duméril, 1852",2442789.0,Animalia,Chordata,Testudines,,Podocnemididae,Podocnemis,ACCEPTED,99,CR
+SAPAJUS APELLA,Sapajus apella,"Sapajus apella (Linnaeus, 1758)",7477334.0,Animalia,Chordata,Mammalia,Primates,Cebidae,Sapajus,ACCEPTED,99,LC
+PROCYON CANCRIVORUS,Procyon cancrivorus,Procyon cancrivorus G,9518324.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Procyon,ACCEPTED,99,LC
+DIPSAS SP.,Dipsas sp.,Animalia,1.0,Animalia,,,,,,ACCEPTED,92,NE
+DENDROPHIDION NECHALE,Dendrophidion nechale,"Dendrophidion nuchale (Peters, 1863)",2452595.0,Animalia,Chordata,Squamata,,Colubridae,Dendrophidion,ACCEPTED,95,LC
+DENDROBATES HISTRIONICUS,Dendrobates histrionicus,"Dendrobates histrionicus Berthold, 1845",5218056.0,Animalia,Chordata,Amphibia,Anura,Dendrobatidae,Oophaga,SYNONYM,98,CR
+ANISOGNATHUS FLAVINUCHA,Anisognathus flavinucha,"Anisognathus flavinucha (d'Orbigny & Lafresnaye, 1837)",5788712.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Anisognathus,SYNONYM,98,LC
+FRINGILLIDAE,Fringillidae,,,,,,,,,,0,
+KINOSTERNUM LEUCOSTONUM,Kinosternum leucostonum,"Kinosternum Bonaparte, 1830",2442493.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,SYNONYM,94,
+ICTERUS NIGROGULARIS,Icterus nigrogularis,"Icterus nigrogularis (Hahn, 1819)",5229939.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Icterus,ACCEPTED,99,LC
+FREDIUS,Fredius,,,,,,,,,,0,
+MELANERPES SP,Melanerpes sp,"Melanerpes Swainson, 1832",2478067.0,Animalia,Chordata,Aves,Piciformes,Picidae,Melanerpes,ACCEPTED,94,NE
+GARZA BLANCA,Garza blanca,,,,,,,,,,0,
+CEBUELLA PYGMAEA,Cebuella pygmaea,"Cebuella pygmaea (Spix, 1823)",4827382.0,Animalia,Chordata,Mammalia,Primates,Callitrichidae,Cebuella,ACCEPTED,99,VU
+TANGARA CYANICOLLIS,Tangara cyanicollis,"Tangara cyanicollis (d'Orbigny & Lafresnaye, 1837)",2488125.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Stilpnia,SYNONYM,98,LC
+EIRA BARBARA,Eira barbara,"Eira barbara (Linnaeus, 1758)",2433716.0,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Eira,ACCEPTED,99,LC
+TANGARA GYROLA,Tangara gyrola,"Tangara gyrola (Linnaeus, 1758)",2488114.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Tangara,ACCEPTED,99,LC
+MAZAMA AMERICANA,Mazama americana,"Mazama americana (Erxleben, 1777)",5220123.0,Animalia,Chordata,Mammalia,Artiodactyla,Cervidae,Mazama,ACCEPTED,99,DD
+LEPIDOTHRIX CORONATA,Lepidothrix coronata,"Lepidothrix coronata (Spix, 1825)",5230528.0,Animalia,Chordata,Aves,Passeriformes,Pipridae,Lepidothrix,ACCEPTED,99,LC
+CYANOCORAX AFFINIS,Cyanocorax affinis,"Cyanocorax affinis Pelzeln, 1856",2482559.0,Animalia,Chordata,Aves,Passeriformes,Corvidae,Cyanocorax,ACCEPTED,99,LC
+RAMPHOCELUS FLAMMIGERUS,Ramphocelus flammigerus,"Ramphocelus flammigerus (Jardine & Selby, 1833)",2488439.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Ramphocelus,ACCEPTED,99,LC
+ODOCOILEUS VIRGINIANUS,Odocoileus virginianus,"Odocoileus virginianus (Zimmermann, 1780)",2440965.0,Animalia,Chordata,Mammalia,Artiodactyla,Cervidae,Odocoileus,ACCEPTED,99,LC
+COLUMBA LIVIA,Columba livia,"Columba livia J.F.Gmelin, 1789",2495414.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Columba,ACCEPTED,99,LC
+KINOSTERNON SCORPIOIDES,Kinosternon scorpioides,"Kinosternon scorpioides (Linnaeus, 1766)",2442361.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,ACCEPTED,99,NE
+BASSARICYON SP.,Bassaricyon sp.,"Bassaricyon J.A.Allen, 1876",2433581.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Bassaricyon,ACCEPTED,94,NE
+CARETTA CARETTA,Caretta caretta,"Caretta caretta (Linnaeus, 1758)",8894817.0,Animalia,Chordata,Testudines,,Cheloniidae,Caretta,ACCEPTED,99,VU
+EPICRATES MAURUS,Epicrates maurus,"Epicrates maurus Gray, 1849",2465191.0,Animalia,Chordata,Squamata,,Boidae,Epicrates,ACCEPTED,99,LC
+BUTEO BRACHYURUS,Buteo brachyurus,"Buteo brachyurus Vieillot, 1816",2480553.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Buteo,ACCEPTED,99,LC
+FALCO SPARVERIUS CAUCAE CHAPMAN,Falco sparverius,"Falco sparverius Linnaeus, 1758",9685907.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Falco,ACCEPTED,99,LC
+VENILIORNIS AFFINIS,Veniliornis affinis,"Veniliornis affinis (Swainson, 1821)",2478373.0,Animalia,Chordata,Aves,Piciformes,Picidae,Veniliornis,ACCEPTED,99,LC
+TRACHEMYS VENUSTA,Trachemys venusta,"Trachemys venusta (Gray, 1855)",2443040.0,Animalia,Chordata,Testudines,,Emydidae,Trachemys,ACCEPTED,99,NE
+COLIBRI CORRUSCANS,Colibri corruscans,"Colibri coruscans (Gould, 1846)",5228474.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Colibri,ACCEPTED,96,LC
+DIDELPHIS SP. (MARSUPIALIS O ALVIVENTRIS),Didelphis sp.,"Didelphis Linnaeus, 1758",7932087.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Didelphis,ACCEPTED,92,NE
+PIONOPSITA PULCHRA,Pionopsita pulchra,"Pionopsitta pulchra Berlepsch, 1897",2479981.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionopsitta,ACCEPTED,80,
+SPILOTES PULLATUS,Spilotes pullatus,"Spilotes pullatus (Linnaeus, 1758)",9195230.0,Animalia,Chordata,Squamata,,Colubridae,Spilotes,ACCEPTED,99,LC
+DASYPUS NOVEMCINCTUS,Dasypus novemcinctus,"Dasypus novemcinctus Linnaeus, 1758",2440779.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Dasypus,ACCEPTED,99,LC
+TAYASSU TAJACU LINNAEUS,Tayassu tajacu,"Tayassu tajacu (Linnaeus, 1758)",2440996.0,Animalia,Chordata,Mammalia,Artiodactyla,Tayassuidae,Pecari,SYNONYM,98,NE
+MACROBRACHIUM CARCINUS,Macrobrachium carcinus,"Macrobrachium carcinus (Linnaeus, 1758)",2224580.0,Animalia,Arthropoda,Malacostraca,Decapoda,Palaemonidae,Macrobrachium,ACCEPTED,99,LC
+TRACHEMYS ELEGANS,Trachemys elegans,"Trachemys Agassiz, 1857",2442941.0,Animalia,Chordata,Testudines,,Emydidae,Trachemys,ACCEPTED,94,NE
+CHELUS FIMBRIATUS,Chelus fimbriatus,"Chelus fimbriata (Schneider, 1783)",2441927.0,Animalia,Chordata,Testudines,,Chelidae,Chelus,ACCEPTED,96,NE
+PACHYRAMPHUS RUFUS,Pachyramphus rufus,"Pachyramphus rufus (Boddaert, 1783)",5230318.0,Animalia,Chordata,Aves,Passeriformes,Cotingidae,Pachyramphus,ACCEPTED,99,LC
+BUTEO ALBIGULA PHILIPPI,Buteo albigula,"Buteo albigula Philippi, 1899",2480535.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Buteo,ACCEPTED,99,LC
+NYCTIBIUS GRANDIS,Nyctibius grandis,"Nyctibius grandis (J.F.Gmelin, 1789)",2496801.0,Animalia,Chordata,Aves,Nyctibiiformes,Nyctibiidae,Nyctibius,ACCEPTED,99,LC
+MUSTELA FRENATA AFFINIS L.E. GRAY,Mustela frenata,"Mustela frenata Lichtenstein, 1831",5218919.0,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Mustela,ACCEPTED,99,LC
+MASTIGODRYAS BODDAERTI,Mastigodryas boddaerti,"Mastigodryas boddaerti (Sentzen, 1796)",2456203.0,Animalia,Chordata,Squamata,,Colubridae,Mastigodryas,ACCEPTED,99,LC
+ARDEA ALBA,Ardea alba,"Ardea alba Linnaeus, 1758",9752617.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Ardea,ACCEPTED,97,LC
+AOTUS SP,Aotus sp,,,,,,,,,,0,
+FALCO RUFIGULARIS,Falco rufigularis,"Falco rufigularis Daudin, 1800",2481033.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Falco,ACCEPTED,99,LC
+PTEROGLOSUS TORQUARUS,Pteroglosus torquarus,"Pteroglossus torquatus (J.F.Gmelin, 1788)",2478838.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Pteroglossus,ACCEPTED,80,
+KINOSTERNON DUNNI,Kinosternon dunni,"Kinosternon dunni Schmidt, 1947",2442399.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,ACCEPTED,99,VU
+ACCIPITER STRIATUS VENTRALIS P.L. SCLATER,Accipiter striatus,"Accipiter striatus Vieillot, 1808",9740253.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Accipiter,ACCEPTED,99,LC
+RHINELA MARINA,Rhinela marina,"Rhinella marina (Linnaeus, 1758)",5216933.0,Animalia,Chordata,Amphibia,Anura,Bufonidae,Rhinella,ACCEPTED,85,
+SPIZAETUS ISIDORI,Spizaetus isidori,"Spizaetus isidori (Des Murs, 1845)",5788512.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Spizaetus,ACCEPTED,99,EN
+KINOSTERNON LEUCOSTOMUS,Kinosternon leucostomus,"Kinosternon leucostomum (Duméril, Bibron & Duméril, 1851)",2442350.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,ACCEPTED,96,NE
+CHAUNA CHAVARIA,Chauna chavaria,"Chauna chavaria (Linnaeus, 1766)",5959223.0,Animalia,Chordata,Aves,Anseriformes,Anhimidae,Chauna,ACCEPTED,99,LC
+MELANERPES FORMICIVORUS,Melanerpes formicivorus,"Melanerpes formicivorus (Swainson, 1827)",2478133.0,Animalia,Chordata,Aves,Piciformes,Picidae,Melanerpes,ACCEPTED,99,LC
+FORPUS CONSPICILLATUS,Forpus conspicillatus,"Forpus conspicillatus (Lafresnaye, 1848)",2479071.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Forpus,ACCEPTED,99,LC
+TARABA MAJOR,Taraba major,"Taraba major (Vieillot, 1816)",2490224.0,Animalia,Chordata,Aves,Passeriformes,Thamnophilidae,Taraba,ACCEPTED,99,LC
+RATTUS RATTUS,Rattus rattus,"Rattus rattus (Linnaeus, 1758)",2439270.0,Animalia,Chordata,Mammalia,Rodentia,Muridae,Rattus,ACCEPTED,99,LC
+MILLEPORA SP.,Millepora sp.,"Millepora Linnaeus, 1758",1004776.0,Animalia,Cnidaria,Hydrozoa,Anthoathecata,Milleporidae,Millepora,ACCEPTED,92,NE
+MANICINA AREOLATA,Manicina areolata,"Manicina areolata (Linnaeus, 1758)",2260111.0,Animalia,Cnidaria,Anthozoa,Scleractinia,Faviidae,Manicina,ACCEPTED,99,LC
+HELIOSERIS CUCULLATA,Helioseris cucullata,"Helioseris cucullata (Ellis & Solander, 1786)",2260491.0,Animalia,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Helioseris,ACCEPTED,99,CR
+AGARICIA SPP.,Agaricia spp.,"Agaricia Lamarck, 1801",2260501.0,Animalia,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Agaricia,ACCEPTED,94,NE
+COLPOPHYLLIA NATANS,Colpophyllia natans,"Colpophyllia natans (Houttuyn, 1772)",2260043.0,Animalia,Cnidaria,Anthozoa,Scleractinia,Faviidae,Colpophyllia,ACCEPTED,99,VU
+NO DETERMINADA,No determinada,,,,,,,,,,0,
+CHELONIA MYDAS,Chelonia mydas,"Chelonia mydas (Linnaeus, 1758)",2442225.0,Animalia,Chordata,Testudines,,Cheloniidae,Chelonia,ACCEPTED,97,EN
+ARDEA CINEREA,Ardea cinerea,"Ardea cinerea Linnaeus, 1758",9797180.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Ardea,ACCEPTED,99,LC
+ECHINOPROCTA RUFESCENS J.E. GRAY,Echinoprocta rufescens,"Echinoprocta rufescens Gray, 1865",2437596.0,Animalia,Chordata,Mammalia,Rodentia,Erethizontidae,Echinoprocta,ACCEPTED,99,LC
+SETOPHAGA RUTICILLA  SUBSP. MIGRATORIA,Setophaga ruticilla,"Setophaga ruticilla (Linnaeus, 1758)",2489985.0,Animalia,Chordata,Aves,Passeriformes,Parulidae,Setophaga,ACCEPTED,99,LC
+SIN DETERMINAR,Sin determinar,,,,,,,,,,0,
+COEREBA FLAVEOLA,Coereba flaveola,"Coereba flaveola (Linnaeus, 1758)",2493744.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Coereba,ACCEPTED,99,LC
+PORZANA CAROLINA,Porzana carolina,"Porzana carolina (Linnaeus, 1758)",2474639.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Porzana,ACCEPTED,99,LC
+COLIBRI SP,Colibri sp,"Colibri von Spix, 1824",5228473.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Colibri,ACCEPTED,92,NE
+PHONEUTRIA NIGRIVENTER,Phoneutria nigriventer,"Phoneutria nigriventer (Keyserling, 1891)",2152822.0,Animalia,Arthropoda,Arachnida,Araneae,Ctenidae,Phoneutria,ACCEPTED,99,NE
+HARPYHALIAETUS SOLITARIUS,Harpyhaliaetus solitarius,"Harpyhaliaetus solitarius (Tschudi, 1844)",2480374.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Harpyhaliaetus,ACCEPTED,99,NT
+IGUANA IGUANA HUEVOS,Iguana iguana,"Iguana iguana (Linnaeus, 1758)",2459658.0,Animalia,Chordata,Squamata,,Iguanidae,Iguana,ACCEPTED,99,LC
+ELECTROPHORUS ELECTRICUS,Electrophorus electricus,"Electrophorus electricus (Linnaeus, 1766)",2401958.0,Animalia,Chordata,,Gymnotiformes,Gymnotidae,Electrophorus,ACCEPTED,99,LC
+NO IDENTIFICADA,No identificada,,,,,,,,,,0,
+INDETERMINADA,Indeterminada,,,,,,,,,,0,
+ERYTHROLAMPUS TYPHLUS,Erythrolampus typhlus,"Erythrolamprus typhlus (Linnaeus, 1758)",8151938.0,Animalia,Chordata,Squamata,,Colubridae,Erythrolamprus,ACCEPTED,85,
+CHELUS FIMBRIATA,Chelus fimbriata,"Chelus fimbriata (Schneider, 1783)",2441927.0,Animalia,Chordata,Testudines,,Chelidae,Chelus,ACCEPTED,99,NE
+MELANERPES FORMICIVORUS FLAVIGULA (MALHERBE),Melanerpes formicivorus,"Melanerpes formicivorus (Swainson, 1827)",2478133.0,Animalia,Chordata,Aves,Piciformes,Picidae,Melanerpes,ACCEPTED,99,LC
+UCA SP,Uca sp,"Uca Leach, 1814",6586700.0,Animalia,Arthropoda,Malacostraca,Decapoda,Ocypodidae,Uca,ACCEPTED,92,
+CORAGYPS ATRATUS BECHSTEIN,Coragyps atratus,"Coragyps atratus (Bechstein, 1793)",2481942.0,Animalia,Chordata,Aves,Accipitriformes,Cathartidae,Coragyps,ACCEPTED,99,LC
+KINOSTERNON LEUCOSTOMUM,Kinosternon leucostomum,"Kinosternon leucostomum (Duméril, Bibron & Duméril, 1851)",2442350.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,ACCEPTED,99,NE
+PYRILIA PULCHRA,Pyrilia pulchra,"Pyrilia pulchra (Berlepsch, 1897)",5788420.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionopsitta,SYNONYM,98,LC
+ERYTHROLAMPRUS MELANOTUS,Erythrolamprus melanotus,"Erythrolamprus melanotus (Shaw, 1802)",9367661.0,Animalia,Chordata,Squamata,,Colubridae,Erythrolamprus,ACCEPTED,99,LC
+RAMPHASTOS TUCANUS,Ramphastos tucanus,"Ramphastos tucanus Linnaeus, 1758",2478774.0,Animalia,Chordata,Aves,Piciformes,Ramphastidae,Ramphastos,ACCEPTED,99,LC
+CHLOROCERYLE AMERICANA,Chloroceryle americana,"Chloroceryle americana (J.F.Gmelin, 1788)",2475486.0,Animalia,Chordata,Aves,Coraciiformes,Alcedinidae,Chloroceryle,ACCEPTED,99,LC
+LATERALLUS ALBIGULARIS,Laterallus albigularis,"Laterallus albigularis (Lawrence, 1861)",2474599.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Laterallus,ACCEPTED,99,LC
+BUTORIDES STRIATUS,Butorides striatus,"Butorides striata (Linnaeus, 1758)",2480824.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Butorides,ACCEPTED,96,LC
+TAMANDUA SP,Tamandua sp,"Tamandua Gray, 1825",2436334.0,Animalia,Chordata,Mammalia,Pilosa,Myrmecophagidae,Tamandua,ACCEPTED,92,NE
+TANGARA CAYANA,Tangara cayana,"Tangara cayana (Linnaeus, 1766)",2488246.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Stilpnia,SYNONYM,98,LC
+NYCTIDROMUS ALBOCOLLIS,Nyctidromus albocollis,"Nyctidromus albicollis (J.F.Gmelin, 1789)",2496990.0,Animalia,Chordata,Aves,Caprimulgiformes,Caprimulgidae,Nyctidromus,ACCEPTED,95,LC
+CUNICULUS PACA,Cuniculus paca,"Cuniculus paca (Linnaeus, 1766)",4263039.0,Animalia,Chordata,Mammalia,Rodentia,Cuniculidae,Cuniculus,ACCEPTED,99,LC
+MOMOTUS MOMOTA AEQUATORIALIS GOULD,Momotus momota,"Momotus momota (Linnaeus, 1766)",2475290.0,Animalia,Chordata,Aves,Coraciiformes,Momotidae,Momotus,ACCEPTED,99,LC
+CHONDROHIERAX UNCINATUS,Chondrohierax uncinatus,"Chondrohierax uncinatus (Temminck, 1822)",2480571.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Chondrohierax,ACCEPTED,99,LC
+POLYBORUS PLANCUS,Polyborus plancus,"Polyborus plancus (J.F.Miller, 1777)",2480990.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Caracara,SYNONYM,98,LC
+PSAROCOLIUS WAGLERI,Psarocolius wagleri,"Psarocolius wagleri (G.R.Gray, 1845)",2484237.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Psarocolius,ACCEPTED,99,LC
+AMAZILIA SAUCEROTTEI,Amazilia saucerottei,"Amazilia saucerottei (Delattre & Bourcier, 1846)",8336802.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Saucerottia,SYNONYM,98,LC
+EPTESICUS BRASILIENSIS ANDINUS J.A. ALLEN,Eptesicus brasiliensis,"Eptesicus brasiliensis (Desmarest, 1819)",2432368.0,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Eptesicus,ACCEPTED,99,LC
+BUBO VIRGINIANUS,Bubo virginianus,"Bubo virginianus (J.F.Gmelin, 1788)",5959118.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Bubo,ACCEPTED,99,LC
+BROTEGERIS CYANOPTERA,Brotegeris cyanoptera,"Brotogeris cyanoptera (Pelzeln, 1870)",2479576.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Brotogeris,ACCEPTED,83,
+PHAETHORNIS GUY,Phaethornis guy,"Phaethornis guy (R.Lesson, 1833)",2476607.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Phaethornis,ACCEPTED,99,LC
+ANTHRACOTHORAX NIGRICOLLIS,Anthracothorax nigricollis,"Anthracothorax nigricollis (Vieillot, 1817)",2476718.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Anthracothorax,ACCEPTED,99,LC
+ERYTHROLAMPRUS BIZONA,Erythrolamprus bizona,"Erythrolamprus bizona Jan, 1863",7368688.0,Animalia,Chordata,Squamata,,Colubridae,Erythrolamprus,ACCEPTED,99,LC
+AMAZONA MERCENARIA CANIPALLIATA (CABANIS),Amazona mercenaria,"Amazona mercenaria (Tschudi, 1844)",2479636.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,99,LC
+FORPUS CONSPICILLATUS SUBSP. PERQUITO,Forpus conspicillatus,"Forpus conspicillatus (Lafresnaye, 1848)",2479071.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Forpus,ACCEPTED,99,LC
+PSEUDOSCOPS CLAMATOR,Pseudoscops clamator,"Pseudoscops clamator (Vieillot, 1808)",2497774.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pseudoscops,ACCEPTED,99,LC
+CALUROMYS LANATUS,Caluromys lanatus,"Caluromys lanatus (Olfers, 1818)",2440004.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Caluromys,ACCEPTED,98,LC
+PIRANGA OLIVACEA (GMELIN),Piranga olivacea,"Piranga olivacea (J.F.Gmelin, 1789)",2488517.0,Animalia,Chordata,Aves,Passeriformes,Cardinalidae,Piranga,ACCEPTED,99,LC
+CAROLLIA PERSPICILLATA,Carollia perspicillata,"Carollia perspicillata (Linnaeus, 1758)",2433176.0,Animalia,Chordata,Mammalia,Chiroptera,Phyllostomidae,Carollia,ACCEPTED,99,LC
+EUBUCCO BOURCIERII,Eubucco bourcierii,"Eubucco bourcierii (Lafresnaye, 1845)",2478979.0,Animalia,Chordata,Aves,Piciformes,Capitonidae,Eubucco,ACCEPTED,99,LC
+CONTOPUS VIRENS (LINNAEUS),Contopus virens,"Contopus virens (Linnaeus, 1766)",5229734.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Contopus,ACCEPTED,99,LC
+CARDUELIS PSALTRIA,Carduelis psaltria,"Carduelis psaltria (Say, 1822)",2494739.0,Animalia,Chordata,Aves,Passeriformes,Fringillidae,Spinus,SYNONYM,98,LC
+SPOROPHILA AMERICANA,Sporophila americana,"Sporophila americana (J.F.Gmelin, 1789)",2491332.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Sporophila,ACCEPTED,99,LC
+LONTRA LONGICAUDIS,Lontra longicaudis,"Lontra longicaudis (Olfers, 1818)",2433738.0,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Lontra,ACCEPTED,99,NT
+TYRANNUS TYRANNUS,Tyrannus tyrannus,"Tyrannus tyrannus (Linnaeus, 1758)",5229688.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Tyrannus,ACCEPTED,99,LC
+MYOTIS ALBESCENS,Myotis albescens,"Myotis albescens (E.Geoffroy, 1806)",2432424.0,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Myotis,ACCEPTED,99,LC
+GYMNOMYSTAX MEXICANUS,Gymnomystax mexicanus,"Gymnomystax mexicanus (Linnaeus, 1766)",2484109.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Gymnomystax,ACCEPTED,99,LC
+SPOROPHILIA CRASSIROSTRIS,Sporophilia crassirostris,"Sporophila crassirostris (J.F.Gmelin, 1789)",8362699.0,Animalia,Chordata,Aves,Passeriformes,Thraupidae,Sporophila,ACCEPTED,85,
+ZONOTRICHIA CAPENSIS,Zonotrichia capensis,"Zonotrichia capensis (P.L.S.Müller, 1776)",5231103.0,Animalia,Chordata,Aves,Passeriformes,Passerellidae,Zonotrichia,ACCEPTED,99,LC
+NASUELLA OLIVACEA LAGUNETAE J.A. ALLEN,Nasuella olivacea,"Nasuella olivacea (Gray, 1865)",2433588.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Nasua,SYNONYM,98,NT
+CARDENALIS PHOENICEUS,Cardenalis phoeniceus,"Cardinalis phoeniceus Bonaparte, 1838",2490404.0,Animalia,Chordata,Aves,Passeriformes,Cardinalidae,Cardinalis,ACCEPTED,85,
+PYRILIA PYRILIA,Pyrilia pyrilia,"Pyrilia pyrilia (Bonaparte, 1853)",5788422.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionopsitta,SYNONYM,98,NT
+BOTHROPS ATROX,Bothrops atrox,"Bothrops atrox (Linnaeus, 1758)",5220775.0,Animalia,Chordata,Squamata,,Viperidae,Bothrops,ACCEPTED,99,LC
+DENDROCYGNA BICOLOR,Dendrocygna bicolor,"Dendrocygna bicolor (Vieillot, 1816)",2498402.0,Animalia,Chordata,Aves,Anseriformes,Anatidae,Dendrocygna,ACCEPTED,99,LC
+RUPORNIS MAGNIROSTRIS,Rupornis magnirostris,"Rupornis magnirostris (Gmelin, 1788)",5844398.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Rupornis,ACCEPTED,99,LC
+ZENAIDA AURICULATA,Zenaida auriculata,"Zenaida auriculata (Des Murs, 1847)",2495358.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Zenaida,ACCEPTED,99,LC
+TYRANNUS MELANCHOLICUS,Tyrannus melancholicus,"Tyrannus melancholicus Vieillot, 1819",5229662.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Tyrannus,ACCEPTED,99,LC
+MARMOSA SP,Marmosa sp,"Marmosa Gray, 1821",2439860.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Marmosa,ACCEPTED,92,NE
+NOTOSCIURUS GRANATENSIS,Notosciurus granatensis,Notosciurus granatensis,11160000.0,Animalia,Chordata,Mammalia,Rodentia,Sciuridae,Notosciurus,ACCEPTED,99,NE
+NYCTIDROMUS ALBICOLLIS,Nyctidromus albicollis,"Nyctidromus albicollis (J.F.Gmelin, 1789)",2496990.0,Animalia,Chordata,Aves,Caprimulgiformes,Caprimulgidae,Nyctidromus,ACCEPTED,99,LC
+COLIUMBINA TALPCOTI,Coliumbina talpcoti,"Columbina talpacoti (Temminck, 1810)",2495858.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Columbina,ACCEPTED,80,
+MAZAMA,Mazama,,,,,,,,,,0,
+TAPIRUS PINCHAQUE,Tapirus pinchaque,"Tapirus pinchaque (Roulin, 1829)",2440899.0,Animalia,Chordata,Mammalia,Perissodactyla,Tapiridae,Tapirus,ACCEPTED,99,EN
+PORPHYRIO MARTINICUS,Porphyrio martinicus,"Porphyrio martinica (Linnaeus, 1766)",5228136.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Porphyrio,ACCEPTED,96,LC
+PODOCNEMIS UNIFILIS,Podocnemis unifilis,"Podocnemis unifilis Troschel, 1848",2442782.0,Animalia,Chordata,Testudines,,Podocnemididae,Podocnemis,ACCEPTED,99,VU
+PODOCNEMIS VOGLI,Podocnemis vogli,"Podocnemis vogli Müller, 1935",2442791.0,Animalia,Chordata,Testudines,,Podocnemididae,Podocnemis,ACCEPTED,99,NE
+CLEIA CLEIA,Cleia cleia,,,,,,,,,,0,
+POGONA VITTICEPS,Pogona vitticeps,"Pogona vitticeps (Ahl, 1926)",2465641.0,Animalia,Chordata,Squamata,,Agamidae,Pogona,ACCEPTED,99,LC
+CUCARACHAS,Cucarachas,,,,,,,,,,0,
+MUDAS DE BOAS CONSTRICTOR,Mudas de,,,,,,,,,,0,
+GRYLLUS CAMPESTRES,Gryllus campestres,"Gryllus campestris Linnaeus, 1758",1716462.0,Animalia,Arthropoda,Insecta,Orthoptera,Gryllidae,Gryllus,ACCEPTED,93,NE
+TRACHEMYC CALLIROSTRIS,Trachemyc callirostris,"Trachemys callirostris (Gray, 1856)",2442992.0,Animalia,Chordata,Testudines,,Emydidae,Trachemys,ACCEPTED,85,
+MOMOTUS AEQUATORIALIS,Momotus aequatorialis,"Momotus aequatorialis Gould, 1858",2475311.0,Animalia,Chordata,Aves,Coraciiformes,Momotidae,Momotus,ACCEPTED,99,LC
+CHOLOEPUS HOFFMANNI,Choloepus hoffmanni,"Choloepus hoffmanni Peters, 1858",5219520.0,Animalia,Chordata,Mammalia,Pilosa,Megalonychidae,Choloepus,ACCEPTED,99,LC
+EUPSITTULA PERTINAX,Eupsittula pertinax,"Eupsittula pertinax (Linnaeus, 1758)",7926461.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Aratinga,SYNONYM,98,LC
+GERANOAETUS ALBICAUDATUS,Geranoaetus albicaudatus,"Geranoaetus albicaudatus (Vieillot, 1816)",7787493.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Buteo,SYNONYM,98,LC
+SIBON NEBULATUS,Sibon nebulatus,"Sibon nebulatus (Linnaeus, 1758)",2458237.0,Animalia,Chordata,Squamata,,Colubridae,Sibon,ACCEPTED,99,LC
+COENDOU RUFESCENS,Coendou rufescens,"Coendou rufescens (Gray, 1865)",11056981.0,Animalia,Chordata,Mammalia,Rodentia,Erethizontidae,Echinoprocta,SYNONYM,98,LC
+ARA SEVERUS,Ara severus,"Ara severus (Linnaeus, 1758)",5959228.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,99,LC
+PANGASIANODON HYPOPHTHALMUS,Pangasianodon hypophthalmus,"Pangasianodon hypophthalmus (Sauvage, 1878)",2340714.0,Animalia,Chordata,,Siluriformes,Pangasiidae,Pangasianodon,ACCEPTED,99,EN
+HEXANEMATICHTHYS SEEMANNI,Hexanematichthys seemanni,"Hexanematichthys seemanni (Günther, 1864)",2345019.0,Animalia,Chordata,,Siluriformes,Ariidae,Ariopsis,SYNONYM,98,LC
+PORPHYRIO MARTINICA,Porphyrio martinica,"Porphyrio martinica (Linnaeus, 1766)",5228136.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Porphyrio,ACCEPTED,99,LC
+ORTALIS COLUMBIANA,Ortalis columbiana,"Ortalis columbiana Hellmayr, 1906",5229460.0,Animalia,Chordata,Aves,Galliformes,Cracidae,Ortalis,ACCEPTED,99,LC
+PENDIENTE ID,Pendiente id,,,,,,,,,,0,
+PIONITES MELANOCEPHALUS,Pionites melanocephalus,"Pionites melanocephalus (Linnaeus, 1758)",2479437.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionites,ACCEPTED,99,LC
+PIONUS MENTRUUS,Pionus mentruus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,95,LC
+EGRETTA THULA,Egretta thula,"Egretta thula (Molina, 1782)",2480873.0,Animalia,Chordata,Aves,Pelecaniformes,Ardeidae,Egretta,ACCEPTED,99,LC
+ARA CHLOROPTERUS,Ara chloropterus,"Ara chloropterus G.R.Gray, 1859",5959225.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Ara,ACCEPTED,99,LC
+POMACEA CANALICULATA,Pomacea canaliculata,"Pomacea canaliculata (Lamarck, 1822)",2292582.0,Animalia,Mollusca,Gastropoda,Architaenioglossa,Ampullariidae,Pomacea,ACCEPTED,99,LC
+BRACHYPELMA SMITHI,Brachypelma smithi,"Brachypelma smithi (F.O.Pickard-Cambridge, 1897)",2153432.0,Animalia,Arthropoda,Arachnida,Araneae,Theraphosidae,Brachypelma,ACCEPTED,99,NT
+NOTROSCIURUS GRANATENSIS,Notrosciurus granatensis,Notosciurus granatensis,11160000.0,Animalia,Chordata,Mammalia,Rodentia,Sciuridae,Notosciurus,ACCEPTED,85,
+DENDROPSOPHUS COLUMBIANUS,Dendropsophus columbianus,"Dendropsophus columbianus (Boettger, 1892)",2428577.0,Animalia,Chordata,Amphibia,Anura,Hylidae,Dendropsophus,ACCEPTED,99,LC
+MILVAGO CHIMACHIMA,Milvago chimachima,"Milvago chimachima (Vieillot, 1816)",2481066.0,Animalia,Chordata,Aves,Falconiformes,Falconidae,Milvago,ACCEPTED,99,LC
+PHALACRCORAX BRASILIANUS,Phalacrcorax brasilianus,"Phalacrocorax brasilianus (Gmelin, 1789)",9399113.0,Animalia,Chordata,Aves,Suliformes,Phalacrocoracidae,Phalacrocorax,ACCEPTED,85,
+STENORRHINA DEGENHARDTII,Stenorrhina degenhardtii,"Stenorrhina degenhardtii (Berthold, 1846)",2455347.0,Animalia,Chordata,Squamata,,Colubridae,Stenorrhina,ACCEPTED,99,LC
+NASUELLA OLIVACEA,Nasuella olivacea,"Nasuella olivacea (Gray, 1865)",2433588.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Nasua,SYNONYM,98,NT
+AMBYSTOMA MEXICANUM,Ambystoma mexicanum,"Ambystoma mexicanum (Shaw & Nodder, 1798)",2431950.0,Animalia,Chordata,Amphibia,Caudata,Ambystomatidae,Ambystoma,ACCEPTED,99,CR
+PIONUS MENSTRUUS RUBRIGULARIS,Pionus menstruus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,99,LC
+ALOUATTA SENICULUS,Alouatta seniculus,"Alouatta seniculus (Linnaeus, 1766)",2436648.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Alouatta,ACCEPTED,99,LC
+PUMA YAGOUAROUNDI,Puma yagouaroundi,"Puma yagouaroundi (É.Geoffroy Saint-Hilaire, 1803)",2435146.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Puma,ACCEPTED,99,LC
+SPIZAETUS MELANOLEUCUS,Spizaetus melanoleucus,"Spizaetus melanoleucus (Vieillot, 1816)",5788513.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Spizaetus,ACCEPTED,99,LC
+PSITTACARA WAGLERI,Psittacara wagleri,"Psittacara wagleri (G.R.Gray, 1845)",7634300.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Aratinga,SYNONYM,98,NT
+EUPSITTULLA PERTINAX,Eupsittulla pertinax,"Eupsittula pertinax (Linnaeus, 1758)",7926461.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Aratinga,SYNONYM,84,
+OXYRHOPUS PETOLA,Oxyrhopus petola,"Oxyrhopus petola (Linnaeus, 1758)",7754541.0,Animalia,Chordata,Squamata,,Colubridae,Oxyrhopus,SYNONYM,98,NE
+ATELES SP.,Ateles sp.,"Ateles É.Geoffroy Saint-Hilaire, 1806",2436640.0,Animalia,Chordata,Mammalia,Primates,Atelidae,Ateles,ACCEPTED,94,NE
+OROCHELIDON MURINA,Orochelidon murina,"Orochelidon murina (Cassin, 1853)",7340421.0,Animalia,Chordata,Aves,Passeriformes,Hirundinidae,Notiochelidon,SYNONYM,98,LC
+PHRYNONAX,Phrynonax,,,,,,,,,,0,
+MUSTELA FRENATA,Mustela frenata,"Mustela frenata Lichtenstein, 1831",5218919.0,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Mustela,ACCEPTED,99,LC
+HYDROCHOERUS HYDROCHAERIS,Hydrochoerus hydrochaeris,"Hydrochoerus hydrochaeris (Linnaeus, 1766)",5786666.0,Animalia,Chordata,Mammalia,Rodentia,Caviidae,Hydrochoerus,ACCEPTED,99,LC
+PIONUS TUMULTUOSUS,Pionus tumultuosus,"Pionus tumultuosus (Tschudi, 1844)",2479913.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,99,LC
+PHRYNONAX POECILONOTUS,Phrynonax poecilonotus,"Phrynonax poecilonotus (Günther, 1858)",2456580.0,Animalia,Chordata,Squamata,,Colubridae,Phrynonax,ACCEPTED,99,LC
+LECHUZA,Lechuza,,,,,,,,,,0,
+CEBUS CAPUCCINUS,Cebus capuccinus,"Cebus capucinus (Linnaeus, 1758)",2436637.0,Animalia,Chordata,Mammalia,Primates,Cebidae,Cebus,ACCEPTED,96,VU
+PYGOCHELIDON CYANOLEUCA,Pygochelidon cyanoleuca,"Pygochelidon cyanoleuca (Vieillot, 1817)",2489207.0,Animalia,Chordata,Aves,Passeriformes,Hirundinidae,Notiochelidon,SYNONYM,98,LC
+PIONUS MESTRUUS,Pionus mestruus,"Pionus Wagler, 1832",2479900.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,94,NE
+ACCIPITER SUPERCILIOSUS,Accipiter superciliosus,"Accipiter superciliosus (Linnaeus, 1766)",2480580.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Accipiter,ACCEPTED,99,LC
+HARPIA HARPYJA,Harpia harpyja,"Harpia harpyja (Linnaeus, 1758)",2480516.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Harpia,ACCEPTED,99,VU
+MUSTELIRALLUS SP,Mustelirallus sp,"Mustelirallus Bonaparte, 1856",4843492.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Mustelirallus,DOUBTFUL,92,
+PIONUS MENTRUUS RUBRIGULARES,Pionus mentruus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,95,LC
+PIONUS MESNSTRUUS RUBRIGULARIS,Pionus mesnstruus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,95,LC
+OXHRYOPUS PETALARIUS,Oxhryopus petalarius,,,,,,,,,,0,
+CHERAX SP.,Cherax sp.,"Cherax Erichson, 1846",4417557.0,Animalia,Arthropoda,Malacostraca,Decapoda,Parastacidae,Cherax,ACCEPTED,94,NE
+SPINUS SP.,Spinus sp.,Animalia,1.0,Animalia,,,,,,ACCEPTED,92,NE
+ARTIBEUS LITURATUS,Artibeus lituratus,"Artibeus lituratus (Olfers, 1818)",2433270.0,Animalia,Chordata,Mammalia,Chiroptera,Phyllostomidae,Artibeus,ACCEPTED,99,LC
+PENDIENTE,Pendiente,,,,,,,,,,0,
+MUSTELA PUTORIUS FURO,Mustela putorius,"Mustela putorius Linnaeus, 1758",5218911.0,Animalia,Chordata,Mammalia,Carnivora,Mustelidae,Mustela,ACCEPTED,99,LC
+ERYTHROLAMPRUS EPINEPHELUS,Erythrolamprus epinephelus,"Erythrolamprus epinephelus (Cope, 1862)",9609892.0,Animalia,Chordata,Squamata,,Colubridae,Erythrolamprus,ACCEPTED,99,LC
+PIONUS MENSTRUUS RUBRIGULARES,Pionus menstruus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,99,LC
+CHELONOIDIS,Chelonoidis,,,,,,,,,,0,
+BUTEO SWAINSONI,Buteo swainsoni,"Buteo swainsoni Bonaparte, 1838",2480562.0,Animalia,Chordata,Aves,Accipitriformes,Accipitridae,Buteo,ACCEPTED,99,LC
+CHELONOIDIS DENTICULATA,Chelonoidis denticulata,"Chelonoidis denticulatus (Linnaeus, 1766)",5220281.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,96,VU
+CHELYDRA ACUTIROSTRIS,Chelydra acutirostris,"Chelydra acutirostris Peters, 1862",8330787.0,Animalia,Chordata,Testudines,,Chelydridae,Chelydra,ACCEPTED,99,NE
+MEGACERYLE TORQUATA,Megaceryle torquata,"Megaceryle torquata (Linnaeus, 1766)",2475466.0,Animalia,Chordata,Aves,Coraciiformes,Alcedinidae,Megaceryle,ACCEPTED,99,LC
+DIPSAS SANCTIJOANNIS,Dipsas sanctijoannis,"Dipsas sanctijoannis (Boulenger, 1911)",5223428.0,Animalia,Chordata,Squamata,,Colubridae,Dipsas,ACCEPTED,99,LC
+CHELONODIS CARBONARIA,Chelonodis carbonaria,"Chelonoidis carbonarius (Spix, 1824)",9533689.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,85,
+DRYMARCHON MELANURUS,Drymarchon melanurus,"Drymarchon melanurus (Duméril, Bibron & Duméril, 1854)",2452321.0,Animalia,Chordata,Squamata,,Colubridae,Drymarchon,ACCEPTED,99,LC
+KINOSTERNON LEUCOSTOMUN,Kinosternon leucostomun,"Kinosternon leucostomum (Duméril, Bibron & Duméril, 1851)",2442350.0,Animalia,Chordata,Testudines,,Kinosternidae,Kinosternon,ACCEPTED,93,NE
+ARAMIDES CAJANEUS,Aramides cajaneus,"Aramides cajanea (Statius Muller, 1776)",2474659.0,Animalia,Chordata,Aves,Gruiformes,Rallidae,Aramides,ACCEPTED,96,LC
+THERISTICUS CAUDATUS,Theristicus caudatus,"Theristicus caudatus (Boddaert, 1783)",2480790.0,Animalia,Chordata,Aves,Pelecaniformes,Threskiornithidae,Theristicus,ACCEPTED,99,LC
+OXYRHOPUS PETOLARIUS,Oxyrhopus petolarius,"Oxyrhopus petolarius (Linnaeus, 1758)",2454989.0,Animalia,Chordata,Squamata,,Colubridae,Oxyrhopus,ACCEPTED,99,LC
+CHELONOIDES CARBONARIA,Chelonoides carbonaria,"Chelonoidis carbonarius (Spix, 1824)",9533689.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,85,
+STEATORNIS CARIPENSIS,Steatornis caripensis,"Steatornis caripensis von Humboldt, 1817",2497150.0,Animalia,Chordata,Aves,Steatornithiformes,Steatornithidae,Steatornis,ACCEPTED,99,LC
+CHELONOIDES DENTRICULATA,Chelonoides dentriculata,"Chelonoidis denticulatus (Linnaeus, 1766)",5220281.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,80,
+MASTIGODRYAS DANIELI,Mastigodryas danieli,"Mastigodryas danieli Amaral, 1935",2456187.0,Animalia,Chordata,Squamata,,Colubridae,Mastigodryas,ACCEPTED,99,LC
+DIDEPLPHIS MARSUPIALIS,Dideplphis marsupialis,"Didelphis marsupialis Linnaeus, 1758",2439920.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Didelphis,ACCEPTED,85,
+PULSATRIX PERSPICILATA,Pulsatrix perspicilata,"Pulsatrix perspicillata (Latham, 1790)",2497878.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pulsatrix,ACCEPTED,96,LC
+STRUTHIO CAMELUS,Struthio camelus,"Struthio camelus Linnaeus, 1758",2495150.0,Animalia,Chordata,Aves,Struthioniformes,Struthionidae,Struthio,ACCEPTED,99,LC
+POEPHILA ACUTICAUDA,Poephila acuticauda,"Poephila acuticauda (Gould, 1840)",5231425.0,Animalia,Chordata,Aves,Passeriformes,Estrildidae,Poephila,ACCEPTED,99,LC
+DASYPUS NOMENCICTUS,Dasypus nomencictus,"Dasypus Linnaeus, 1758",2440775.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Dasypus,ACCEPTED,94,NE
+AMAZILITA TZACATL,Amazilita tzacatl,"Amazilia tzacatl (de la Llave, 1833)",2476441.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Amazilia,ACCEPTED,85,
+BOTHROPS PUNCTATUS,Bothrops punctatus,"Bothrops punctatus (Garcia, 1896)",5220871.0,Animalia,Chordata,Squamata,,Viperidae,Bothrops,ACCEPTED,99,LC
+BOTHROPS ASPER,Bothrops asper,"Bothrops asper (Garman, 1883)",5220796.0,Animalia,Chordata,Squamata,,Viperidae,Bothrops,ACCEPTED,99,LC
+PODOCNEMIS UNIFIIIS,Podocnemis unifiiis,"Podocnemis unifilis Troschel, 1848",2442782.0,Animalia,Chordata,Testudines,,Podocnemididae,Podocnemis,ACCEPTED,95,VU
+EUBLEPHARIS MACULARIUS,Eublepharis macularius,"Eublepharis macularius (Blyth, 1854)",5221283.0,Animalia,Chordata,Squamata,,Eublepharidae,Eublepharis,ACCEPTED,99,LC
+HAPALOPSITTACA FUERTESI,Hapalopsittaca fuertesi,"Hapalopsittaca fuertesi (Chapman, 1912)",2479477.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Hapalopsittaca,ACCEPTED,99,EN
+LEOPARDUS WIEDII,Leopardus wiedii,"Leopardus wiedii (Schinz, 1821)",2434950.0,Animalia,Chordata,Mammalia,Carnivora,Felidae,Leopardus,ACCEPTED,99,NT
+KINOSRTERNON LAUCOSTOMUN,Kinosrternon laucostomun,,,,,,,,,,0,
+MOLOTHRUS ORYZIVORUS,Molothrus oryzivorus,"Molothrus oryzivorus (Gmelin, 1788)",2484386.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Molothrus,ACCEPTED,99,LC
+SPINUS SPINESCENS,Spinus spinescens,"Spinus spinescens (Bonaparte, 1850)",7341772.0,Animalia,Chordata,Aves,Passeriformes,Fringillidae,Spinus,ACCEPTED,99,LC
+ANOLIS FRASERI,Anolis fraseri,"Anolis fraseri Günther, 1859",2467182.0,Animalia,Chordata,Squamata,,Dactyloidae,Anolis,ACCEPTED,99,LC
+PACHYSYLVIA SEMIBRUNNEA,Pachysylvia semibrunnea,"Pachysylvia semibrunnea (Lafresnaye, 1845)",7971774.0,Animalia,Chordata,Aves,Passeriformes,Vireonidae,Hylophilus,SYNONYM,98,LC
+AMAZONA OCHOCEPHALA,Amazona ochocephala,"Amazona ochrocephala (Gmelin, 1788)",2479612.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Amazona,ACCEPTED,95,LC
+EMPIDONAX VIRESCENS,Empidonax virescens,"Empidonax virescens (Vieillot, 1818)",2482802.0,Animalia,Chordata,Aves,Passeriformes,Tyrannidae,Empidonax,ACCEPTED,99,LC
+COLAPTES RUBIGINOSUS,Colaptes rubiginosus,"Colaptes rubiginosus (Swainson, 1820)",7340161.0,Animalia,Chordata,Aves,Piciformes,Picidae,Colaptes,ACCEPTED,99,LC
+MASTIGODRYAS PLEEI,Mastigodryas pleei,"Mastigodryas pleii (Duméril, Bibron & Duméril, 1854)",2456189.0,Animalia,Chordata,Squamata,,Colubridae,Mastigodryas,ACCEPTED,96,LC
+LAMPROPELTIS MICROPHOLIS,Lampropeltis micropholis,"Lampropeltis micropholis Cope, 1860",5224527.0,Animalia,Chordata,Squamata,,Colubridae,Lampropeltis,ACCEPTED,99,LC
+DRYOCOPUES LINAOTUS,Dryocopues linaotus,,,,,,,,,,0,
+ICTERUS CHRYSOTER,Icterus chrysoter,"Icterus chrysater (Lesson, 1844)",5229924.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Icterus,ACCEPTED,95,LC
+PASSERIFORMES,Passeriformes,,,,,,,,,,0,
+PULSATRIX PERSPILLATA,Pulsatrix perspillata,"Pulsatrix perspicillata (Latham, 1790)",2497878.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pulsatrix,ACCEPTED,93,LC
+GLAUCIS HIRSUTUS,Glaucis hirsutus,"Glaucis hirsutus (J.F.Gmelin, 1788)",2476892.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Glaucis,ACCEPTED,99,LC
+MALACOPTILA PANAMENSIS,Malacoptila panamensis,"Malacoptila panamensis Lafresnaye, 1847",2475147.0,Animalia,Chordata,Aves,Piciformes,Bucconidae,Malacoptila,ACCEPTED,99,LC
+CHIRONIUS MONTICULA,Chironius monticula,"Chironius monticola Roze, 1952",2457327.0,Animalia,Chordata,Squamata,,Colubridae,Chironius,ACCEPTED,95,LC
+DIDELPHIS MARUPIALIS,Didelphis marupialis,"Didelphis marsupialis Linnaeus, 1758",2439920.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Didelphis,ACCEPTED,95,LC
+PULSATRIX PERSPILATA,Pulsatrix perspilata,"Pulsatrix perspicillata (Latham, 1790)",2497878.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Pulsatrix,ACCEPTED,93,LC
+CHIRONECTES MINIMUS,Chironectes minimus,"Chironectes minimus (Zimmermann, 1780)",5219955.0,Animalia,Chordata,Mammalia,Didelphimorphia,Didelphidae,Chironectes,ACCEPTED,99,LC
+ZENAIDA OURICULATA,Zenaida ouriculata,"Zenaida Bonaparte, 1838",2495346.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Zenaida,ACCEPTED,94,NE
+FLORISUGA MELLIVORA,Florisuga mellivora,"Florisuga mellivora (Linnaeus, 1758)",2476195.0,Animalia,Chordata,Aves,Apodiformes,Trochilidae,Florisuga,ACCEPTED,99,LC
+MARMOSA,Marmosa,,,,,,,,,,0,
+MICRURUS DUMERILII,Micrurus dumerilii,"Micrurus dumerilii Jan, 1858",5227000.0,Animalia,Chordata,Squamata,,Elapidae,Micrurus,ACCEPTED,99,LC
+CICCABA ALBICOLLIS,Ciccaba albicollis,"Ciccaba Wagler, 1832",9741604.0,Animalia,Chordata,Aves,Strigiformes,Strigidae,Strix,SYNONYM,94,NE
+PROCYON SP.,Procyon sp.,"Procyon Storr, 1780",2433592.0,Animalia,Chordata,Mammalia,Carnivora,Procyonidae,Procyon,ACCEPTED,92,NE
+LASIURUS BLOSSEVILLII,Lasiurus blossevillii,"Lasiurus blossevillii (Lesson & Garnot, 1826)",5218548.0,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Lasiurus,ACCEPTED,99,LC
+DASYPROCTA PUNTACTA,Dasyprocta puntacta,"Dasyprocta punctata Gray, 1842",2437576.0,Animalia,Chordata,Mammalia,Rodentia,Dasyproctidae,Dasyprocta,ACCEPTED,93,LC
+COLAPTES PUNCTIGULA,Colaptes punctigula,"Colaptes punctigula (Boddaert, 1783)",2478237.0,Animalia,Chordata,Aves,Piciformes,Picidae,Colaptes,ACCEPTED,99,LC
+CHAMAELEO CALYPTRATUS,Chamaeleo calyptratus,"Chamaeleo calyptratus Duméril & Duméril, 1851",2449133.0,Animalia,Chordata,Squamata,,Chamaeleonidae,Chamaeleo,ACCEPTED,99,LC
+CATHARUS USTULATUS,Catharus ustulatus,"Catharus ustulatus (Nuttall, 1840)",2490821.0,Animalia,Chordata,Aves,Passeriformes,Turdidae,Catharus,ACCEPTED,99,LC
+DIPSAS SANCTICJOANNIS,Dipsas sancticjoannis,"Dipsas sanctijoannis (Boulenger, 1911)",5223428.0,Animalia,Chordata,Squamata,,Colubridae,Dipsas,ACCEPTED,93,LC
+PIONUS MENSTRUS,Pionus menstrus,"Pionus menstruus (Linnaeus, 1766)",2479902.0,Animalia,Chordata,Aves,Psittaciformes,Psittacidae,Pionus,ACCEPTED,95,LC
+CHELONOIDS CARBONARA,Chelonoids carbonara,"Chelonoidis carbonarius (Spix, 1824)",9533689.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,80,
+LEPTOTILA VERREAUXI,Leptotila verreauxi,"Leptotila verreauxi Bonaparte, 1855",2496060.0,Animalia,Chordata,Aves,Columbiformes,Columbidae,Leptotila,ACCEPTED,99,LC
+ICTERUS SPURIUS,Icterus spurius,"Icterus spurius (Linnaeus, 1766)",5229935.0,Animalia,Chordata,Aves,Passeriformes,Icteridae,Icterus,ACCEPTED,99,LC
+CHELONIDIS CARBONARIA,Chelonidis carbonaria,"Chelonoidis carbonarius (Spix, 1824)",9533689.0,Animalia,Chordata,Testudines,,Testudinidae,Chelonoidis,ACCEPTED,85,
+LEPTODEIRA SEPTENTRIONALIS,Leptodeira septentrionalis,"Leptodeira septentrionalis (Kennicott, 1859)",2454959.0,Animalia,Chordata,Squamata,,Colubridae,Leptodeira,ACCEPTED,99,LC
+DASYPUS NOVEMANCTUS,Dasypus novemanctus,"Dasypus novemcinctus Linnaeus, 1758",2440779.0,Animalia,Chordata,Mammalia,Cingulata,Dasypodidae,Dasypus,ACCEPTED,93,LC
+TROFLODYTES AEDON,Troflodytes aedon,"Troglodytes aedon Vieillot, 1809",5231459.0,Animalia,Chordata,Aves,Passeriformes,Troglodytidae,Troglodytes,ACCEPTED,85,

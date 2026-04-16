@@ -6,14 +6,16 @@ from extract_api import extract_gbif, profiling_api
 from transform import transform_data
 from load import save_dimensions_to_csv, load_to_dw
 
+from output_validation import output_data_validation
+from input_validation import input_data_validation
+
 gbif_raw_path = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\raw\gbif_raw.csv'
-
 log_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\logs\log_file.txt'
-
-target_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\petl_project_ods-main\transformed'
-
+target_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\transformed'
 data_path = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\raw\incautaciones.csv'
 
+inp_validate = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\expectations\input'
+out_validate = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\expectations\output'
 
 def main():
     # ETL process
@@ -33,7 +35,12 @@ def main():
     profiling_api(df_gbif)
     log_progress('Data profiling complete', log_file)
 
-    # Transform
+    # Validate input 
+    log_progress('Input data validation started', log_file)
+    input_data_validation(df_incautaciones, df_gbif, inp_validate)
+    log_progress('Input data validation complete', log_file)
+
+    # Transform and Clean
     log_progress('Transform phase started', log_file)
     df_transform = transform_data(df_incautaciones, df_gbif)
 
@@ -54,10 +61,10 @@ def main():
 
     log_progress('Transform phase complete', log_file)
 
-    # Validity Check
-    log_progress('Data validity check started', log_file)
-
-    log_progress('Data validity check complete', log_file)
+    # Validite output
+    log_progress('Validate output tarted', log_file)
+    output_data_validation(df_transform, out_validate)
+    log_progress('Validate output complete', log_file)
 
 
     # Load

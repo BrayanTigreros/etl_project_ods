@@ -1,0 +1,86 @@
+{
+  "expectations": [
+    {
+      "id": "432f2ef6-deff-40e8-a245-f63dab1dceba",
+      "kwargs": {
+        "column": "anio"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "e61f7eb0-4757-41a4-9046-90c1c8037355",
+      "kwargs": {
+        "column": "departamento"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "96116d0a-26e1-4d63-bea1-a9ff51c4b39d",
+      "kwargs": {
+        "column": "situacion"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2996390a-a62d-47f8-8339-90d1adfb8105",
+      "kwargs": {
+        "column": "cantidad"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "25415fdd-9d08-4d0e-b534-13e9b56f9d44",
+      "kwargs": {
+        "column_set": [
+          "anio",
+          "departamento",
+          "municipio",
+          "lugar_decomiso",
+          "situacion",
+          "autoridad_que_incauto",
+          "tipo_especie",
+          "nombre_comun",
+          "nombre_cientifico",
+          "cantidad"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_set"
+    },
+    {
+      "id": "6f65ea11-54b9-44fa-b00f-4ab5a923f312",
+      "kwargs": {
+        "column": "anio",
+        "min_value": 2008.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "f364db84-5689-4e61-bed8-6f29993d6718",
+      "kwargs": {
+        "column": "cantidad",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "fbd13a82-be82-4c0e-9af3-aa5504969fb4",
+  "meta": {
+    "great_expectations_version": "1.15.1"
+  },
+  "name": "incautaciones_raw_suite",
+  "notes": null
+}
