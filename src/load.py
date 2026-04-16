@@ -78,7 +78,7 @@ def load_to_dw(dataframes):
     fact_incautaciones = dataframes["fact_incautaciones"]
 
     engine = create_engine(
-        "mysql+pymysql://root:davidsp@localhost:3306/incautaciones_dw"
+        "mysql+pymysql://root:@localhost:3306/incautaciones_dw"
     )
 
     insert_ignore(dim_tiempo, "dim_tiempo", engine)
