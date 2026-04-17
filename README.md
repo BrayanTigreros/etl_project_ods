@@ -1,4 +1,4 @@
-*Proyecto ETL - ODS 15: Vida de Ecosistemas Terrestres*
+# Proyecto ETL - ODS 15: Vida de Ecosistemas Terrestres
 
 Por:
 
@@ -8,7 +8,7 @@ Por:
 
 -Brayan Stiven Tigreros
 
-**Objetivo del proyecto**
+## Objetivo del proyecto
 
 El propósito de este proyecto es diseñar e implementar un pipeline ETL en entorno de producción que integre y analice datos de incautaciones de fauna silvestre en los departamentos de Risaralda y Caldas, Colombia, junto con información externa sobre el estado de conservación de las especies. Este sistema se desarrolla en el marco de los Objetivos de Desarrollo Sostenible (ODS 15: Vida de Ecosistemas Terrestres), con el fin de generar conocimiento que contribuya a la protección de la biodiversidad y la lucha contra el tráfico ilegal de especies y la extinción de ellas.
 Desde su concepción, el pipeline está diseñado para trabajar con múltiples fuentes de datos que se complementan entre sí. Por un lado, se cuenta con datasets en formato CSV que registran las incautaciones de fauna silvestre realizadas por autoridades en Risaralda y Caldas. Por otro lado, se integra información proveniente de la API de Global Biodiversity Information Facility (GBIF), la cual proporciona el estado de conservación de las especies según estándares internacionales como la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza.
@@ -19,7 +19,7 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 
 ---
 
-**Objetivos específicos**
+## Objetivos específicos**
 
 - Integrar los datos de incautaciones de fauna silvestre con la información de estado de conservación proveniente de la API de GBIF.
 - Diseñar y ejecutar el proceso de ETL que incluyan limpieza y validación de datos, asegurando la calidad e integridad de la información antes de su almacenamiento y utilización.
@@ -30,19 +30,19 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 
 ---
 
-**Fuentes de datos**
+## Fuentes de datos
 
-***Dataset incautaciones.csv***
+### Dataset incautaciones.csv
 El archivo incautaciones.csv es extraido de datos.gov.co el cual contiene aproximadamente 12,836 registros con 10 atributos: año del evento con un rango de fechas de 2008 a 2022, departamento, municipio, lugar del decomiso, situación (INCAUTACIÓN, ENTREGA VOLUNTARIA o HALLAZGO), autoridad que intervino, tipo de especie, nombre común, nombre científico y cantidad de individuos.
 
-***API gbif_raw.csv***
+### API gbif_raw.csv
 La API de Global Biodiversity Information Facility (GBIF), la cual proporciona información de la jerarquía taxonómica completa de cada especie: reino, filo, clase, orden y familia. Por otro lado, la categoría de amenaza IUCN (LC, NT, VU, EN, CR, NE, DD), que indica el nivel de riesgo de extinción según la Lista Roja internacional. Esta API fue seleccionada debido a que nos proporciona una lista larga de especies y en especial evalúa la amenaza en la que se encuentran estas especies algo muy importante para desarrollar nuestro ODS (ODS 15: Vida de Ecosistemas Terrestres), dándonos la oportunidad de conocer el nivel de amenaza en la que se encuentra y identificar la relación entre su nivel de riego con las incautaciones registradas en estos dos departamentos de Colombia que son muy ricos en biodiversidad.
 
 ---
 
-**Profiling summary**
+## Profiling summary
 
-***Information general del dataset incautaciones.csv***
+### Information general del dataset incautaciones.csv
 
 - Number of columns: 10
 - Number of rows: 12,836
@@ -64,7 +64,7 @@ La API de Global Biodiversity Information Facility (GBIF), la cual proporciona i
 
 ---
 
-***Information general de gbif_raw.csv***
+### Information general de gbif_raw.csv
 
 - Number of columns: 13
 - Number of rows: 567
@@ -89,7 +89,7 @@ La API de Global Biodiversity Information Facility (GBIF), la cual proporciona i
 
 ----
 
-**Cleaning Actions**
+## Cleaning Actions
 
 En general las estrategias aplicadas para el desarrollo de nuestro trabajo fue la eliminación de diferentes columnas esto se debe a que queríamos tomar un enfoque mas centrado a nivel de el nivel de riesgo de extinción según la lista roja internacional que estaban presentando estos individuos incautados en vez de realizar una jerarquía taxonómica completa, esto se debe a que consideramos que es mas importante que las personas conozcan el nivel de riesgo de los individuos que su taxonomía completa.
 
@@ -104,7 +104,7 @@ En general las estrategias aplicadas para el desarrollo de nuestro trabajo fue l
 
 ---
 
-**Data Quality Issues table** 
+## Data Quality Issues table
 
 | Column | Issue | Example | Dimension |
 |---|---|---|---|
@@ -122,7 +122,7 @@ Se puede observar que el principal problema que se presenta son los valores falt
 
 ---
 
-**Transformation**
+## Transformation
 
 1. Para el dataset de incautaciones se decidió transformar el año que venia en formato tipo float pasarlo a entero por medio de una multiplicación por 1000.
 2. Se decidió rellenar los nulos de las columnas (departamento, municipio, lugar_decomiso, tipo_especie, nombre_comun,  nombre_cientifico y autoridad_que_incauto) por “DESCONOCIDO” para evitar nulos dentro de los registros debido a que esto no es un error solo que no se conocía con exactitud la ubicación.
@@ -137,12 +137,12 @@ Se puede observar que el principal problema que se presenta son los valores falt
 11. Se creo una variable booleana nueva para definir si la especie esta es una categoría peligrosa de amenaza o no, esto permitirá el analisis posterior.
 
 ---
-**Integracion de datos**
+## Integracion de datos
 
 Para la integracion de datos se tomo como estrategia el uso del nombre cientifico como variable de unión, debido a que era la unica variable compatible entre el dataset y la API. Debido a que la API contenia una cantidad muy extensa de registros se decidio separar unicamente los registros que contenian compatibilidad entre ellos para no saturarnos con datos que no ibamos a usar, por ello el dataset final tendra los registros de las incautaciones enriquecida con la de la situacion de amenaza de estas especies.
 
 ---
-**Data Quality Policy Proposal**
+## Data Quality Policy Proposal
 
 | # | Policy statement | GE Expectation | Severity | Dimension | Justification |
 |---|---|---|---|---|---|
@@ -185,7 +185,7 @@ Para la integracion de datos se tomo como estrategia el uso del nombre cientific
 
 ---
 
-**Evaluacion del resultado de validación**
+## Evaluacion del resultado de validación
 
 - [incautaciones_raw] DQ Score: 85.7% —-—Passed: 6/7
 
@@ -194,7 +194,8 @@ Para la integracion de datos se tomo como estrategia el uso del nombre cientific
 - DQ Score global (input): 91.7% —————Total passed: 11 / 12
 
 ---
-**Integración en Airflow**
+
+## Integración en Airflow
 
 Comprobación de los task
 
@@ -203,7 +204,8 @@ Comprobación de los task
 ---
 
 ## Modelo Dimensional
-**Definición de la granularidad**
+
+### Definición de la granularidad
 
 | Dimensión              | Atributo 1              | Atributo 2      | Atributo 3      | Atributo 4 | Atributo 5| Atributo 6|
 |------------------------|------------------------|-----------------|------------------|------------|------------------------|-----------------------|
@@ -216,7 +218,7 @@ Comprobación de los task
 
 ---
 
-**Decisiones del Esquema Estrella**
+### Decisiones del Esquema Estrella
 
 La fact table fact_incautaciones contiene dos medidas: cantidad (individuos) y situacion (tipo de evento). 
 
@@ -228,7 +230,7 @@ Imagen del Esquema Estrella:
 
 ---
 
-**Visualizations and KPIs with interpretation**
+## Visualizations and KPIs with interpretation
 
 | KPI | Visualization | KPI Value |
 |---|---|---|
