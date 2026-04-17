@@ -1,0 +1,94 @@
+{
+  "expectations": [
+    {
+      "id": "c8713f41-2298-4f6b-a324-36d43be33e60",
+      "kwargs": {
+        "column": "especie_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "685db89f-7a5d-487a-9e32-fb8f6b8535be",
+      "kwargs": {
+        "column": "tipo_especie"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "690911a0-cb3e-45f7-b577-37e641b14c72",
+      "kwargs": {
+        "column": "nombre_comun"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "c292cbd8-253b-4ceb-91ad-0fdc56b48d80",
+      "kwargs": {
+        "column": "nombre_cientifico"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "679c2602-2ac4-43bc-ae6f-06555239de12",
+      "kwargs": {
+        "column": "especie_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "2b016e4b-9955-41d3-bc23-0b066f03c47b",
+      "kwargs": {
+        "column": "product",
+        "value_set": [
+          "AVES",
+          "FAUNA ACUATICA",
+          "MAMIFEROS",
+          "REPTILES",
+          "ANFIBIOS",
+          "ARACNIDOS",
+          "ESPECIMENES",
+          "CRUSTACEOS",
+          "CRUSTACEOS",
+          "MOLUSCOS",
+          "DESCONOCIDO",
+          "PRODUCTOS",
+          "ARTROPODOS"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "1d0e9abb-5289-487f-acf3-d203b96ab0d1",
+      "kwargs": {
+        "column_set": [
+          "especie_key",
+          "tipo_especie",
+          "nombre_comun",
+          "nombre_cientifico"
+        ],
+        "exact_match": false
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "e5ed04d1-7809-49d1-a23f-785b3f6587d8",
+  "meta": {
+    "great_expectations_version": "1.16.1"
+  },
+  "name": "dim_especie_suite",
+  "notes": null
+}

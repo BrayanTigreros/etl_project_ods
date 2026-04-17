@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "id": "3d9e1e28-9370-4909-9fb2-ec9ace40647e",
+      "kwargs": {
+        "column": "autoridad_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "ffc8c07b-0fe6-4afc-b85a-499bd8a63415",
+      "kwargs": {
+        "column": "autoridad_que_incauto"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "c2686bd6-f02e-49f2-9979-0acbf984a75a",
+      "kwargs": {
+        "column": "autoridad_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "7396e225-50a9-49b7-88df-a8c6069b7867",
+      "kwargs": {
+        "column": "autoridad_que_incauto"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    }
+  ],
+  "id": "40e32913-c882-44c3-9e2f-8e86f228091d",
+  "meta": {
+    "great_expectations_version": "1.16.1"
+  },
+  "name": "dim_autoridad_suite",
+  "notes": null
+}

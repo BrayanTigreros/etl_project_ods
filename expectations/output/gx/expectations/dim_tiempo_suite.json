@@ -1,0 +1,47 @@
+{
+  "expectations": [
+    {
+      "id": "8b81db45-16f5-495c-89a3-d96cd24d3fa6",
+      "kwargs": {
+        "column": "tiempo_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2f03a12f-4b23-4da8-99b4-3a60f45aa000",
+      "kwargs": {
+        "column": "anio"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "c9cb0f88-6afa-45fc-bbfa-c2d2fbf4b367",
+      "kwargs": {
+        "column": "tiempo_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "a114ae77-9720-4820-ab49-3fc78add1cec",
+      "kwargs": {
+        "column": "anio",
+        "min_value": 2008.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "f8109c0c-48e1-43fb-8f32-c54f303d32a1",
+  "meta": {
+    "great_expectations_version": "1.16.1"
+  },
+  "name": "dim_tiempo_suite",
+  "notes": null
+}

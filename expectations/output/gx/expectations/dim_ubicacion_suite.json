@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "id": "adfce378-1a4f-4f04-a16e-6c0560f04a90",
+      "kwargs": {
+        "column": "ubicacion_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a9cf72bd-8d7d-453b-91d6-8ac6a66ed0b3",
+      "kwargs": {
+        "column": "departamento"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "187a6861-d8db-4c38-afec-86056f9e215e",
+      "kwargs": {
+        "column": "municipio"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a5ffa483-4303-4ba3-9840-f1b1ed165a6f",
+      "kwargs": {
+        "column": "ubicacion_key"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    }
+  ],
+  "id": "de1a003a-f2e5-43f0-af2b-77b16c1c89e3",
+  "meta": {
+    "great_expectations_version": "1.16.1"
+  },
+  "name": "dim_ubicacion_suite",
+  "notes": null
+}

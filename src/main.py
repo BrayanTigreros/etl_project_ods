@@ -1,16 +1,21 @@
 import pandas as pd
 from tabulate import tabulate
 from log import log_progress
-from extract import extract_incautaciones
-from extract_api import extract_gbif
+from extract import extract_incautaciones, profiling_csv
+from extract_api import extract_gbif, profiling_api
 from transform import transform_data
 from load import save_dimensions_to_csv, load_to_dw
 
-gbif_raw_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\raw\gbif_raw.csv'
+from output_validation import output_data_validation
+from input_validation import input_data_validation
+
+gbif_raw_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\data\raw\gbif_raw.csv'
 log_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\logs\log_file.txt'
 target_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\transformed'
-data_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\raw\incautaciones.csv'
+data_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\data\raw\incautaciones.csv'
 
+inp_validate = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\expectations\input'
+out_validate = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\expectations\output'
 
 def main():
     # ETL process
@@ -20,15 +25,23 @@ def main():
     log_progress('Extract phase started', log_file)
     df_incautaciones = extract_incautaciones(data_path)
     df_gbif = extract_gbif(data_path, gbif_raw_path)
-
     df_incautaciones = extract_incautaciones(data_path)
     print(tabulate(df_incautaciones.head(), headers='keys', tablefmt='psql'))
-
     log_progress("Extract phase complete", log_file)
 
-    # Transform
-    log_progress('Transform phase started', log_file)
+    # Profiling
+    log_progress('Data profiling started', log_file)
+    profiling_csv(df_incautaciones)
+    profiling_api(df_gbif)
+    log_progress('Data profiling complete', log_file)
 
+    # Validate input 
+    log_progress('Input data validation started', log_file)
+    input_data_validation(df_incautaciones, df_gbif, inp_validate)
+    log_progress('Input data validation complete', log_file)
+
+    # Transform and Clean
+    log_progress('Transform phase started', log_file)
     df_transform = transform_data(df_incautaciones, df_gbif)
 
     print("\nDIM_TIEMPO")
@@ -47,6 +60,12 @@ def main():
     print(tabulate(df_transform["fact_incautaciones"].head(), headers='keys', tablefmt='psql'))
 
     log_progress('Transform phase complete', log_file)
+
+    # Validite output
+    log_progress('Validate output tarted', log_file)
+    output_data_validation(df_transform, out_validate)
+    log_progress('Validate output complete', log_file)
+
 
     # Load
     log_progress('Load phase started', log_file)

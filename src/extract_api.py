@@ -3,6 +3,7 @@ import re
 import time
 import requests
 import pandas as pd
+from ydata_profiling import ProfileReport
 
 BASE_URL = "https://api.gbif.org/v1"
 MIN_CONFIDENCE = 80
@@ -157,5 +158,13 @@ def extract_gbif(data_path: str, output_path: str, force_refresh: bool = False) 
     print(f"Con match válido         : {len(nombres_unicos) - sin_match - no_cientificos}")
 
     print(f"\nGBIF extraído: {len(df_gbif)} especies → {output_path}")
+
+    return df_gbif
+
+def profiling_api(df_gbif):
+    profile = ProfileReport(df_gbif, title="Data Profiling Report API", explorative=True)
+
+    # Or save the report to an HTML file
+    profile.to_file(r"C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\profiling\api_profiling_report.html")
 
     return df_gbif
