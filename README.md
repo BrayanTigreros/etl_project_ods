@@ -122,7 +122,7 @@ Se puede observar que el principal problema que se presenta son los valores falt
 
 ---
 
-Transformation
+**Transformation**
 
 1. Para el dataset de incautaciones se decidió transformar el año que venia en formato tipo float pasarlo a entero por medio de una multiplicación por 1000.
 2. Se decidió rellenar los nulos de las columnas (departamento, municipio, lugar_decomiso, tipo_especie, nombre_comun,  nombre_cientifico y autoridad_que_incauto) por “DESCONOCIDO” para evitar nulos dentro de los registros debido a que esto no es un error solo que no se conocía con exactitud la ubicación.
@@ -137,7 +137,7 @@ Transformation
 11. Se creo una variable booleana nueva para definir si la especie esta es una categoría peligrosa de amenaza o no, esto permitirá el analisis posterior.
 
 ---
-**Data Quality Policy Proposal***
+**Data Quality Policy Proposal**
 
 ## 6. Data Quality Policy Proposal
 
