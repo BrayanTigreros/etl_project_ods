@@ -165,6 +165,6 @@ def profiling_api(df_gbif):
     profile = ProfileReport(df_gbif, title="Data Profiling Report API", explorative=True)
 
     # Or save the report to an HTML file
-    profile.to_file(r"C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\profiling\api_profiling_report.html")
+    profile.to_file(r"C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\profiling\api_profiling_report.html")
 
     return df_gbif

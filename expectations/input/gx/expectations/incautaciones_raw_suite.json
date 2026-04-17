@@ -1,7 +1,7 @@
 {
   "expectations": [
     {
-      "id": "56671cd9-7e8f-4355-b0ff-f768d4d910e3",
+      "id": "a816e3b6-1126-4835-81f2-e6e2759ed8f0",
       "kwargs": {
         "column": "anio"
       },
@@ -10,7 +10,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "65bcf2de-dfaa-4c67-8ff0-340f4970b2e4",
+      "id": "338076c6-3847-4540-ae4a-71bd6cc8a293",
       "kwargs": {
         "column": "departamento"
       },
@@ -19,7 +19,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "666e1569-c6a2-49e3-95bd-e9e36ff5aeac",
+      "id": "275b81c5-7645-4b6c-b5ce-a9e93c53cd6a",
       "kwargs": {
         "column": "situacion"
       },
@@ -28,7 +28,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "9350a915-ddd7-4ab9-b198-5b54e70abd43",
+      "id": "d3a03656-73ce-45b0-8f25-007ff71f4f24",
       "kwargs": {
         "column": "cantidad"
       },
@@ -37,7 +37,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "ec069e25-342b-47a8-97ad-4ab250acb3f0",
+      "id": "332fd766-6fd7-4734-8a1d-1f33fc6d62a8",
       "kwargs": {
         "column_set": [
           "anio",
@@ -57,7 +57,7 @@
       "type": "expect_table_columns_to_match_set"
     },
     {
-      "id": "f55edb73-691e-4103-bb64-401d73feced4",
+      "id": "bea0fa11-de0f-432f-ab2e-8959da67e577",
       "kwargs": {
         "column": "anio",
         "min_value": 2008.0
@@ -67,7 +67,7 @@
       "type": "expect_column_values_to_be_between"
     },
     {
-      "id": "79e95ad8-f58d-43e1-825c-1d177e39ffd1",
+      "id": "49d6ec01-2d45-4b47-9f49-9e915198a996",
       "kwargs": {
         "column": "cantidad",
         "min_value": 1.0
@@ -79,7 +79,7 @@
   ],
   "id": "fbd13a82-be82-4c0e-9af3-aa5504969fb4",
   "meta": {
-    "great_expectations_version": "1.16.1"
+    "great_expectations_version": "1.15.1"
   },
   "name": "incautaciones_raw_suite",
   "notes": null

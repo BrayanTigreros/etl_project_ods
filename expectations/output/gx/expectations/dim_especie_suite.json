@@ -1,7 +1,7 @@
 {
   "expectations": [
     {
-      "id": "c8713f41-2298-4f6b-a324-36d43be33e60",
+      "id": "d626accf-db72-4505-bfe9-16ad44e3d9f5",
       "kwargs": {
         "column": "especie_key"
       },
@@ -10,7 +10,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "685db89f-7a5d-487a-9e32-fb8f6b8535be",
+      "id": "36c70499-0e6d-43ab-97d7-46e55e11ff35",
       "kwargs": {
         "column": "tipo_especie"
       },
@@ -19,7 +19,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "690911a0-cb3e-45f7-b577-37e641b14c72",
+      "id": "de2c771b-1f14-4e4c-bc96-2f6958798ad5",
       "kwargs": {
         "column": "nombre_comun"
       },
@@ -28,7 +28,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "c292cbd8-253b-4ceb-91ad-0fdc56b48d80",
+      "id": "17cca8d9-dd67-4ad0-b966-e730f46fa944",
       "kwargs": {
         "column": "nombre_cientifico"
       },
@@ -37,7 +37,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "679c2602-2ac4-43bc-ae6f-06555239de12",
+      "id": "757fb2a0-54ad-4715-9f43-2bd4738fe370",
       "kwargs": {
         "column": "especie_key"
       },
@@ -46,9 +46,9 @@
       "type": "expect_column_values_to_be_unique"
     },
     {
-      "id": "2b016e4b-9955-41d3-bc23-0b066f03c47b",
+      "id": "3f74110e-3c1f-4233-a40e-2a8141259c47",
       "kwargs": {
-        "column": "product",
+        "column": "tipo_especie",
         "value_set": [
           "AVES",
           "FAUNA ACUATICA",
@@ -70,7 +70,7 @@
       "type": "expect_column_values_to_be_in_set"
     },
     {
-      "id": "1d0e9abb-5289-487f-acf3-d203b96ab0d1",
+      "id": "96a5d42b-b6c0-4c14-af8c-1f71a777e0d5",
       "kwargs": {
         "column_set": [
           "especie_key",
@@ -87,7 +87,7 @@
   ],
   "id": "e5ed04d1-7809-49d1-a23f-785b3f6587d8",
   "meta": {
-    "great_expectations_version": "1.16.1"
+    "great_expectations_version": "1.15.1"
   },
   "name": "dim_especie_suite",
   "notes": null

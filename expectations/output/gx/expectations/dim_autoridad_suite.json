@@ -1,7 +1,7 @@
 {
   "expectations": [
     {
-      "id": "3d9e1e28-9370-4909-9fb2-ec9ace40647e",
+      "id": "da7b5da7-e584-4594-970a-62d9ae51b348",
       "kwargs": {
         "column": "autoridad_key"
       },
@@ -10,7 +10,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "ffc8c07b-0fe6-4afc-b85a-499bd8a63415",
+      "id": "93791b7d-8507-4008-bdb0-6be5f2ffbe0a",
       "kwargs": {
         "column": "autoridad_que_incauto"
       },
@@ -19,7 +19,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
-      "id": "c2686bd6-f02e-49f2-9979-0acbf984a75a",
+      "id": "b1b403f0-4872-44ae-8ac7-40ff9588b704",
       "kwargs": {
         "column": "autoridad_key"
       },
@@ -28,7 +28,7 @@
       "type": "expect_column_values_to_be_unique"
     },
     {
-      "id": "7396e225-50a9-49b7-88df-a8c6069b7867",
+      "id": "c1b288db-6bc9-42c9-8947-ec44cd94cb75",
       "kwargs": {
         "column": "autoridad_que_incauto"
       },
@@ -39,7 +39,7 @@
   ],
   "id": "40e32913-c882-44c3-9e2f-8e86f228091d",
   "meta": {
-    "great_expectations_version": "1.16.1"
+    "great_expectations_version": "1.15.1"
   },
   "name": "dim_autoridad_suite",
   "notes": null

@@ -171,6 +171,7 @@ services:
     environment:
       <<: *airflow-common-env
       DUMB_INIT_SETSID: "0"
+      _PIP_ADDITIONAL_REQUIREMENTS: '-r /requirements.txt' 
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
