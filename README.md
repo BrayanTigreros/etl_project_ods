@@ -192,27 +192,20 @@ Transformation
 | dim_tiempo             | anio                   |                 |                  |             |                        |                        |
 | fact_incautaciones     | situación              | cantidad        |                  |             |                        |                        |
 
-
-Un registro por evento de incautación o entrega de fauna silvestre, identificado por la combinación de año, ubicación (departamento + municipio + lugar), especie (tipo + nombre común + nombre científico) y autoridad interviniente.
+---
 
 **Decisiones del Esquema Estrella**
 
-La fact table fact_incautaciones contiene dos medidas: 
+La fact table fact_incautaciones contiene dos medidas: cantidad (individuos) y situacion (tipo de evento). 
 
-cantidad (individuos) y situacion (tipo de evento). 
-
-Se mantuvo en la fact table y no como dimensión porque solo tiene 3 valores distintos y varía por evento individual. 
-
-Las cuatro dimensiones son dim_tiempo (año), dim_ubicacion (departamento, municipio, lugar), dim_especie (tipo, nombre común, nombre científico) y dim_autoridad (entidad interviniente).
-
-Todos los surrogate keys se generan con reset_index() + 1 en pandas antes de la carga.
-
-lugar_decomiso se integró dentro de dim_ubicacion por formar parte de la jerarquía geográfica del evento.
+Se decidieron optar por las 4 dimensiones que se habían establecido (dim_tiempo, dim_ubicacion, dim_especie y dim_autoridad) pero esta vez se cambiaron los atributos de dim_especie debido a la union que se realizo entre el dataset y la API, por ello se agregaron atributos relacionados a este como lo son (categoria_iucn, categoria_iucn_label y es_amenazada) correspondientes a los datos extraídos de la API.
 
 Imagen del Esquema Estrella:
 
 ![Diagrama de estrella](diagrams/star_schema/esquema_estrella_actualizado.png)
 
+---
+ 
 **Lógica ETL**
 
 En la fase de extracción se lee el CSV con pandas usando separador coma y encoding UTF-8, asignando los nombres de columna definidos. 
