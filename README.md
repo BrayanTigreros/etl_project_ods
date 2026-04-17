@@ -19,7 +19,7 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 
 ---
 
-## Objetivos específicos**
+## Objetivos específicos
 
 - Integrar los datos de incautaciones de fauna silvestre con la información de estado de conservación proveniente de la API de GBIF.
 - Diseñar y ejecutar el proceso de ETL que incluyan limpieza y validación de datos, asegurando la calidad e integridad de la información antes de su almacenamiento y utilización.
