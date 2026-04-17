@@ -89,7 +89,7 @@ La API de Global Biodiversity Information Facility (GBIF), la cual proporciona i
 
 ----
 
-**Cleaning Actions
+**Cleaning Actions**
 
 En general las estrategias aplicadas para el desarrollo de nuestro trabajo fue la eliminación de diferentes columnas esto se debe a que queríamos tomar un enfoque mas centrado a nivel de el nivel de riesgo de extinción según la lista roja internacional que estaban presentando estos individuos incautados en vez de realizar una jerarquía taxonómica completa, esto se debe a que consideramos que es mas importante que las personas conozcan el nivel de riesgo de los individuos que su taxonomía completa.
 
