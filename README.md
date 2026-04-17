@@ -1,4 +1,4 @@
-**Proyecto ETL - ODS 15: Vida de Ecosistemas Terrestres**
+*Proyecto ETL - ODS 15: Vida de Ecosistemas Terrestres*
 
 Por:
 
@@ -80,6 +80,91 @@ La API de Global Biodiversity Information Facility (GBIF), la cual proporciona i
 | **estado_taxonomico** | Object | 41 | 7.23 | 4 | … | Indica el estado del nombre en la taxonomía interpretada por GBIF. Aparecen valores como `ACCEPTED`, `SYNONYM` y `DOUBTFUL` |
 | **confianza_match** | Int65 | 0 | 0 | … | Count = 567<br>Mean = 89.7<br>Min = 0<br>Max = 99 | Representa el nivel de confianza del emparejamiento entre el nombre consultado y el taxón encontrado por GBIF |
 | **categoria_iucn** | Object | 87 | 15.34 | 8 | … | Es la categoría de amenaza IUCN |
+
+**Cleaning Actions**
+En general las estrategias aplicadas para el desarrollo de nuestro trabajo fue la eliminación de diferentes columnas esto se debe a que queríamos tomar un enfoque mas centrado a nivel de el nivel de riesgo de extinción según la lista roja internacional que estaban presentando estos individuos incautados en vez de realizar una jerarquía taxonómica completa, esto se debe a que consideramos que es mas importante que las personas conozcan el nivel de riesgo de los individuos que su taxonomía completa.
+
+| Issue | Cleaning Strategy | Justification | Log Requirement |
+|---|---|---|---|
+| **reino** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count removed |
+| **filo** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count dropped |
+| **clase** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count dropped |
+| **orden** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count replaced |
+| **familia** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count removed |
+| **genero** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count removed |
+
+**Data Quality Issues table** 
+
+| Column | Issue | Example | Dimension |
+|---|---|---|---|
+| **Municipio** | NULL values | NaN in 31 rows | Completeness |
+| **Autoridad que incauto** | NULL values | NaN in 34 rows | Completeness |
+| **nom tipo especie** | NULL values | NaN in 10 rows | Completeness |
+| **Nombre comun** | NULL values | NaN in 738 rows | Completeness |
+| **Nombre cientifico** | NULL values | NaN in 703 rows | Completeness |
+| **nombre_cientifico_gbif** | NULL values | NaN in 41 rows | Completeness |
+| **usage_key** | NULL values | NaN in 41 rows | Completeness |
+| **estado_taxonomico** | NULL values | NaN in 41 rows | Completeness |
+| **categoria_iucn** | NULL values | NaN in 87 rows | Completeness |
+
+Se puede observar que el principal problema que se presenta son los valores faltantes, se puede concluir que debido a que son fuentes verídicas, la información esta mas filtrada y no contiene tantos errores como un dataset de prueba por ello el principal problema es la ausencia de registros o problema de “completeness” dentro de ambas fuentes de datos. 
+
+---
+
+Transformation
+
+1. En primera instancia se decidió crear una variable denominada “IUCN_LABELS” para traducir los atributos de la columna  “categoria_iucn” debido a que las siglas con las que estaban representadas no eran muy claras, en su vez se representaron así: (“LC" = "Preocupación menor” , ”NT” = "Casi amenazada” , “VU" = “Vulnerable” , ”EN” = "En peligro” , “CR" = "En peligro crítico” , “EW” = "Extinta en vida silvestre” , ”EX” = “Extinta” , ”DD": "Datos insuficientes” , ”NE": "No evaluada”).
+2. Se renombro la columna “nombre_cientifico_original” por “nombre_cientifico" para que los nombres coincidan con el otro que se tiene.
+3. Se imputan los valores nulos de las columnas relacionadas a la taxonomía e IUCN remplazando los valores faltantes en el caso de lo taxonómico por "NO IDENTIFICADO” y en la categoría de IUCN por "NE" (No evaluada) para evitar que existan nulos antes del cruce.
+4. Se estandarizan las diferentes columnas relacionadas con la parte taxonómica 
+5. Se seleccionan las columnas para el enriquecimiento en este caso se dejaran únicamente “nombre_cientifico" y “categoria_iucn" y se eliminan los duplicados tomando como referencia el nombre científico. En este caso no se tomaron todas las columnas que antes se habían transformado por temas de enfoque del proyecto pero estas pueden ser utiles en otro contexto. 
+6. Se realizo el cruce con la dimension de especies, este proceso se realizo mediante un LEFT JOIN entre dim_especie que es la dimension de nuestro diagrama de estrella que ya teníamos construido previamente y la tabla reducida de gbif que realizamos en este proceso si una especie sí hace match, recibe categoria_iucn, en el caso contrario queda nula temporalmente.
+7. Se realiza una imputación nuevamente para manejar los nulos del anterior proceso y se vuelve a desarrollar el manejo de nulos previos.
+8. Se creo una variable booleana nueva para definir si la especie esta es una categoría peligrosa de amenaza o no, esto permitirá el analisis posterior.
+
+---
+**Data Quality Policy Proposal***
+
+## 6. Data Quality Policy Proposal
+
+| # | Policy statement | GE Expectation | Severity |
+|---|---|---|---|
+| P-01 | La columna `tiempo_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-02 | La columna `anio` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-03 | Los valores de `tiempo_key` deben ser únicos en toda la dimensión de tiempo. | `expect_column_values_to_be_unique` | Critical |
+| P-04 | Los valores de la columna `anio` deben ser mayores o iguales a `2008`, de acuerdo con el rango esperado del dataset. | `expect_column_values_to_be_between` | Critical |
+| P-05 | La columna `ubicacion_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-06 | La columna `departamento` no debe contener valores nulos; si el dato original no existe, debe haberse estandarizado con un valor sustituto como `DESCONOCIDO`. | `expect_column_values_to_not_be_null` | Critical |
+| P-07 | La columna `municipio` no debe contener valores nulos; si el dato original no existe, debe haberse estandarizado con un valor sustituto como `DESCONOCIDO`. | `expect_column_values_to_not_be_null` | Critical |
+| P-08 | Los valores de `ubicacion_key` deben ser únicos en toda la dimensión de ubicación. | `expect_column_values_to_be_unique` | Critical |
+| P-09 | La columna `especie_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-10 | La columna `tipo_especie` no debe contener valores nulos; si el dato original no existe, debe haberse estandarizado con un valor sustituto como `DESCONOCIDO`. | `expect_column_values_to_not_be_null` | Critical |
+| P-11 | La columna `nombre_comun` no debe contener valores nulos; si el dato original no existe, debe haberse estandarizado con un valor sustituto como `DESCONOCIDO`. | `expect_column_values_to_not_be_null` | Critical |
+| P-12 | La columna `nombre_cientifico` no debe contener valores nulos; si el dato original no existe, debe haberse estandarizado con un valor sustituto como `DESCONOCIDO`. | `expect_column_values_to_not_be_null` | Critical |
+| P-13 | Los valores de `especie_key` deben ser únicos en toda la dimensión de especie. | `expect_column_values_to_be_unique` | Critical |
+| P-14 | La columna `product` debe contener únicamente valores permitidos dentro del conjunto definido: `AVES`, `FAUNA ACUATICA`, `MAMIFEROS`, `REPTILES`, `ANFIBIOS`, `ARACNIDOS`, `ESPECIMENES`, `CRUSTACEOS`, `MOLUSCOS`, `DESCONOCIDO`, `PRODUCTOS` y `ARTROPODOS`. | `expect_column_values_to_be_in_set` | Critical |
+| P-15 | La dimensión `dim_especie` debe contener como mínimo las columnas `especie_key`, `tipo_especie`, `nombre_comun` y `nombre_cientifico`, permitiendo columnas adicionales derivadas del enriquecimiento con GBIF. | `expect_table_columns_to_match_set` | Critical |
+| P-16 | La columna `autoridad_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-17 | La columna `autoridad_que_incauto` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-18 | Los valores de `autoridad_key` deben ser únicos en toda la dimensión de autoridad. | `expect_column_values_to_be_unique` | Critical |
+| P-19 | Los valores de `autoridad_que_incauto` deben ser únicos en toda la dimensión de autoridad. | `expect_column_values_to_be_unique` | Critical |
+| P-20 | La columna `tiempo_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-21 | La columna `ubicacion_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-22 | La columna `especie_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-23 | La columna `autoridad_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-24 | La columna `situacion` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-25 | La columna `cantidad` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-26 | La columna `id` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical |
+| P-27 | Los valores de la columna `cantidad` deben ser mayores o iguales a `1`. | `expect_column_values_to_be_between` | Critical |
+| P-28 | Los valores de la columna `id` deben ser únicos en toda la tabla de hechos. | `expect_column_values_to_be_unique` | Critical |
+| P-29 | Los valores de `tiempo_key` deben ser enteros positivos, mayores o iguales a `1`. | `expect_column_values_to_be_between` | Critical |
+| P-30 | Los valores de `ubicacion_key` deben ser enteros positivos, mayores o iguales a `1`. | `expect_column_values_to_be_between` | Critical |
+| P-31 | Los valores de `especie_key` deben ser enteros positivos, mayores o iguales a `1`. | `expect_column_values_to_be_between` | Critical |
+| P-32 | Los valores de `autoridad_key` deben ser enteros positivos, mayores o iguales a `1`. | `expect_column_values_to_be_between` | Critical |
+| P-33 | Los valores de `tiempo_key` deben existir en la dimensión `dim_tiempo`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
+| P-34 | Los valores de `ubicacion_key` deben existir en la dimensión `dim_ubicacion`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
+| P-35 | Los valores de `especie_key` deben existir en la dimensión `dim_especie`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
+| P-36 | Los valores de `autoridad_key` deben existir en la dimensión `dim_autoridad`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
 
 ## Modelo Dimensional
 **Definición de la granularidad**
