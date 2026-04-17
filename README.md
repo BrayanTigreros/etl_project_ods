@@ -140,8 +140,8 @@ Transformation
 
 ## 6. Data Quality Policy Proposal
 
-| # | Policy statement | GE Expectation | Severity |
-|---|---|---|---|
+| # | Policy statement | GE Expectation | Severity | Justification |
+|---|---|---|---|---|
 | P-01 | La columna `tiempo_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical | Se debe de validar que no se posean nulos en las llaves primarias |
 | P-02 | La columna `anio` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical | Se debe de validar que no se posean nulos en los años para tener coherencia en los registros |
 | P-03 | Los valores de `tiempo_key` deben ser únicos en toda la dimensión de tiempo. | `expect_column_values_to_be_unique` | Critical | Se debe de validar que las llaves primarias sean únicas  |
