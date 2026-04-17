@@ -308,6 +308,4 @@ Los valores del reporte deben coincidir con el contenido de la base de datos inc
 | ¿Cuáles son los animales por nombre común que más frecuentemente se han incautado? | Cantidad incautada por nombre común del animal | Especie | Por medio de esta información se busca conocer el nombre del animal que más está siendo afectado por el proceso de tráfico de especies. Esto ayuda a generar planes de mitigación del problema como campañas de protección sobre animales afectados. |
 | ¿Cuál es el total acumulado de individuos registrados en el DW? | Cantidad de individuos registrados | Especie | Mediante esto se puede conocer la cantidad de individuos que están siendo registrados y ver cómo esta problemática está afectando a los departamentos en cuestión para aplicar medidas de protección animal en las zonas. |
 
-
-<img width="1439" height="809" alt="Captura de pantalla 2026-03-05 225552" src="https://github.com/user-attachments/assets/742d1e5c-5a2d-4902-95d6-f7b87eee44b9" />
-
+<img width="1373" height="770" alt="image" src="https://github.com/user-attachments/assets/7fc6176c-5522-4e5c-9b89-a5195178488a" />
