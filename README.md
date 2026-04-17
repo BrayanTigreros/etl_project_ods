@@ -191,6 +191,13 @@ Se puede observar que el principal problema que se presenta son los valores falt
 - DQ Score global (input): 91.7% —————Total passed: 11 / 12
 
 ---
+**Integración en Airflow**
+
+Comprobación de los task
+
+![Airflow](comprobacion_task.jpeg)
+
+---
 
 ## Modelo Dimensional
 **Definición de la granularidad**
@@ -202,6 +209,7 @@ Se puede observar que el principal problema que se presenta son los valores falt
 | dim_autoridad          | autoridad_que_incauto  |                 |                  |             |                        |                        |
 | dim_tiempo             | anio                   |                 |                  |             |                        |                        |
 | fact_incautaciones     | situación              | cantidad        |                  |             |                        |                        |
+
 
 ---
 
