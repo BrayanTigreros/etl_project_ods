@@ -113,14 +113,17 @@ Se puede observar que el principal problema que se presenta son los valores falt
 
 Transformation
 
-1. En primera instancia se decidió crear una variable denominada “IUCN_LABELS” para traducir los atributos de la columna  “categoria_iucn” debido a que las siglas con las que estaban representadas no eran muy claras, en su vez se representaron así: (“LC" = "Preocupación menor” , ”NT” = "Casi amenazada” , “VU" = “Vulnerable” , ”EN” = "En peligro” , “CR" = "En peligro crítico” , “EW” = "Extinta en vida silvestre” , ”EX” = “Extinta” , ”DD": "Datos insuficientes” , ”NE": "No evaluada”).
-2. Se renombro la columna “nombre_cientifico_original” por “nombre_cientifico" para que los nombres coincidan con el otro que se tiene.
-3. Se imputan los valores nulos de las columnas relacionadas a la taxonomía e IUCN remplazando los valores faltantes en el caso de lo taxonómico por "NO IDENTIFICADO” y en la categoría de IUCN por "NE" (No evaluada) para evitar que existan nulos antes del cruce.
-4. Se estandarizan las diferentes columnas relacionadas con la parte taxonómica 
-5. Se seleccionan las columnas para el enriquecimiento en este caso se dejaran únicamente “nombre_cientifico" y “categoria_iucn" y se eliminan los duplicados tomando como referencia el nombre científico. En este caso no se tomaron todas las columnas que antes se habían transformado por temas de enfoque del proyecto pero estas pueden ser utiles en otro contexto. 
-6. Se realizo el cruce con la dimension de especies, este proceso se realizo mediante un LEFT JOIN entre dim_especie que es la dimension de nuestro diagrama de estrella que ya teníamos construido previamente y la tabla reducida de gbif que realizamos en este proceso si una especie sí hace match, recibe categoria_iucn, en el caso contrario queda nula temporalmente.
-7. Se realiza una imputación nuevamente para manejar los nulos del anterior proceso y se vuelve a desarrollar el manejo de nulos previos.
-8. Se creo una variable booleana nueva para definir si la especie esta es una categoría peligrosa de amenaza o no, esto permitirá el analisis posterior.
+1. Para el dataset de incautaciones se decidió transformar el año que venia en formato tipo float pasarlo a entero por medio de una multiplicación por 1000.
+2. Se decidió rellenar los nulos de las columnas (departamento, municipio, lugar_decomiso, tipo_especie, nombre_comun,  nombre_cientifico y autoridad_que_incauto) por “DESCONOCIDO” para evitar nulos dentro de los registros debido a que esto no es un error solo que no se conocía con exactitud la ubicación.
+3. Tambien se decidió estandarizar las columnas (departamento, municipio, lugar_decomiso, tipo_especie, nombre_comun, nombre_cientifico y autoridad_que_incauto) para que manejaran el mismo formato.
+4. Se decidió crear una variable denominada “IUCN_LABELS” para traducir los atributos de la columna  “categoria_iucn” debido a que las siglas con las que estaban representadas no eran muy claras, en su vez se representaron así: (“LC" = "Preocupación menor” , ”NT” = "Casi amenazada” , “VU" = “Vulnerable” , ”EN” = "En peligro” , “CR" = "En peligro crítico” , “EW” = "Extinta en vida silvestre” , ”EX” = “Extinta” , ”DD": "Datos insuficientes” , ”NE": "No evaluada”).
+5. Se renombro la columna “nombre_cientifico_original” por “nombre_cientifico" para que los nombres coincidan con el otro que se tiene.
+6. Se imputan los valores nulos de las columnas relacionadas a la taxonomía e IUCN remplazando los valores faltantes en el caso de lo taxonómico por "NO IDENTIFICADO” y en la categoría de IUCN por "NE" (No evaluada) para evitar que existan nulos antes del cruce.
+7. Se estandarizan las diferentes columnas relacionadas con la parte taxonómica 
+8. Se seleccionan las columnas para el enriquecimiento en este caso se dejaran únicamente “nombre_cientifico" y “categoria_iucn" y se eliminan los duplicados tomando como referencia el nombre científico. En este caso no se tomaron todas las columnas que antes se habían transformado por temas de enfoque del proyecto pero estas pueden ser utiles en otro contexto. 
+9. Se realizo el cruce con la dimension de especies, este proceso se realizo mediante un LEFT JOIN entre dim_especie que es la dimension de nuestro diagrama de estrella que ya teníamos construido previamente y la tabla reducida de gbif que realizamos en este proceso si una especie sí hace match, recibe categoria_iucn, en el caso contrario queda nula temporalmente.
+10. Se realiza una imputación nuevamente para manejar los nulos del anterior proceso y se vuelve a desarrollar el manejo de nulos previos.
+11. Se creo una variable booleana nueva para definir si la especie esta es una categoría peligrosa de amenaza o no, esto permitirá el analisis posterior.
 
 ---
 **Data Quality Policy Proposal***
@@ -171,8 +174,8 @@ Transformation
 
 | Dimensión              | Atributo 1              | Atributo 2      | Atributo 3        |
 |------------------------|------------------------|-----------------|------------------|
-| Especie dimensión      | Nom tipo especie       | Nombre común   | Nombre científico |
-| Ubicación dimensión    | Departamento           | Municipio      | Lugar decomiso    |
+| Especie dimensión      | tipo_especie           | nombre_comun    | nombre_científico |
+| Ubicación dimensión    | Departamento           | Municipio       | Lugar decomiso    |
 | Autoridad dimensión    | Autoridad que incautó  |                 |                  |
 | Tiempo dimensión       | Año                    |                 |                  |
 | Fact Table             | Situación              | Cantidad        |                  |
