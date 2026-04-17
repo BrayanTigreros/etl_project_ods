@@ -139,7 +139,7 @@ Se puede observar que el principal problema que se presenta son los valores falt
 ---
 ## Integracion de datos
 
-Para la integracion de datos se tomo como estrategia el uso del nombre cientifico como variable de unión, debido a que era la unica variable compatible entre el dataset y la API. Debido a que la API contenia una cantidad muy extensa de registros se decidio separar unicamente los registros que contenian compatibilidad entre ellos para no saturarnos con datos que no ibamos a usar, por ello el dataset final tendra los registros de las incautaciones enriquecida con la de la situacion de amenaza de estas especies.
+La integración de datos se realizó utilizando el nombre científico como clave principal de unión, ya que es el único atributo común entre el dataset de incautaciones y la API de GBIF. Dado que la API de GBIF contiene un volumen muy amplio de información, se optó por una estrategia de consulta selectiva, así, se procesaron unicamentes las especies presentes en el dataset original. Buscando tener como resultado reducir el consumo de recursos, evitar llamadas innecesarias a la API para trabajar exclusivamente con datos relevantes para el análisis. Pero para garantizar una correcta correspondencia entre ambas fuentes, se tuvo que implementar un proceso de normalización de los nombres científicos. Este incluyó la limpieza de caracteres no relevantes como paréntesis o sufijos en mayúsculas, estandarización de formato y eliminación de inconsistencias. Posteriormente, se validó cada coincidencia utilizando el endpoint de species match de GBIF, aplicando un umbral mínimo de confianza para asegurar la calidad de los datos integrados.
 
 ---
 ## Data Quality Policy Proposal
