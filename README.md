@@ -227,7 +227,7 @@ Comprobación de los task
 
 La fact table fact_incautaciones contiene dos medidas: cantidad (individuos) y situacion (tipo de evento). 
 
-Se decidieron optar por las 4 dimensiones que se habían establecido (dim_tiempo, dim_ubicacion, dim_especie y dim_autoridad) pero esta vez se cambiaron los atributos de dim_especie debido a la union que se realizo entre el dataset y la API, por ello se agregaron atributos relacionados a este como lo son (categoria_iucn, categoria_iucn_label y es_amenazada) correspondientes a los datos extraídos de la API.
+Se decidieron optar por las 4 dimensiones que se habían establecido (dim_tiempo, dim_ubicacion, dim_especie y dim_autoridad) pero esta vez se cambiaron los atributos de dim_especie debido a la union que se realizo entre el dataset y la API, por ello se agregaron atributos relacionados a este como lo son (categoria_iucn, categoria_iucn_label y es_amenazada) correspondientes a los datos extraídos de la API. Estos nuevos atributos nos permitira usar datos relacionados con el nivel de amenaza que presenta la especie algo que no se fuera podido sin la actualización al agregar atributos de la API.
 
 Imagen del Esquema Estrella:
 
