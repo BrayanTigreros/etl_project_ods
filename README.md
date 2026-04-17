@@ -139,8 +139,6 @@ Se puede observar que el principal problema que se presenta son los valores falt
 ---
 **Data Quality Policy Proposal**
 
-## 6. Data Quality Policy Proposal
-
 | # | Policy statement | GE Expectation | Severity | Dimension | Justification |
 |---|---|---|---|---|---|
 | P-01 | La columna `tiempo_key` no debe contener valores nulos. | `expect_column_values_to_not_be_null` | Critical | Completeness| Se debe de validar que no se posean nulos en las llaves primarias |
