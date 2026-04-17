@@ -190,7 +190,7 @@ Transformation
 | dim_ubicacion          | departamento           | municipio       | lugar_decomiso    |            |                        |                        |
 | dim_autoridad          | autoridad_que_incauto  |                 |                  |             |                        |                        |
 | dim_tiempo             | anio                   |                 |                  |             |                        |                        |
-| Fact Table             | Situación              | Cantidad        |                  |             |                        |                        |
+| fact_incautaciones     | situación              | cantidad        |                  |             |                        |                        |
 
 
 Un registro por evento de incautación o entrega de fauna silvestre, identificado por la combinación de año, ubicación (departamento + municipio + lugar), especie (tipo + nombre común + nombre científico) y autoridad interviniente.
