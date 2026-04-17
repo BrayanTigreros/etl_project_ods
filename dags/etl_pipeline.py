@@ -7,7 +7,7 @@ RAW_PATH    = f"{BASE_PATH}/data/raw"
 TRANS_PATH  = f"{BASE_PATH}/data/transformed"
 INP_VALIDATE    = f"{BASE_PATH}/expectations/input"  
 OUT_VALIDATE    = f"{BASE_PATH}/expectations/output"
-DB_CONN     = "mysql+pymysql://root:@192.168.0.11:3306/incautaciones_dw"
+DB_CONN     = "mysql+pymysql://root:@192.168.1.5:3306/incautaciones_dw"
  
  
 @dag(

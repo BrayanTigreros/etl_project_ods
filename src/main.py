@@ -9,13 +9,13 @@ from load import save_dimensions_to_csv, load_to_dw
 from output_validation import output_data_validation
 from input_validation import input_data_validation
 
-gbif_raw_path = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\data\raw\gbif_raw.csv'
-log_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\logs\log_file.txt'
-target_file = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\transformed'
-data_path = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\data\raw\incautaciones.csv'
+gbif_raw_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\data\raw\gbif_raw.csv'
+log_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\logs\log_file.txt'
+target_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\transformed'
+data_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\data\raw\incautaciones.csv'
 
-inp_validate = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\expectations\input'
-out_validate = r'C:\Users\btigr\Documents\UAO\5\ETL\ETL_2026_1\proyecto\etl_project_ods-main\etl_project_ods-main\expectations\output'
+inp_validate = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\expectations\input'
+out_validate = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\expectations\output'
 
 def main():
     # ETL process
