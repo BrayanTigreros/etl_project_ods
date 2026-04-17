@@ -181,6 +181,16 @@ Transformation
 
 ---
 
+**Evaluacion del resultado de validación**
+
+- [incautaciones_raw] DQ Score: 85.7% —-—Passed: 6/7
+
+- [gbif_raw] DQ Score: 100.0% —————- Passed: 5/5
+
+- DQ Score global (input): 91.7% —————Total passed: 11 / 12
+
+---
+
 ## Modelo Dimensional
 **Definición de la granularidad**
 
