@@ -215,7 +215,21 @@ Imagen del Esquema Estrella:
 ![Diagrama de estrella](diagrams/star_schema/esquema_estrella_actualizado.png)
 
 ---
- 
+
+**Visualizations and KPIs with interpretation**
+
+| KPI | Visualization | KPI Value |
+|---|---|---|
+| Cantidad de incautaciones por año dependiendo de la amenaza | Gráfico de línea | Permite identificar la cantidad de animales incautados dependiendo de si están en amenaza o no; esto permite evaluar el nivel de riesgo que presentan los animales que están siendo incautados dentro de estos departamentos al pasar de los años. |
+| Porcentaje de incautaciones por situación | Gráfico de torta | Mediante esto se puede identificar el contexto en el que están siendo incautadas estas especies para definir si las condiciones de estas están siendo voluntarias o porque ya no tenía opción. |
+| Cantidad de animales incautados por nivel de amenaza | Gráfico de barras horizontal | Permite identificar la cantidad de animales incautados por cada uno de los niveles de amenaza establecidos y determinar cuál es la especie que más se está incautando y cuál es su nivel de amenaza de extinción identificado. |
+| Cantidad de incautaciones por autoridad | Gráfico de barras | Con estos datos se puede ver a cuáles de las autoridades competentes dar más crédito o a cuáles de ellas están teniendo un rendimiento menor para implementar medidas de mejora y esperar mejores resultados de su parte. |
+| Total de especies incautadas | Tarjeta | Mediante este valor se puede identificar cuál es la cantidad de especies que están siendo incautadas y, mediante esto, dar un alcance de la cantidad de especies que están siendo víctimas del tráfico ilegal de especies en estos departamentos. |
+| Total de especies en amenaza incautadas | Tarjeta | Mediante este valor se puede identificar cuál es la cantidad de especies que están siendo incautadas y que además se encuentran en una amenaza real; mediante esto dar un alcance del efecto que puede estar teniendo el tráfico ilegal en estas especies que han sido incautadas. |
+
+<img width="1373" height="770" alt="image" src="https://github.com/user-attachments/assets/7fc6176c-5522-4e5c-9b89-a5195178488a" />
+---
+
 **Lógica ETL**
 
 En la fase de extracción se lee el CSV con pandas usando separador coma y encoding UTF-8, asignando los nombres de columna definidos. 
@@ -293,29 +307,8 @@ Selecciona la fuente ODBC, haz clic en Editar Permisos e ingresa tus credenciale
 
 Confirma que el DSN utilizado sea incautaciones_dw_dsn (o el que tengas creado) y refresca el dataset desde Inicio → Actualizar.
 
-Después de refrescar, el reporte mostrará los siguientes KPIs: 
 
--cantidad de animales incautados por especie
 
--incautados por año
 
--proporción por situación (incautación, entrega voluntaria y hallazgo)
 
--incautados por autoridad
 
--total de individuos incautados. 
-
-Los valores del reporte deben coincidir con el contenido de la base de datos incautaciones_dw tras ejecutar el pipeline completo con python main.py. Un ejemplo de como deberia lucir el reporte que se mostrara a continuacion.
-
-**KPIs del Dashboard**
-
-| Requerimientos | KPIs | Dimensiones | Valor |
-|---|---|---|---|
-| ¿Cuáles son los animales por especie con más individuos incautados | Cantidad de especies incautadas | Especie | Por medio de esta se puede determinar cuál es la especie que en más peligro se encuentra dentro de los departamentos debido al alto número de individuos que ya se han incautado en el momento. Este KPI entra en vigor al utilizar la opcion de filtrado por especie incluida en el dashboard. |
-| ¿Cuál es la autoridad que más incautaciones ha realizado o lidera las incautaciones? | Cantidad incautada por autoridad | Autoridad | Con estos datos se puede ver a cuáles de las autoridades competentes dar más crédito o a cuáles de ellas están teniendo un rendimiento menor para implementar medidas de mejora para esperar mejores resultados de su parte. |
-| ¿Cómo es la distribución de las incautaciones según su situación? | Cantidad de incautaciones según su situación | Especie | Mediante esto se pueden identificar cuál es la situación en la que mayormente se está haciendo el proceso de incautación. Esto permite identificar cómo es la tendencia de incautaciones y por cuál método optar o cuáles reforzar. |
-| ¿Cómo ha evolucionado el volumen de fauna incautada entre 2008 y 2021? | Cantidad de incautaciones entre 2008 y 2021 | Tiempo | Mediante esta información se busca conocer la cantidad de fauna incautada en ese rango de años y determinar cómo ha sido su evolución a lo largo de los años. Esto permite conocer la distribución y evaluar por qué se está realizando un incremento o reducción en la cantidad, evaluando posibles causas. | 
-| ¿Cuáles son los animales por nombre común que más frecuentemente se han incautado? | Cantidad incautada por nombre común del animal | Especie | Por medio de esta información se busca conocer el nombre del animal que más está siendo afectado por el proceso de tráfico de especies. Esto ayuda a generar planes de mitigación del problema como campañas de protección sobre animales afectados. |
-| ¿Cuál es el total acumulado de individuos registrados en el DW? | Cantidad de individuos registrados | Especie | Mediante esto se puede conocer la cantidad de individuos que están siendo registrados y ver cómo esta problemática está afectando a los departamentos en cuestión para aplicar medidas de protección animal en las zonas. |
-
-<img width="1373" height="770" alt="image" src="https://github.com/user-attachments/assets/7fc6176c-5522-4e5c-9b89-a5195178488a" />
