@@ -184,13 +184,13 @@ Transformation
 ## Modelo Dimensional
 **Definición de la granularidad**
 
-| Dimensión              | Atributo 1              | Atributo 2      | Atributo 3        |
-|------------------------|------------------------|-----------------|------------------|
-| Especie dimensión      | tipo_especie           | nombre_comun    | nombre_científico |
-| Ubicación dimensión    | Departamento           | Municipio       | Lugar decomiso    |
-| Autoridad dimensión    | Autoridad que incautó  |                 |                  |
-| Tiempo dimensión       | Año                    |                 |                  |
-| Fact Table             | Situación              | Cantidad        |                  |
+| Dimensión              | Atributo 1              | Atributo 2      | Atributo 3      | Atributo 4 | Atributo 5| Atributo 6|
+|------------------------|------------------------|-----------------|------------------|------------|------------------------|-----------------------|
+| dim_especie            | tipo_especie           | nombre_comun    | nombre_científico |           categoria_iucn| categoria_iucn_label| es_amenazada|
+| dim_ubicacion          | departamento           | municipio       | lugar_decomiso    |            |                        |                        |
+| dim_autoridad          | autoridad_que_incauto  |                 |                  |             |                        |                        |
+| dim_tiempo             | anio                   |                 |                  |             |                        |                        |
+| Fact Table             | Situación              | Cantidad        |                  |             |                        |                        |
 
 
 Un registro por evento de incautación o entrega de fauna silvestre, identificado por la combinación de año, ubicación (departamento + municipio + lugar), especie (tipo + nombre común + nombre científico) y autoridad interviniente.
