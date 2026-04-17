@@ -17,6 +17,8 @@ El desarrollo de este sistema responde a la necesidad de convertir datos aislado
 A partir de la integración de ambas fuentes de datos, el pipeline busca relacionar las especies registradas en incautaciones en estos departamentos con su nivel de riesgo a nivel mundial, con el fin de analizar cómo el tráfico ilegal está afectando a las especies en estos contextos específicos. Esta integración permite habilitar análisis que no eran posibles con el dataset original, entre ellos: identificar qué proporción de los animales incautados corresponde a especies amenazadas o en peligro crítico, determinar qué autoridades interceptan más especies de alto riesgo ecológico, y analizar la relación entre la frecuencia de incautaciones y el nivel de amenaza de las especies.
 Finalmente, los resultados esperados incluyen la generación de dashboards interactivos en Power BI que permitan identificar patrones, tendencias y riesgos asociados al tráfico de fauna silvestre. Esto facilita la toma de decisiones por parte de entidades ambientales y contribuye al cumplimiento de los objetivos de conservación de la biodiversidad y mitigar o eliminar su riesgo de extinción.
 
+---
+
 **Objetivos específicos**
 
 - Integrar los datos de incautaciones de fauna silvestre con la información de estado de conservación proveniente de la API de GBIF.
@@ -26,6 +28,8 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 - Implementar un Data Warehouse en MySQL bajo un modelo dimensional que permita consultas eficientes orientadas al análisis de incautaciones y nivel de amenaza de las especies.
 - Desarrollar un dashboard que permitan visualizar tendencias, distribuciones y relaciones clave para la toma de decisiones.
 
+---
+
 **Fuentes de datos**
 
 ***Dataset incautaciones.csv***
@@ -33,6 +37,8 @@ El archivo incautaciones.csv es extraido de datos.gov.co el cual contiene aproxi
 
 ***API gbif_raw.csv***
 La API de Global Biodiversity Information Facility (GBIF), la cual proporciona información de la jerarquía taxonómica completa de cada especie: reino, filo, clase, orden y familia. Por otro lado, la categoría de amenaza IUCN (LC, NT, VU, EN, CR, NE, DD), que indica el nivel de riesgo de extinción según la Lista Roja internacional. Esta API fue seleccionada debido a que nos proporciona una lista larga de especies y en especial evalúa la amenaza en la que se encuentran estas especies algo muy importante para desarrollar nuestro ODS (ODS 15: Vida de Ecosistemas Terrestres), dándonos la oportunidad de conocer el nivel de amenaza en la que se encuentra y identificar la relación entre su nivel de riego con las incautaciones registradas en estos dos departamentos de Colombia que son muy ricos en biodiversidad.
+
+---
 
 **Profiling summary**
 
@@ -81,6 +87,8 @@ La API de Global Biodiversity Information Facility (GBIF), la cual proporciona i
 | **confianza_match** | Int65 | 0 | 0 | … | Count = 567<br>Mean = 89.7<br>Min = 0<br>Max = 99 | Representa el nivel de confianza del emparejamiento entre el nombre consultado y el taxón encontrado por GBIF |
 | **categoria_iucn** | Object | 87 | 15.34 | 8 | … | Es la categoría de amenaza IUCN |
 
+----
+
 **Cleaning Actions**
 En general las estrategias aplicadas para el desarrollo de nuestro trabajo fue la eliminación de diferentes columnas esto se debe a que queríamos tomar un enfoque mas centrado a nivel de el nivel de riesgo de extinción según la lista roja internacional que estaban presentando estos individuos incautados en vez de realizar una jerarquía taxonómica completa, esto se debe a que consideramos que es mas importante que las personas conozcan el nivel de riesgo de los individuos que su taxonomía completa.
 
@@ -92,6 +100,8 @@ En general las estrategias aplicadas para el desarrollo de nuestro trabajo fue l
 | **orden** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count replaced |
 | **familia** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count removed |
 | **genero** | Drop column | Se eliminó la columna debido a que no se consideraba relevante en el conjunto de datos, ya que el análisis se centrará en el nivel de riesgo de la especie. | Count removed |
+
+---
 
 **Data Quality Issues table** 
 
@@ -168,6 +178,8 @@ Transformation
 | P-34 | Los valores de `ubicacion_key` deben existir en la dimensión `dim_ubicacion`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
 | P-35 | Los valores de `especie_key` deben existir en la dimensión `dim_especie`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
 | P-36 | Los valores de `autoridad_key` deben existir en la dimensión `dim_autoridad`, garantizando integridad referencial. | `expect_column_values_to_be_in_set` | Critical |
+
+---
 
 ## Modelo Dimensional
 **Definición de la granularidad**
