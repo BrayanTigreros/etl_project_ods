@@ -140,6 +140,7 @@ Se puede observar que el principal problema que se presenta son los valores falt
 **Integracion de datos**
 
 Para la integracion de datos se tomo como estrategia el uso del nombre cientifico como variable de unión, debido a que era la unica variable compatible entre el dataset y la API. Debido a que la API contenia una cantidad muy extensa de registros se decidio separar unicamente los registros que contenian compatibilidad entre ellos para no saturarnos con datos que no ibamos a usar, por ello el dataset final tendra los registros de las incautaciones enriquecida con la de la situacion de amenaza de estas especies.
+
 ---
 **Data Quality Policy Proposal**
 
