@@ -240,6 +240,7 @@ Imagen del Esquema Estrella:
 | Total de especies en amenaza incautadas | Tarjeta | Mediante este valor se puede identificar cuál es la cantidad de especies que están siendo incautadas y que además se encuentran en una amenaza real; mediante esto dar un alcance del efecto que puede estar teniendo el tráfico ilegal en estas especies que han sido incautadas. |
 
 <img width="1373" height="770" alt="image" src="https://github.com/user-attachments/assets/7fc6176c-5522-4e5c-9b89-a5195178488a" />
+
 ---
 
 
