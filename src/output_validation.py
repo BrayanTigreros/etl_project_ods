@@ -67,7 +67,7 @@ def output_data_validation(transformed_data, out_validate):
             suite.add_expectation(gx.expectations.ExpectColumnValuesToBeUnique(column="especie_key"))
 
             # Validity 
-            suite.add_expectation(gx.expectations.ExpectColumnValuesToBeInSet(column="product",
+            suite.add_expectation(gx.expectations.ExpectColumnValuesToBeInSet(column="tipo_especie",
             value_set=["AVES", "FAUNA ACUATICA", "MAMIFEROS", "REPTILES", "ANFIBIOS", 
                        "ARACNIDOS", "ESPECIMENES", "CRUSTACEOS", "CRUSTACEOS", "MOLUSCOS", "DESCONOCIDO", "PRODUCTOS", "ARTROPODOS"]
             ))
@@ -135,6 +135,8 @@ def output_data_validation(transformed_data, out_validate):
                 column="autoridad_key",
                 value_set=transformed_data["dim_autoridad"]["autoridad_key"].tolist()
             ))
+
+        
 
         context.suites.add_or_update(suite)
         validation_result = batch.validate(suite)

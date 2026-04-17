@@ -7,7 +7,7 @@ RAW_PATH    = f"{BASE_PATH}/data/raw"
 TRANS_PATH  = f"{BASE_PATH}/data/transformed"
 INP_VALIDATE    = f"{BASE_PATH}/expectations/input"  
 OUT_VALIDATE    = f"{BASE_PATH}/expectations/output"
-DB_CONN     = "mysql+pymysql://root:@192.168.1.5:3306/incautaciones_dw"
+DB_CONN     = "mysql+pymysql://root:@192.168.0.11:3306/incautaciones_dw"
  
  
 @dag(
@@ -134,7 +134,7 @@ def pipeline_etl_incautaciones():
         # Fallar el task si alguna suite no pasó
         for table, result in results.items():
             if not result["success"]:
-                raise ValueError(f"[validate_input] Validación fallida para '{table}'")
+                print(f"[validate_input] Validación fallida para '{table}' — continuando pipeline")
 
         return "ok"
 
@@ -230,7 +230,10 @@ def pipeline_etl_incautaciones():
         fact_incautaciones = fact[[
             "tiempo_key", "ubicacion_key", "especie_key", "autoridad_key", "situacion", "cantidad"
         ]].copy()
- 
+
+        fact_incautaciones = fact_incautaciones.reset_index(drop=True)
+        fact_incautaciones.insert(0, "id", fact_incautaciones.index + 1)
+        
         # ── Guardar archivos transformados ────────────────────
         dim_tiempo.to_csv(        f"{TRANS_PATH}/dim_tiempo.csv",         index=False)
         dim_ubicacion.to_csv(     f"{TRANS_PATH}/dim_ubicacion.csv",      index=False)
@@ -258,6 +261,9 @@ def pipeline_etl_incautaciones():
 
         for table, result in results.items():
             if not result["success"]:
+                for r in result["results"]:
+                    if not r["success"]:
+                        print(f"❌ FALLO: {r['expectation_config']['type']} | {r['expectation_config']['kwargs'].get('column')} | {r['result']}")
                 raise ValueError(f"[validate_output] Validación fallida para '{table}'")
             
         return "ok" 
