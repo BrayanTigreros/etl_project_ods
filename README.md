@@ -10,16 +10,76 @@ Por:
 
 **Objetivo del proyecto**
 
-Diseñar e implementar un pipeline ETL de producción sobre datos de incautaciones de fauna silvestre en los departamentos de Risaralda y Caldas, Colombia, en el marco del Objetivo de Desarrollo Sostenible 15 (Vida de Ecosistemas Terrestres) que busca frenar la pérdida de biodiversidad, proteger hábitats naturales y evitar la extinción de especies amenazadas para 2030. El sistema extrae datos crudos en CSV, los transforma aplicando limpieza y modelado dimensional, y los carga en un Data Warehouse MySQL para su análisis mediante dashboards en Power BI.
+El propósito de este proyecto es diseñar e implementar un pipeline ETL en entorno de producción que integre y analice datos de incautaciones de fauna silvestre en los departamentos de Risaralda y Caldas, Colombia, junto con información externa sobre el estado de conservación de las especies. Este sistema se desarrolla en el marco de los Objetivos de Desarrollo Sostenible (ODS 15: Vida de Ecosistemas Terrestres), con el fin de generar conocimiento que contribuya a la protección de la biodiversidad y la lucha contra el tráfico ilegal de especies y la extinción de ellas.
+Desde su concepción, el pipeline está diseñado para trabajar con múltiples fuentes de datos que se complementan entre sí. Por un lado, se cuenta con datasets en formato CSV que registran las incautaciones de fauna silvestre realizadas por autoridades en Risaralda y Caldas. Por otro lado, se integra información proveniente de la API de Global Biodiversity Information Facility (GBIF), la cual proporciona el estado de conservación de las especies según estándares internacionales como la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza.
+La integración de estas fuentes permite enriquecer significativamente el análisis, ya que no solo se identifican las especies incautadas, sino también su nivel de riesgo a nivel global. Para lograr esto, el pipeline realiza procesos de extracción, limpieza, transformación, validación y carga en un Data Warehouse en MySQL, bajo un modelo dimensional que facilita el análisis. Ademas de su respectiva orquestación en airflow.
+El desarrollo de este sistema responde a la necesidad de convertir datos aislados en información útil para la toma de decisiones, en el contexto Colombiano donde el tráfico ilegal de especies representa uno de los delitos ambientales más rentables y dañinos. Esta actividad impacta negativamente la biodiversidad, incrementa el riesgo de extinción de especies y altera los ecosistemas, especialmente en regiones altamente biodiversas como Risaralda y Caldas..
+A partir de la integración de ambas fuentes de datos, el pipeline busca relacionar las especies registradas en incautaciones en estos departamentos con su nivel de riesgo a nivel mundial, con el fin de analizar cómo el tráfico ilegal está afectando a las especies en estos contextos específicos. Esta integración permite habilitar análisis que no eran posibles con el dataset original, entre ellos: identificar qué proporción de los animales incautados corresponde a especies amenazadas o en peligro crítico, determinar qué autoridades interceptan más especies de alto riesgo ecológico, y analizar la relación entre la frecuencia de incautaciones y el nivel de amenaza de las especies.
+Finalmente, los resultados esperados incluyen la generación de dashboards interactivos en Power BI que permitan identificar patrones, tendencias y riesgos asociados al tráfico de fauna silvestre. Esto facilita la toma de decisiones por parte de entidades ambientales y contribuye al cumplimiento de los objetivos de conservación de la biodiversidad y mitigar o eliminar su riesgo de extinción.
 
-El tráfico ilegal de especies en Colombia es un crimen ambiental y animal que implica la captura, comercialización, transporte ilícito de fauna y flora silvestre, siendo este uno de los negocios ilícitos más rentables del mundo. Esta actividad afecta gravemente la biodiversidad, aumenta la extinción de especies protegidas, reduce la poblacion de otras especies y aumenta la introduccion de especies exóticas al ecosistema que pueden llegar a ser perjudicial para el ecosistema local. Esta actividad tiende a ser desarrollada para utilizar a las especies como mascotas, carne, huevos o por sus partes como lo son las pieles, a menudo esta actividad provoca alta mortalidad en los animales en cuestión.
+**Objetivos específicos**
 
-La incautación de animales en Colombia es crucial para combatir el tráfico ilegal y detener la crueldad animal, con el fin de asegurar el equilibrio de los ecosistemas y la protección de los seres vivos de nuestra región, es por ello que dentro del pais se generan normativas y programas de incautación como en el caso de la gobernacion de Risaralda y Caldas que son departamentos con gran presencia de tráfico ilegal de fauna silvestre, impulsado por la biodiversidad de la zona.
+- Integrar los datos de incautaciones de fauna silvestre con la información de estado de conservación proveniente de la API de GBIF.
+- Diseñar y ejecutar el proceso de ETL que incluyan limpieza y validación de datos, asegurando la calidad e integridad de la información antes de su almacenamiento y utilización.
+- Identificar patrones entre las incautaciones y su el nivel de riesgo de las especies 
+- Orquestar el pipeline mediante herramientas como Apache Airflow para garantizar la automatización, trazabilidad y ejecución periódica de los procesos, validando el éxito de cada uno de los tasks.
+- Implementar un Data Warehouse en MySQL bajo un modelo dimensional que permita consultas eficientes orientadas al análisis de incautaciones y nivel de amenaza de las especies.
+- Desarrollar un dashboard que permitan visualizar tendencias, distribuciones y relaciones clave para la toma de decisiones.
 
-**Dataset**
+**Fuentes de datos**
 
-El archivo incautaciones.csv es extraido de datos.gov.co el cual contiene aproximadamente 12,836 registros con 10 atributos: año del evento con un rango de fechas de 2008 a 2022, departamento, municipio, lugar del decomiso, situación (INCAUTACIÓN, ENTREGA VOLUNTARIA o HALLAZGO), autoridad que intervino, tipo de especie, nombre común, nombre científico y cantidad de individuos. El año venía serializado como float (2.008) y fue corregido durante la transformación. Se identificaron nulos en municipio (31), autoridad (34), tipo de especie (10), nombre común (738) y nombre científico (703), todos tratados en la fase de transform.
+***Dataset incautaciones.csv***
+El archivo incautaciones.csv es extraido de datos.gov.co el cual contiene aproximadamente 12,836 registros con 10 atributos: año del evento con un rango de fechas de 2008 a 2022, departamento, municipio, lugar del decomiso, situación (INCAUTACIÓN, ENTREGA VOLUNTARIA o HALLAZGO), autoridad que intervino, tipo de especie, nombre común, nombre científico y cantidad de individuos.
 
+***API gbif_raw.csv***
+La API de Global Biodiversity Information Facility (GBIF), la cual proporciona información de la jerarquía taxonómica completa de cada especie: reino, filo, clase, orden y familia. Por otro lado, la categoría de amenaza IUCN (LC, NT, VU, EN, CR, NE, DD), que indica el nivel de riesgo de extinción según la Lista Roja internacional. Esta API fue seleccionada debido a que nos proporciona una lista larga de especies y en especial evalúa la amenaza en la que se encuentran estas especies algo muy importante para desarrollar nuestro ODS (ODS 15: Vida de Ecosistemas Terrestres), dándonos la oportunidad de conocer el nivel de amenaza en la que se encuentra y identificar la relación entre su nivel de riego con las incautaciones registradas en estos dos departamentos de Colombia que son muy ricos en biodiversidad.
+
+**Profiling summary**
+
+***Information general del dataset incautaciones.csv***
+
+- Number of columns: 10
+- Number of rows: 12,836
+- Total memory used (MB): 6.5 
+- Duplicados totales: 3924
+
+| column_name | Data type | Missing values | % of missing values | Cardinality | Basic Statistics | Notes |
+|---|---:|---:|---:|---:|---|---|
+| **año** | Float64 | 0 | 0.00 | … | Count = 12836<br>Mean = 2015<br>Min = 2008<br>Max = 2021 | Representa el año de la incautación |
+| **Departamento** | Object | 0 | 0 | 2 | … | Representa el departamento de la incautación |
+| **Municipio** | Object | 31 | 0.2 | 16 | … | Representa el municipio de la incautación |
+| **Lugar Decomiso** | Object | 0 | 0.00 | 483 | … | Representa el lugar de la incautación |
+| **Situacion** | Object | 0 | 0.00 | 3 | … | Representa la situación en la que se realizó la incautación |
+| **Autoridad que incauto** | Object | 34 | 0.3 | 6 | … | Representa la autoridad que realizó la incautación |
+| **nom tipo especie** | Object | 10 | 0.1 | 12 | … | Representa el nombre de la especie incautada |
+| **Nombre comun** | Object | 738 | 5.7 | 632 | … | Representa el nombre común del individuo incautado |
+| **Nombre cientifico** | Object | 703 | 5.5 | 568 | … | Representa el nombre científico del individuo incautado |
+| **Cantidad** | Int64 | 0 | 0 | … | Count = 12836<br>Mean = 1.237<br>Min = 1<br>Max = 150 | Representa la cantidad de individuos incautados |
+
+---
+
+***Information general de gbif_raw.csv***
+
+- Number of columns: 13
+- Number of rows: 567
+- Total memory used (MB): 368.9
+- Duplicados totales: 0
+
+| column_name | Data type | Missing values | % of missing values | Cardinality | Basic Statistics | Notes |
+|---|---|---:|---:|---:|---|---|
+| **nombre_cientifico_original** | Object | 0 | 0.00 | 567 | … | Representa el nombre científico original del dataset `incautaciones.csv` |
+| **nombre_cientifico_normalizado** | Object | 0 | 0 | 541 | … | Representa el nombre científico normalizado del dataset `incautaciones.csv` |
+| **nombre_cientifico_gbif** | Object | 41 | 7.23 | 441 | … | Representa el nombre científico que se extrajo de GBIF |
+| **usage_key** | float64 | 41 | 7.23 | … | Count = 567<br>Mean = 3.68<br>Min = 1<br>Max = 1.11 | Es el identificador interno del taxón en GBIF |
+| **reino** | Object | 41 | 7.23 | 3 | … | Representa el reino al que pertenece |
+| **filo** | Object | 43 | 7.58 | 6 | … | Representa el filo al que pertenece |
+| **clase** | Object | 48 | 8.47 | 15 | … | Representa la clase a la que pertenece |
+| **orden** | Object | 148 | 26.10 | 47 | … | Representa el orden al que pertenece |
+| **familia** | Object | 46 | 8.11 | 133 | … | Representa la familia a la que pertenece |
+| **genero** | Object | 46 | 8.11 | 285 | … | Representa el género al que pertenece |
+| **estado_taxonomico** | Object | 41 | 7.23 | 4 | … | Indica el estado del nombre en la taxonomía interpretada por GBIF. Aparecen valores como `ACCEPTED`, `SYNONYM` y `DOUBTFUL` |
+| **confianza_match** | Int65 | 0 | 0 | … | Count = 567<br>Mean = 89.7<br>Min = 0<br>Max = 99 | Representa el nivel de confianza del emparejamiento entre el nombre consultado y el taxón encontrado por GBIF |
+| **categoria_iucn** | Object | 87 | 15.34 | 8 | … | Es la categoría de amenaza IUCN |
 
 ## Modelo Dimensional
 **Definición de la granularidad**
