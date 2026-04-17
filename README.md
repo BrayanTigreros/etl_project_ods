@@ -196,7 +196,7 @@ lugar_decomiso se integró dentro de dim_ubicacion por formar parte de la jerarq
 
 Imagen del Esquema Estrella:
 
-![Star Schema](diagrams/star_shema/diagrama_de_estrella.png)
+![Diagrama de estrella](diagrams/star_shema/diagrama_de_estrella.png)
 
 **Lógica ETL**
 
