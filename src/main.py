@@ -9,6 +9,16 @@ from load import save_dimensions_to_csv, load_to_dw
 from output_validation import output_data_validation
 from input_validation import input_data_validation
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
+import threading
+import time
+
+from kafka_src.producer_metrics import run_producer
+from kafka_src.consumer_metrics import run_consumer
+
 gbif_raw_path = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\data\raw\gbif_raw.csv'
 log_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\logs\log_file.txt'
 target_file = r'C:\Users\santa\Desktop\ETL_cositas\proyecto_etl_ods\transformed'
@@ -84,6 +94,18 @@ def main():
 
     # ETL process
     log_progress('ETL process finished successfully', log_file)
+
+    # streaming kafka
+    log_progress('Kafka streaming started', log_file)
+    consumer_thread = threading.Thread(target=run_consumer, daemon=True)
+    consumer_thread.start()
+
+    time.sleep(2)          #este sleep es para asegurar que el consumer este listo antes de que el producer envie los mesajes
+
+    run_producer(iterations=1)
+
+    time.sleep(5)          #aqui espera que el consumer procese los mensajes
+    log_progress('Kafka streaming complete', log_file)
 
 
 if __name__ == "__main__":
