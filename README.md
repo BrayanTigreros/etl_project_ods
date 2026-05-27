@@ -26,7 +26,7 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 
 ## Objetivo general 
 
-Mediante la utilización de lo aprendido durante el curso de ETL se busca la implementación de un pipeline completo donde se utilicen datos de incautaciones en los departamentos de Risaralda y Caldas nutrido con la información del estado de conservación de las especies según estándares internacionales como la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza.
+Realizar mediante la utilización de lo aprendido durante el curso de ETL se busca la implementación de un pipeline completo donde se utilicen datos de incautaciones en los departamentos de Risaralda y Caldas nutrido con la información del estado de conservación de las especies según estándares internacionales como la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza.
 
 ## Objetivos específicos funcionales 
 
@@ -35,11 +35,14 @@ Mediante la utilización de lo aprendido durante el curso de ETL se busca la imp
 - Identificar patrones entre las incautaciones y su el nivel de riesgo de las especies 
 - Orquestar el pipeline mediante herramientas como Apache Airflow para garantizar la automatización, trazabilidad y ejecución periódica de los procesos, validando el éxito de cada uno de los tasks.
 - Implementar un Data Warehouse en MySQL bajo un modelo dimensional que permita consultas eficientes orientadas al análisis de incautaciones y nivel de amenaza de las especies.
+- Desarrollar un producer capaz de transmitir informacion por medio de strimig hacia un consumer que procese y almacene la información.
 - Desarrollar un dashboard que permitan visualizar tendencias, distribuciones y relaciones clave para la toma de decisiones.
+  
 
 ## Objetivos del negocio 
 
-- Reconocer 
+- Reconocer el estado de conservación de los diferentes animales que se han incautado en ambos departamentos de Colombia.
+- 
 
 ---
 
