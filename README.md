@@ -42,7 +42,8 @@ Realizar mediante la utilización de lo aprendido durante el curso de ETL se bus
 ## Objetivos del negocio 
 
 - Reconocer el estado de conservación de los diferentes animales que se han incautado en ambos departamentos de Colombia.
-- 
+- Identificar patrones repetitivos entre las incautaciones y los niveles de riesgo en la conservacion de los animales.
+- Mostrar la creciente 
 
 ---
 
