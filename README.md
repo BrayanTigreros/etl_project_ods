@@ -43,7 +43,10 @@ Realizar mediante la utilización de lo aprendido durante el curso de ETL se bus
 
 - Reconocer el estado de conservación de los diferentes animales que se han incautado en ambos departamentos de Colombia.
 - Identificar patrones repetitivos entre las incautaciones y los niveles de riesgo en la conservacion de los animales.
-- Mostrar la creciente 
+- Mostrar las autoridades que mas influencia tienen en la efectividad de las incautaciones en los departamentos
+- Visualizar la creciente preocupacion en el estado de riesgo de las especies que siguen siendo victimas del trafico de especies.
+- Evaluar el comportamiento de la sociedad ante esta problematica por medio de tipo de incautacion que se raliza (por obligación o por desición propia).
+- Informar sobre la relación que existe entre el creciente riesgo en la coexistencia de los diferentes animales incautados que son victimas del trafico de especies.
 
 ---
 
