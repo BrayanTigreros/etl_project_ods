@@ -8,7 +8,7 @@ Por:
 
 -Brayan Stiven Tigreros
 
-## Objetivo del proyecto
+## Introduccion del proyecto
 
 El propósito de este proyecto es diseñar e implementar un pipeline ETL en entorno de producción que integre y analice datos de incautaciones de fauna silvestre en los departamentos de Risaralda y Caldas, Colombia, junto con información externa sobre el estado de conservación de las especies. Este sistema se desarrolla en el marco de los Objetivos de Desarrollo Sostenible (ODS 15: Vida de Ecosistemas Terrestres), con el fin de generar conocimiento que contribuya a la protección de la biodiversidad y la lucha contra el tráfico ilegal de especies y la extinción de ellas.
 
@@ -24,7 +24,11 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 
 ---
 
-## Objetivos específicos
+## Objetivo general 
+
+Mediante la utilización de lo aprendido durante el curso se busca la implementación de un pipeline que 
+
+## Objetivos específicos funcionales 
 
 - Integrar los datos de incautaciones de fauna silvestre con la información de estado de conservación proveniente de la API de GBIF.
 - Diseñar y ejecutar el proceso de ETL que incluyan limpieza y validación de datos, asegurando la calidad e integridad de la información antes de su almacenamiento y utilización.
@@ -32,6 +36,10 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 - Orquestar el pipeline mediante herramientas como Apache Airflow para garantizar la automatización, trazabilidad y ejecución periódica de los procesos, validando el éxito de cada uno de los tasks.
 - Implementar un Data Warehouse en MySQL bajo un modelo dimensional que permita consultas eficientes orientadas al análisis de incautaciones y nivel de amenaza de las especies.
 - Desarrollar un dashboard que permitan visualizar tendencias, distribuciones y relaciones clave para la toma de decisiones.
+
+## Objetivos del negocio 
+
+- Reconocer 
 
 ---
 
