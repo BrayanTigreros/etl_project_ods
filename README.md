@@ -26,7 +26,7 @@ Finalmente, los resultados esperados incluyen la generación de dashboards inter
 
 ## Objetivo general 
 
-Mediante la utilización de lo aprendido durante el curso se busca la implementación de un pipeline que 
+Mediante la utilización de lo aprendido durante el curso de ETL se busca la implementación de un pipeline completo donde se utilicen datos de incautaciones en los departamentos de Risaralda y Caldas nutrido con la información del estado de conservación de las especies según estándares internacionales como la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza.
 
 ## Objetivos específicos funcionales 
 
