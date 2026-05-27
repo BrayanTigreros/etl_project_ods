@@ -35,7 +35,7 @@ Realizar mediante la utilización de lo aprendido durante el curso de ETL se bus
 - Identificar patrones entre las incautaciones y su el nivel de riesgo de las especies 
 - Orquestar el pipeline mediante herramientas como Apache Airflow para garantizar la automatización, trazabilidad y ejecución periódica de los procesos, validando el éxito de cada uno de los tasks.
 - Implementar un Data Warehouse en MySQL bajo un modelo dimensional que permita consultas eficientes orientadas al análisis de incautaciones y nivel de amenaza de las especies.
-- Desarrollar un producer capaz de transmitir informacion por medio de strimig hacia un consumer que procese y almacene la información.
+- Desarrollar un producer capaz de transmitir informacion por medio de streamig hacia un consumer que procese y almacene la información.
 - Desarrollar un dashboard que permitan visualizar tendencias, distribuciones y relaciones clave para la toma de decisiones.
   
 
@@ -317,6 +317,14 @@ El dataset cubre únicamente Risaralda y Caldas (2008–2021), lo que limita el 
 Alrededor de un 15% de las especies no tienen categoría IUCN asignada, pues estan clasificadas como "No evaluada".
 
 Como mejora futura se podría integrar datos de más departamentos y configurar alertas automáticas cuando la proporción de especies en peligro crítico supere algún umbral definido.
+
+
+**Conclusiones**
+Después del desarrollo completo del pipeline de datos, se puede identificar que los procesos batch y streaming se complementan dentro de la solución. Sin embargo, el streaming tiende a ser más efectivo cuando se requiere obtener y visualizar datos en tiempo real.
+En nuestra situación, si una entidad ambiental necesita conocer la lista de incautaciones actualizadas, por el momento en los departamentos de Risaralda y Caldas, junto con su nivel de riesgo, puede hacerlo en tiempo real sin esperar a que el proceso sea ejecutado y actualizado nuevamente de forma manual o programada.
+Esto representa un beneficio importante para el cumplimiento del Objetivo de Desarrollo Sostenible ODS 15: Vida de Ecosistemas Terrestres, ya que permite conocer la realidad de la situación de manera oportuna. Así, las entidades pueden tomar decisiones más rápidas y acertadas frente a la protección de los ecosistemas, sin depender únicamente de procesos posteriores de almacenamiento, procesamiento o actualización de datos.
+
+
 
 
 
