@@ -320,8 +320,11 @@ Como mejora futura se podría integrar datos de más departamentos y configurar 
 
 
 **Conclusiones**
+
 Después del desarrollo completo del pipeline de datos, se puede identificar que los procesos batch y streaming se complementan dentro de la solución. Sin embargo, el streaming tiende a ser más efectivo cuando se requiere obtener y visualizar datos en tiempo real.
+
 En nuestra situación, si una entidad ambiental necesita conocer la lista de incautaciones actualizadas, por el momento en los departamentos de Risaralda y Caldas, junto con su nivel de riesgo, puede hacerlo en tiempo real sin esperar a que el proceso sea ejecutado y actualizado nuevamente de forma manual o programada.
+
 Esto representa un beneficio importante para el cumplimiento del Objetivo de Desarrollo Sostenible ODS 15: Vida de Ecosistemas Terrestres, ya que permite conocer la realidad de la situación de manera oportuna. Así, las entidades pueden tomar decisiones más rápidas y acertadas frente a la protección de los ecosistemas, sin depender únicamente de procesos posteriores de almacenamiento, procesamiento o actualización de datos.
 
 
