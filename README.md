@@ -265,6 +265,60 @@ Imagen del Esquema Estrella:
 
 ---
 
+Kafka Streaming
+
+El componente de streaming está implementado en la carpeta kafka_src/ y consta de dos scripts: 
+
+producer_metrics.py
+
+consumer_metrics.py.
+
+Métricas publicadas
+
+El producer se conecta directamente al Data Warehouse del MySQL y publica tres métricas derivadas de la tabla de hechos:
+
+por_anio: total de individuos incautados y número de eventos por año desde el 2008 al 2021
+
+por_amenaza: total de individuos agrupados por categoría IUCN (LC, NE, VU, EN, CR, etc.)
+
+por_autoridad: top 10 autoridades por número de individuos incautados
+
+Cada métrica se publica como un mensaje JSON independiente al topico incautaciones-metrics con su marca de tiempo. El producer puede correr en loop continuo o por rondas definidas.
+El consumer escucha el topic y muestra cada métrica formateada en tiempo real en la terminal.
+
+**Cómo correr el componente Kafka**
+
+Primero, en la sección del producer_metrics la conexion a MySQL actualizamos las credenciales
+
+    DB_CONN   = "mysql+pymysql://root:{TU_IP_ACTUAL}:3306/incautaciones_dw"
+
+Luego, levantamos Kafka junto con el resto de servicios:
+
+    compose up -d
+
+
+Crear el topic (esto se hace solo una vez):
+
+    exec -it kafka kafka-topics --create --topic incautaciones-metrics --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+    
+Luego, corremos el pipeline completo incluyendo Kafka desde la raíz:
+
+    cd src
+
+    python main.py
+
+El producer y consumer se ejecutan automáticamente al final del pipeline ETL.
+
+
+**Limitaciones y mejoras futuras**
+
+El dataset cubre únicamente Risaralda y Caldas (2008–2021), lo que limita el analisís a esos solo esos territorios.
+
+Alrededor de un 15% de las especies no tienen categoría IUCN asignada, pues estan clasificadas como "No evaluada".
+
+Como mejora futura se podría integrar datos de más departamentos y configurar alertas automáticas cuando la proporción de especies en peligro crítico supere algún umbral definido.
+
+
 
 
 
